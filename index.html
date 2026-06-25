@@ -1,377 +1,1191 @@
 <!DOCTYPE html>
 <html lang="pt-BR" data-theme="light" data-anim="on">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Grupo Fly — Empreenda, estruture e escale sua agência de viagens</title>
-<link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grupo Fly — Empreenda, estruture e escale sua agência de viagens</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
-<!-- ============ NAV ============ -->
-<nav class="nav" id="nav">
-  <div class="wrap nav__inner">
-    <a href="#top" aria-label="Grupo Fly"><img class="nav__logo" src="assets/grupofly-white.png" alt="Grupo Fly" /></a>
-    <div class="nav__links">
-      <a href="#solucao">Solução</a>
-      <a href="#empresas">Empresas</a>
-      <a href="#atuacao">Como atuamos</a>
-      <a href="#socios">Sócios</a>
-      <a href="#contato">Contato</a>
-    </div>
-    <div class="nav__cta">
-      <a href="#solucao" class="btn btn--ghost">Conhecer soluções</a>
-      <a href="#cta" class="btn btn--primary">Falar com especialista</a>
-      <button class="nav__burger" id="burger" aria-label="Menu"><svg data-lucide="menu"></svg></button>
-    </div>
-  </div>
-</nav>
-
-<!-- ============ HERO ============ -->
-<header class="hero" id="top">
-  <div class="glow" style="width:620px;height:620px;background:var(--accent);opacity:.12;top:-180px;left:-160px;"></div>
-  <div class="glow" style="width:460px;height:460px;background:var(--accent-2);opacity:.08;top:120px;right:-120px;"></div>
-  <div class="wrap hero__grid">
-    <div class="hero__copy reveal">
-      <span class="badge"><span class="dot"></span><b>+1.700 agências</b> criadas no turismo</span>
-      <h1 class="display h-hero" style="margin:22px 0 0;">Empreenda, estruture e <span class="grad">escale</span> sua agência de viagens.</h1>
-      <p class="lead" style="margin:24px 0 0;max-width:46ch;">O Grupo Fly é uma estrutura completa para quem deseja empreender no turismo com segurança, organização e suporte real — conectando educação, operação, tecnologia e contabilidade em todas as etapas do negócio.</p>
-      <div style="display:flex;gap:14px;flex-wrap:wrap;margin:34px 0 0;">
-        <a href="#cta" class="btn btn--primary">Quero falar com um especialista <svg data-lucide="arrow-right"></svg></a>
-        <a href="#solucao" class="btn btn--ghost">Conhecer as soluções</a>
+  <!-- ============ NAV ============ -->
+  <nav class="nav" id="nav">
+    <div class="wrap nav__inner">
+      <a href="#top" aria-label="Grupo Fly"><img class="nav__logo" src="assets/grupofly-white.png"
+          alt="Grupo Fly" /></a>
+      <div class="nav__links">
+        <a href="#solucao">Solução</a>
+        <a href="#empresas">Empresas</a>
+        <a href="#essencia">Nossa Essência</a>
+        <a href="#atuacao">Como atuamos</a>
+        <a href="#socios">Sócios</a>
+        <a href="#contato">Contato</a>
       </div>
-      <div class="stat-strip" style="margin-top:42px;">
-        <div class="s"><b class="grad">+1.700</b><span>agências criadas</span></div>
-        <div class="stat-divider"></div>
-        <div class="s"><b class="grad">+R$ 400 mi</b><span>movimentados no turismo</span></div>
+      <div class="nav__cta">
+        <a href="#solucao" class="btn btn--ghost">Conhecer soluções</a>
+        <a href="#cta" class="btn btn--primary">Falar com especialista</a>
+        <button class="nav__burger" id="burger" aria-label="Menu"><svg data-lucide="menu"></svg></button>
       </div>
     </div>
-    <div class="mark-stage reveal">
-      <div class="mark-ring" style="width:340px;height:340px;"></div>
-      <div class="mark-ring" style="width:440px;height:440px;opacity:.5;"></div>
-      <div class="mark-halo"></div>
-      <img class="mark-img" src="assets/mark-white.png" alt="" />
-    </div>
-  </div>
-</header>
-
-<!-- ============ PROBLEMA ============ -->
-<section class="section" id="problema">
-  <div class="wrap">
-    <div style="max-width:760px;">
-      <span class="eyebrow reveal">O desafio</span>
-      <h2 class="h2 reveal" style="margin-top:18px;">Empreender no turismo parece simples — até os problemas aparecerem.</h2>
-      <p class="lead reveal" style="margin-top:18px;">No início tudo flui, mas rapidamente surgem desafios que travam o crescimento do negócio:</p>
-    </div>
-    <div class="prob-grid reveal" style="margin-top:36px;">
-      <div class="prob"><span class="x"><svg data-lucide="x"></svg></span><p>Falta de direcionamento claro</p></div>
-      <div class="prob"><span class="x"><svg data-lucide="x"></svg></span><p>Dificuldade na estruturação do negócio</p></div>
-      <div class="prob"><span class="x"><svg data-lucide="x"></svg></span><p>Falta de organização financeira</p></div>
-      <div class="prob"><span class="x"><svg data-lucide="x"></svg></span><p>Dependência de soluções isoladas</p></div>
-      <div class="prob"><span class="x"><svg data-lucide="x"></svg></span><p>Erros operacionais e tributários</p></div>
-    </div>
-    <p class="reveal" style="margin-top:30px;font-size:1.2rem;max-width:780px;color:var(--fg);">
-      A maioria dos empreendedores tenta resolver tudo sozinho — <span class="muted">e paga caro por isso em tempo, dinheiro e crescimento.</span>
-    </p>
-  </div>
-</section>
-
-<!-- ============ SOLUÇÃO ============ -->
-<section class="section" id="solucao" style="background:var(--bg-2);">
-  <div class="wrap">
-    <div style="max-width:840px;">
-      <span class="eyebrow reveal">A solução</span>
-      <h2 class="h2 reveal" style="margin-top:18px;">Uma estrutura completa para quem quer empreender no turismo.</h2>
-    </div>
-    <div class="reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:30px;max-width:1000px;">
-      <p class="lead" style="margin:0;">O Grupo Fly foi criado para resolver esse cenário. Não somos uma empresa que entrega apenas um serviço específico — somos um grupo estruturado que atua de forma integrada.</p>
-      <p class="lead" style="margin:0;">Oferecemos suporte em todas as áreas essenciais de uma agência de viagens. Nosso papel é transformar <span class="grad" style="font-weight:600;">intenção em negócio estruturado — e negócio estruturado em crescimento.</span></p>
-    </div>
-  </div>
-</section>
-
-<!-- ============ DIFERENCIAL PRINCIPAL ============ -->
-<section class="section">
-  <div class="glow" style="width:520px;height:520px;background:var(--accent);opacity:.08;left:50%;top:50%;transform:translate(-50%,-50%);"></div>
-  <div class="wrap statement">
-    <span class="eyebrow eyebrow--center reveal" style="justify-content:center;">Diferencial</span>
-    <h2 class="h2 reveal" style="margin-top:20px;font-size:clamp(2.2rem,4.6vw,4rem);">Não fomos <span class="muted-3" style="font-style:italic;">adaptados</span> ao turismo.<br/><span class="grad">Fomos criados para ele.</span></h2>
-    <p class="lead reveal" style="margin:26px auto 0;max-width:680px;">Enquanto muitas soluções do mercado são generalistas e apenas ajustadas para atender agências, o Grupo Fly nasceu exclusivamente dentro do turismo. Tudo foi pensado, desde o início, para a realidade do setor.</p>
-    <div class="checks reveal" style="margin:38px auto 0;max-width:560px;text-align:left;">
-      <div class="check"><span class="c"><svg data-lucide="check"></svg></span><span>Processos alinhados ao turismo</span></div>
-      <div class="check"><span class="c"><svg data-lucide="check"></svg></span><span>Ferramentas desenvolvidas para necessidades reais</span></div>
-      <div class="check"><span class="c"><svg data-lucide="check"></svg></span><span>Estratégias baseadas na prática</span></div>
-      <div class="check"><span class="c"><svg data-lucide="check"></svg></span><span>Menos adaptação, mais eficiência</span></div>
-      <div class="check"><span class="c"><svg data-lucide="check"></svg></span><span>Entendimento profundo da operação</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ DIFERENCIAL ESTRUTURAL ============ -->
-<section class="section" id="estrutura" style="background:var(--bg-2);">
-  <div class="wrap">
-    <div style="max-width:760px;">
-      <span class="eyebrow reveal">Estrutura multidisciplinar</span>
-      <h2 class="h2 reveal" style="margin-top:18px;">Uma estrutura completa, não soluções isoladas.</h2>
-      <p class="lead reveal" style="margin-top:18px;">No turismo, é comum depender de diferentes profissionais para áreas críticas do negócio. O Grupo Fly resolve isso com uma atuação integrada — cada área liderada por especialistas.</p>
-    </div>
-    <div class="areas reveal" style="margin-top:40px;">
-      <div class="card card--lift"><div class="icon-chip"><svg data-lucide="graduation-cap"></svg></div><h3 class="h3" style="margin-top:18px;">Educação</h3><p class="muted" style="margin:8px 0 0;font-size:.95rem;">Formação e capacitação de empreendedores do turismo.</p></div>
-      <div class="card card--lift"><div class="icon-chip"><svg data-lucide="plane"></svg></div><h3 class="h3" style="margin-top:18px;">Operação</h3><p class="muted" style="margin:8px 0 0;font-size:.95rem;">Operação real no mercado, validando o que ensinamos.</p></div>
-      <div class="card card--lift"><div class="icon-chip icon-chip--mint"><svg data-lucide="monitor"></svg></div><h3 class="h3" style="margin-top:18px;">Tecnologia</h3><p class="muted" style="margin:8px 0 0;font-size:.95rem;">Sistema de gestão exclusivo para agências de turismo.</p></div>
-      <div class="card card--lift"><div class="icon-chip"><svg data-lucide="calculator"></svg></div><h3 class="h3" style="margin-top:18px;">Contabilidade</h3><p class="muted" style="margin:8px 0 0;font-size:.95rem;">Segurança jurídica e eficiência tributária especializada.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ EMPREENDEDORISMO ============ -->
-<section class="section">
-  <div class="wrap">
-    <div style="display:grid;grid-template-columns:0.9fr 1.1fr;gap:48px;align-items:center;">
-      <div>
-        <span class="eyebrow reveal">Empreendedorismo</span>
-        <h2 class="h2 reveal" style="margin-top:18px;">Desenvolvemos empreendedores, não apenas agências.</h2>
-        <p class="lead reveal" style="margin-top:18px;">Atuamos em todas as fases do negócio, com foco em reduzir erros, acelerar o aprendizado e aumentar o resultado.</p>
-      </div>
-      <div class="reveal" style="display:grid;gap:14px;">
-        <div class="card" style="display:flex;gap:16px;align-items:center;padding:22px 26px;"><span class="flow__num">01</span><div><b>Quem está começando do zero</b><p class="muted" style="margin:4px 0 0;font-size:.92rem;">Do primeiro passo à primeira venda.</p></div></div>
-        <div class="card" style="display:flex;gap:16px;align-items:center;padding:22px 26px;"><span class="flow__num">02</span><div><b>Quem quer formalizar e organizar</b><p class="muted" style="margin:4px 0 0;font-size:.92rem;">Estrutura, processos e conformidade.</p></div></div>
-        <div class="card" style="display:flex;gap:16px;align-items:center;padding:22px 26px;"><span class="flow__num">03</span><div><b>Quem já vende, mas precisa estruturar</b><p class="muted" style="margin:4px 0 0;font-size:.92rem;">Organização para escalar com segurança.</p></div></div>
-        <div class="card" style="display:flex;gap:16px;align-items:center;padding:22px 26px;"><span class="flow__num">04</span><div><b>Quem quer crescer com consistência</b><p class="muted" style="margin:4px 0 0;font-size:.92rem;">Decisões guiadas por dados e resultado.</p></div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ EMPRESAS DO GRUPO ============ -->
-<section class="section" id="empresas" style="background:var(--bg-2);">
-  <div class="wrap">
-    <div style="max-width:720px;">
-      <span class="eyebrow reveal">As empresas do grupo</span>
-      <h2 class="h2 reveal" style="margin-top:18px;">Conheça as empresas que sustentam essa estrutura.</h2>
-    </div>
-    <div class="companies reveal" style="margin-top:40px;">
-      <div class="card company card--lift">
-        <div class="company__head"><div class="icon-chip"><svg data-lucide="graduation-cap"></svg></div><div><div class="company__tag">Educação</div><div class="company__name">Fly Educacional</div></div></div>
-        <p class="muted" style="margin:0;">Responsável pela formação de empreendedores do turismo, com cursos e treinamentos completos para abertura, estruturação e crescimento de agências.</p>
-      </div>
-      <div class="card company card--lift">
-        <div class="company__head"><div class="icon-chip"><svg data-lucide="plane"></svg></div><div><div class="company__tag">Operação</div><div class="company__name">Voefly Viagens</div></div></div>
-        <p class="muted" style="margin:0;">Agência com operação real no mercado, usada como base prática para validação de estratégias e aplicação do que é ensinado.</p>
-      </div>
-      <div class="card company card--lift">
-        <div class="company__head"><div class="icon-chip icon-chip--mint"><svg data-lucide="monitor"></svg></div><div><div class="company__tag">Tecnologia</div><div class="company__name">Viajaflux</div></div></div>
-        <p class="muted" style="margin:0;">Sistema de gestão exclusivo para agências de turismo, com foco em controle financeiro, organização e escalabilidade.</p>
-      </div>
-      <div class="card company card--lift">
-        <div class="company__head"><div class="icon-chip"><svg data-lucide="calculator"></svg></div><div><div class="company__tag">Contabilidade</div><div class="company__name">Fly One Contabilidade</div></div></div>
-        <p class="muted" style="margin:0;">Contabilidade especializada em turismo, garantindo segurança jurídica, conformidade fiscal e eficiência tributária.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ COMO ATUAMOS ============ -->
-<section class="section" id="atuacao">
-  <div class="wrap">
-    <div style="max-width:720px;">
-      <span class="eyebrow reveal">Como atuamos</span>
-      <h2 class="h2 reveal" style="margin-top:18px;">Uma atuação integrada, do começo ao crescimento.</h2>
-      <p class="lead reveal" style="margin-top:18px;">Cada etapa é sustentada por uma empresa do grupo, garantindo suporte completo ao empreendedor.</p>
-    </div>
-    <div class="card reveal" style="margin-top:40px;padding:8px;">
-      <div class="flow">
-        <div class="flow__step">
-          <span class="flow__num">Etapa 01</span>
-          <h3 class="h3" style="margin:10px 0 6px;">Educação</h3>
-          <p class="muted" style="margin:0;font-size:.9rem;">Fly Educacional</p>
-          <svg class="flow__arrow" data-lucide="chevron-right"></svg>
-        </div>
-        <div class="flow__step">
-          <span class="flow__num">Etapa 02</span>
-          <h3 class="h3" style="margin:10px 0 6px;">Estruturação</h3>
-          <p class="muted" style="margin:0;font-size:.9rem;">Fly One Contabilidade</p>
-          <svg class="flow__arrow" data-lucide="chevron-right"></svg>
-        </div>
-        <div class="flow__step">
-          <span class="flow__num">Etapa 03</span>
-          <h3 class="h3" style="margin:10px 0 6px;">Gestão</h3>
-          <p class="muted" style="margin:0;font-size:.9rem;">Viajaflux</p>
-          <svg class="flow__arrow" data-lucide="chevron-right"></svg>
-        </div>
-        <div class="flow__step">
-          <span class="flow__num">Etapa 04</span>
-          <h3 class="h3" style="margin:10px 0 6px;">Crescimento</h3>
-          <p class="muted" style="margin:0;font-size:.9rem;">Voefly Viagens</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ PROVA ============ -->
-<section class="section" style="background:var(--bg-2);">
-  <div class="wrap">
-    <div style="text-align:center;max-width:680px;margin:0 auto;">
-      <span class="eyebrow eyebrow--center reveal" style="justify-content:center;">Resultados</span>
-      <h2 class="h2 reveal" style="margin-top:18px;">Números que validam nossa atuação.</h2>
-    </div>
-    <div class="bignums reveal" style="margin-top:48px;">
-      <div class="card bignum"><b class="grad">+1.700</b><span>agências criadas</span></div>
-      <div class="card bignum"><b class="grad">+R$ 400 mi</b><span>movimentados no turismo</span></div>
-    </div>
-    <p class="muted reveal" style="text-align:center;margin:28px auto 0;max-width:620px;">Esses números refletem a aplicação prática das soluções do grupo no mercado real.</p>
-  </div>
-</section>
-
-<!-- ============ MISSÃO, VISÃO E VALORES ============ -->
-<section class="section" id="mvv">
-  <div class="wrap">
-    <span class="eyebrow reveal">Missão, visão e valores</span>
-    <div class="mvv-top reveal" style="margin-top:24px;">
-      <div class="card" style="padding:36px;">
-        <h3 class="h3" style="color:var(--accent);">Missão</h3>
-        <p style="margin:14px 0 0;font-size:1.12rem;line-height:1.6;">Alcançar <b>5.000 agências</b> em nossa rede até 2030, transformando o turismo em um caminho real de empreendedorismo por meio de uma estrutura integrada que conecta operação, educação, tecnologia e contabilidade.</p>
-      </div>
-      <div class="card" style="padding:36px;">
-        <h3 class="h3" style="color:var(--accent-2);">Visão</h3>
-        <p style="margin:14px 0 0;font-size:1.12rem;line-height:1.6;">Ser a estrutura de turismo mais eficiente e confiável do Brasil, referência na formação de empreendedores e na gestão profissional de agências de viagens.</p>
-      </div>
-    </div>
-    <div class="values">
-      <div class="card value reveal"><div class="vn">Obsessão pelo cliente</div><p class="muted" style="margin:0;font-size:.95rem;">Cada decisão começa pela experiência de quem confia em nós.</p></div>
-      <div class="card value reveal"><div class="vn">Entrega acima da função</div><p class="muted" style="margin:0;font-size:.95rem;">Responsabilidade não tem limite de cargo.</p></div>
-      <div class="card value reveal"><div class="vn">Compromisso é sagrado</div><p class="muted" style="margin:0;font-size:.95rem;">Cumprir prazos, metas e promessas é o mínimo.</p></div>
-      <div class="card value reveal"><div class="vn">Atitude de dono</div><p class="muted" style="margin:0;font-size:.95rem;">Cuidamos do negócio com responsabilidade e visão de longo prazo.</p></div>
-      <div class="card value reveal"><div class="vn">Crescimento com dados</div><p class="muted" style="margin:0;font-size:.95rem;">Decisões baseadas em indicadores claros.</p></div>
-      <div class="card value reveal"><div class="vn">Foco em resultado</div><p class="muted" style="margin:0;font-size:.95rem;">Resultado não é pressão — é direção.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ SÓCIOS ============ -->
-<section class="section" id="socios" style="background:var(--bg-2);">
-  <div class="wrap">
-    <div style="max-width:680px;">
-      <span class="eyebrow reveal">Liderança</span>
-      <h2 class="h2 reveal" style="margin-top:18px;">A liderança do Grupo Fly.</h2>
-    </div>
-    <div class="socios reveal" style="margin-top:40px;">
-      <div class="card socio"><div class="avatar"><img src="assets/luiz.jpg" alt="Luiz Gregatti" /></div><div class="name-row"><b>Luiz Gregatti</b><svg class="verified-badge" viewBox="-4 -4 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Verificado"><path d="M17.837,3.843 Q20,1 22.163,3.843 Q24.326,6.685 27.747,5.657 Q31.168,4.629 31.247,8.2 Q31.326,11.771 34.699,12.95 Q38.071,14.129 36.036,17.065 Q34,20 36.036,22.936 Q38.071,25.871 34.699,27.05 Q31.326,28.229 31.247,31.8 Q31.168,35.371 27.747,34.343 Q24.326,33.315 22.163,36.158 Q20,39 17.837,36.158 Q15.674,33.315 12.253,34.343 Q8.832,35.371 8.753,31.8 Q8.674,28.229 5.302,27.05 Q1.929,25.871 3.965,22.936 Q6,20 3.965,17.065 Q1.929,14.129 5.302,12.95 Q8.674,11.771 8.753,8.2 Q8.832,4.629 12.253,5.657 Q15.674,6.685 17.837,3.843Z" fill="#0095F6"/><path d="M11 21l7 7L30 13" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="role">Marketing e Comercial</div><p class="muted" style="margin:12px 0 0;font-size:.92rem;">Estratégia de crescimento, aquisição de clientes e posicionamento do grupo.</p></div>
-      <div class="card socio"><div class="avatar"><img src="assets/pablo.jpg" alt="Pablo Alexandrino" /></div><div class="name-row"><b>Pablo Alexandrino</b><svg class="verified-badge" viewBox="-4 -4 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Verificado"><path d="M17.837,3.843 Q20,1 22.163,3.843 Q24.326,6.685 27.747,5.657 Q31.168,4.629 31.247,8.2 Q31.326,11.771 34.699,12.95 Q38.071,14.129 36.036,17.065 Q34,20 36.036,22.936 Q38.071,25.871 34.699,27.05 Q31.326,28.229 31.247,31.8 Q31.168,35.371 27.747,34.343 Q24.326,33.315 22.163,36.158 Q20,39 17.837,36.158 Q15.674,33.315 12.253,34.343 Q8.832,35.371 8.753,31.8 Q8.674,28.229 5.302,27.05 Q1.929,25.871 3.965,22.936 Q6,20 3.965,17.065 Q1.929,14.129 5.302,12.95 Q8.674,11.771 8.753,8.2 Q8.832,4.629 12.253,5.657 Q15.674,6.685 17.837,3.843Z" fill="#0095F6"/><path d="M11 21l7 7L30 13" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="role">Tecnologia</div><p class="muted" style="margin:12px 0 0;font-size:.92rem;">Desenvolvimento e evolução das soluções tecnológicas.</p></div>
-      <div class="card socio"><div class="avatar"><img src="assets/zanini.jpg" alt="João Zanini" /></div><div class="name-row"><b>João Zanini</b><svg class="verified-badge" viewBox="-4 -4 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Verificado"><path d="M17.837,3.843 Q20,1 22.163,3.843 Q24.326,6.685 27.747,5.657 Q31.168,4.629 31.247,8.2 Q31.326,11.771 34.699,12.95 Q38.071,14.129 36.036,17.065 Q34,20 36.036,22.936 Q38.071,25.871 34.699,27.05 Q31.326,28.229 31.247,31.8 Q31.168,35.371 27.747,34.343 Q24.326,33.315 22.163,36.158 Q20,39 17.837,36.158 Q15.674,33.315 12.253,34.343 Q8.832,35.371 8.753,31.8 Q8.674,28.229 5.302,27.05 Q1.929,25.871 3.965,22.936 Q6,20 3.965,17.065 Q1.929,14.129 5.302,12.95 Q8.674,11.771 8.753,8.2 Q8.832,4.629 12.253,5.657 Q15.674,6.685 17.837,3.843Z" fill="#0095F6"/><path d="M11 21l7 7L30 13" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="role">Pós-venda</div><p class="muted" style="margin:12px 0 0;font-size:.92rem;">Experiência do cliente e desenvolvimento das agências.</p></div>
-      <div class="card socio"><div class="avatar"><img src="assets/viviane.jpg" alt="Viviane Gregatti" /></div><div class="name-row"><b>Viviane Gregatti</b><svg class="verified-badge" viewBox="-4 -4 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Verificado"><path d="M17.837,3.843 Q20,1 22.163,3.843 Q24.326,6.685 27.747,5.657 Q31.168,4.629 31.247,8.2 Q31.326,11.771 34.699,12.95 Q38.071,14.129 36.036,17.065 Q34,20 36.036,22.936 Q38.071,25.871 34.699,27.05 Q31.326,28.229 31.247,31.8 Q31.168,35.371 27.747,34.343 Q24.326,33.315 22.163,36.158 Q20,39 17.837,36.158 Q15.674,33.315 12.253,34.343 Q8.832,35.371 8.753,31.8 Q8.674,28.229 5.302,27.05 Q1.929,25.871 3.965,22.936 Q6,20 3.965,17.065 Q1.929,14.129 5.302,12.95 Q8.674,11.771 8.753,8.2 Q8.832,4.629 12.253,5.657 Q15.674,6.685 17.837,3.843Z" fill="#0095F6"/><path d="M11 21l7 7L30 13" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="role">Administrativo e Financeiro</div><p class="muted" style="margin:12px 0 0;font-size:.92rem;">Gestão financeira e organização estrutural do grupo.</p></div>
-    </div>
-    <p class="reveal" style="margin-top:30px;font-size:1.12rem;max-width:720px;">A atuação conjunta dessas lideranças garante <span class="grad" style="font-weight:600;">visão estratégica e execução especializada.</span></p>
-  </div>
-</section>
-
-<!-- ============ PARA QUEM É ============ -->
-<section class="section" id="paraquem">
-  <div class="wrap">
-    <div style="max-width:680px;">
-      <span class="eyebrow reveal">Para quem é</span>
-      <h2 class="h2 reveal" style="margin-top:18px;">Feito para quem quer empreender no turismo.</h2>
-    </div>
-    <div class="audience reveal" style="margin-top:36px;">
-      <div class="aud"><div class="n">01</div><h3 class="h3" style="margin:10px 0 0;font-size:1.05rem;">Abrir uma agência de viagens</h3></div>
-      <div class="aud"><div class="n">02</div><h3 class="h3" style="margin:10px 0 0;font-size:1.05rem;">Agências em crescimento</h3></div>
-      <div class="aud"><div class="n">03</div><h3 class="h3" style="margin:10px 0 0;font-size:1.05rem;">Empreendedores que querem escalar</h3></div>
-      <div class="aud"><div class="n">04</div><h3 class="h3" style="margin:10px 0 0;font-size:1.05rem;">Começar do zero no turismo</h3></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ CTA FINAL ============ -->
-<section class="section" id="cta">
-  <div class="wrap">
-    <div class="cta-final reveal" style="position: relative">
-      <div class="glow absolute" style="position: absolute; width:520px;height:520px;background:var(--accent);opacity:.16;left:50%;top:0;transform:translate(-50%,-40%);"></div>
-      <div class="glow absolute" style="position: absolute; width:360px;height:360px;background:var(--accent-2);opacity:.10;left:20%;bottom:0;"></div>
-      <span class="eyebrow eyebrow--center" style="justify-content:center;">Vamos conversar</span>
-      <h2 class="h2" style="margin-top:18px;font-size:clamp(2.2rem,4.6vw,3.8rem);">Pronto para empreender no<br/>turismo <span class="grad">com estrutura?</span></h2>
-      <p class="lead" style="margin:22px auto 0;max-width:560px;">Fale com o Grupo Fly e entenda como podemos apoiar o seu crescimento.</p>
-      <div class="cta-btns">
-        <a href="https://wa.me/5518991871456" target="_blank" rel="noopener" class="btn btn--wa"><svg data-lucide="message-circle"></svg> Chamar no WhatsApp</a>
-        <a href="mailto:administrativo@grupofly.co" class="btn btn--ghost"><svg data-lucide="mail"></svg> Enviar e-mail</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ CONTATO ============ -->
-<section class="section section--tight" id="contato">
-  <div class="wrap">
-    <div class="contact reveal">
-      <a class="cinfo" href="mailto:administrativo@grupofly.co"><div class="icon-chip"><svg data-lucide="mail"></svg></div><div><small>E-mail</small><span>administrativo@grupofly.co</span></div></a>
-      <a class="cinfo" href="https://wa.me/5518991871456" target="_blank" rel="noopener"><div class="icon-chip"><svg data-lucide="phone"></svg></div><div><small>Telefone / WhatsApp</small><span>(18) 99187-1456</span></div></a>
-      <div class="cinfo"><div class="icon-chip"><svg data-lucide="map-pin"></svg></div><div><small>Endereço</small><span>Rua Bandeirantes, 92 — Araçatuba/SP</span></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ FOOTER ============ -->
-<footer class="footer">
-  <div class="wrap footer__inner">
-    <img class="footer__logo" src="assets/grupofly-white.png" alt="Grupo Fly" />
-    <span class="muted-3" style="font-size:.85rem;">© 2026 Grupo Fly · Educação · Operação · Tecnologia · Contabilidade</span>
-  </div>
-</footer>
-
-<!-- ============ WHATSAPP FLOATER ============ -->
-<a class="wa-float" href="https://wa.me/5518991871456" target="_blank" rel="noopener" aria-label="WhatsApp">
-  <svg data-lucide="message-circle"></svg>
-</a>
-
-<!-- ============ MOBILE MENU ============ -->
-<div id="mobileMenu" style="position:fixed;inset:0;z-index:100;background:var(--bg);display:none;flex-direction:column;padding:28px;">
-  <div style="display:flex;justify-content:space-between;align-items:center;">
-    <img src="assets/grupofly-white.png" alt="Grupo Fly" style="height:28px;filter:var(--logo-filter);" />
-    <button id="closeMenu" style="background:none;border:0;color:var(--fg);cursor:pointer;"><svg data-lucide="x" style="width:28px;height:28px;"></svg></button>
-  </div>
-  <nav style="display:flex;flex-direction:column;gap:6px;margin-top:40px;font-family:var(--font-display);font-weight:700;font-size:1.8rem;">
-    <a href="#solucao" class="mm">Solução</a>
-    <a href="#empresas" class="mm">Empresas</a>
-    <a href="#atuacao" class="mm">Como atuamos</a>
-    <a href="#socios" class="mm">Sócios</a>
-    <a href="#contato" class="mm">Contato</a>
   </nav>
-  <a href="#cta" class="btn btn--primary mm" style="margin-top:auto;justify-content:center;">Falar com um especialista</a>
-</div>
 
-<!-- icons -->
-<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <!-- ============ HERO ============ -->
+  <header class="hero" id="top">
+    <div class="glow" style="width:620px;height:620px;background:var(--accent);opacity:.12;top:-180px;left:-160px;">
+    </div>
+    <div class="glow" style="width:460px;height:460px;background:var(--accent-2);opacity:.08;top:120px;right:-120px;">
+    </div>
+    <div class="wrap hero__grid">
+      <div class="hero__copy reveal">
+        <span class="badge"><span class="dot"></span><b>+1.700 agências</b> criadas no turismo</span>
+        <h1 class="display h-hero" style="margin:22px 0 0;">Empreenda, estruture e <span class="grad">escale</span> sua
+          agência de viagens.</h1>
+        <p class="lead" style="margin:24px 0 0;max-width:46ch;">O Grupo Fly é uma estrutura completa para quem deseja
+          empreender no turismo com segurança, organização e suporte real — conectando educação, operação, tecnologia e
+          contabilidade em todas as etapas do negócio.</p>
+        <div style="display:flex;gap:14px;flex-wrap:wrap;margin:34px 0 0;">
+          <a href="#cta" class="btn btn--primary">Quero falar com um especialista <svg
+              data-lucide="arrow-right"></svg></a>
+          <a href="#solucao" class="btn btn--ghost">Conhecer as soluções</a>
+        </div>
+        <div class="stat-strip" style="margin-top:42px;">
+          <div class="s"><b class="grad">+1.700</b><span>agências criadas</span></div>
+          <div class="stat-divider"></div>
+          <div class="s"><b class="grad">+R$ 400 mi</b><span>movimentados no turismo</span></div>
+        </div>
+      </div>
+      <div class="mark-stage reveal">
+        <div class="mark-ring" style="width:340px;height:340px;"></div>
+        <div class="mark-ring" style="width:440px;height:440px;opacity:.5;"></div>
+        <div class="mark-halo"></div>
+        <img class="mark-img" src="assets/mark-white.png" alt="" />
+      </div>
+    </div>
+  </header>
 
-<!-- tweaks island -->
-<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
-<script type="text/babel" src="tweaks-panel.jsx"></script>
-<script type="text/babel" src="tweaks-app.jsx"></script>
+  <!-- ============ PROBLEMA ============ -->
+  <section class="section" id="problema">
+    <div class="wrap">
+      <div style="max-width:760px;">
+        <span class="eyebrow reveal">O desafio</span>
+        <h2 class="h2 reveal" style="margin-top:18px;">Empreender no turismo parece simples — até os problemas
+          aparecerem.</h2>
+        <p class="lead reveal" style="margin-top:18px;">No início tudo flui, mas rapidamente surgem desafios que travam
+          o crescimento do negócio:</p>
+      </div>
+      <div class="prob-grid reveal" style="margin-top:36px;">
+        <div class="prob"><span class="x"><svg data-lucide="x"></svg></span>
+          <p>Falta de direcionamento claro</p>
+        </div>
+        <div class="prob"><span class="x"><svg data-lucide="x"></svg></span>
+          <p>Dificuldade na estruturação do negócio</p>
+        </div>
+        <div class="prob"><span class="x"><svg data-lucide="x"></svg></span>
+          <p>Falta de organização financeira</p>
+        </div>
+        <div class="prob"><span class="x"><svg data-lucide="x"></svg></span>
+          <p>Dependência de soluções isoladas</p>
+        </div>
+        <div class="prob"><span class="x"><svg data-lucide="x"></svg></span>
+          <p>Erros operacionais e tributários</p>
+        </div>
+      </div>
+      <p class="reveal" style="margin-top:30px;font-size:1.2rem;max-width:780px;color:var(--fg);">
+        A maioria dos empreendedores tenta resolver tudo sozinho — <span class="muted">e paga caro por isso em tempo,
+          dinheiro e crescimento.</span>
+      </p>
+    </div>
+  </section>
 
-<script>
-  // icons
-  function renderIcons(){ if (window.lucide) window.lucide.createIcons(); }
-  renderIcons();
+  <!-- ============ SOLUÇÃO ============ -->
+  <section class="section" id="solucao" style="background:var(--bg-2);">
+    <div class="wrap">
+      <div style="max-width:840px;">
+        <span class="eyebrow reveal">A solução</span>
+        <h2 class="h2 reveal" style="margin-top:18px;">Uma estrutura completa para quem quer empreender no turismo.</h2>
+      </div>
+      <div class="reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:30px;max-width:1000px;">
+        <p class="lead" style="margin:0;">O Grupo Fly foi criado para resolver esse cenário. Não somos uma empresa que
+          entrega apenas um serviço específico — somos um grupo estruturado que atua de forma integrada.</p>
+        <p class="lead" style="margin:0;">Oferecemos suporte em todas as áreas essenciais de uma agência de viagens.
+          Nosso papel é transformar <span class="grad" style="font-weight:600;">intenção em negócio estruturado — e
+            negócio estruturado em crescimento.</span></p>
+      </div>
+    </div>
+  </section>
 
-  // nav scroll state
-  const nav = document.getElementById('nav');
-  const onScroll = () => { nav.classList.toggle('scrolled', window.scrollY > 24); };
-  window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
+  <!-- ============ DIFERENCIAL PRINCIPAL ============ -->
+  <section class="section">
+    <div class="glow"
+      style="width:520px;height:520px;background:var(--accent);opacity:.08;left:50%;top:50%;transform:translate(-50%,-50%);">
+    </div>
+    <div class="wrap statement">
+      <span class="eyebrow eyebrow--center reveal" style="justify-content:center;">Diferencial</span>
+      <h2 class="h2 reveal" style="margin-top:20px;font-size:clamp(2.2rem,4.6vw,4rem);">Não fomos <span class="muted-3"
+          style="font-style:italic;">adaptados</span> ao turismo.<br /><span class="grad">Fomos criados para ele.</span>
+      </h2>
+      <p class="lead reveal" style="margin:26px auto 0;max-width:680px;">Enquanto muitas soluções do mercado são
+        generalistas e apenas ajustadas para atender agências, o Grupo Fly nasceu exclusivamente dentro do turismo. Tudo
+        foi pensado, desde o início, para a realidade do setor.</p>
+      <div class="checks reveal" style="margin:38px auto 0;max-width:560px;text-align:left;">
+        <div class="check"><span class="c"><svg data-lucide="check"></svg></span><span>Processos alinhados ao
+            turismo</span></div>
+        <div class="check"><span class="c"><svg data-lucide="check"></svg></span><span>Ferramentas desenvolvidas para
+            necessidades reais</span></div>
+        <div class="check"><span class="c"><svg data-lucide="check"></svg></span><span>Estratégias baseadas na
+            prática</span></div>
+        <div class="check"><span class="c"><svg data-lucide="check"></svg></span><span>Menos adaptação, mais
+            eficiência</span></div>
+        <div class="check"><span class="c"><svg data-lucide="check"></svg></span><span>Entendimento profundo da
+            operação</span></div>
+      </div>
+    </div>
+  </section>
 
-  // reveal on scroll
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-  }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
-  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  <!-- ============ DIFERENCIAL ESTRUTURAL ============ -->
+  <section class="section" id="estrutura" style="background:var(--bg-2);">
+    <div class="wrap">
+      <div style="max-width:760px;">
+        <span class="eyebrow reveal">Estrutura multidisciplinar</span>
+        <h2 class="h2 reveal" style="margin-top:18px;">Uma estrutura completa, não soluções isoladas.</h2>
+        <p class="lead reveal" style="margin-top:18px;">No turismo, é comum depender de diferentes profissionais para
+          áreas críticas do negócio. O Grupo Fly resolve isso com uma atuação integrada — cada área liderada por
+          especialistas.</p>
+      </div>
+      <div class="areas reveal" style="margin-top:40px;">
+        <div class="card card--lift">
+          <div class="icon-chip"><svg data-lucide="graduation-cap"></svg></div>
+          <h3 class="h3" style="margin-top:18px;">Educação</h3>
+          <p class="muted" style="margin:8px 0 0;font-size:.95rem;">Formação e capacitação de empreendedores do turismo.
+          </p>
+        </div>
+        <div class="card card--lift">
+          <div class="icon-chip"><svg data-lucide="plane"></svg></div>
+          <h3 class="h3" style="margin-top:18px;">Operação</h3>
+          <p class="muted" style="margin:8px 0 0;font-size:.95rem;">Operação real no mercado, validando o que ensinamos.
+          </p>
+        </div>
+        <div class="card card--lift">
+          <div class="icon-chip icon-chip--mint"><svg data-lucide="monitor"></svg></div>
+          <h3 class="h3" style="margin-top:18px;">Tecnologia</h3>
+          <p class="muted" style="margin:8px 0 0;font-size:.95rem;">Sistema de gestão exclusivo para agências de
+            turismo.</p>
+        </div>
+        <div class="card card--lift">
+          <div class="icon-chip"><svg data-lucide="calculator"></svg></div>
+          <h3 class="h3" style="margin-top:18px;">Contabilidade</h3>
+          <p class="muted" style="margin:8px 0 0;font-size:.95rem;">Segurança jurídica e eficiência tributária
+            especializada.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  // mobile menu
-  const mm = document.getElementById('mobileMenu');
-  document.getElementById('burger').addEventListener('click', () => { mm.style.display = 'flex'; });
-  document.getElementById('closeMenu').addEventListener('click', () => { mm.style.display = 'none'; });
-  document.querySelectorAll('.mm').forEach(a => a.addEventListener('click', () => { mm.style.display = 'none'; }));
-</script>
+  <!-- ============ EMPREENDEDORISMO ============ -->
+  <section class="section">
+    <div class="wrap">
+      <div style="display:grid;grid-template-columns:0.9fr 1.1fr;gap:48px;align-items:center;">
+        <div>
+          <span class="eyebrow reveal">Empreendedorismo</span>
+          <h2 class="h2 reveal" style="margin-top:18px;">Desenvolvemos empreendedores, não apenas agências.</h2>
+          <p class="lead reveal" style="margin-top:18px;">Atuamos em todas as fases do negócio, com foco em reduzir
+            erros, acelerar o aprendizado e aumentar o resultado.</p>
+        </div>
+        <div class="reveal" style="display:grid;gap:14px;">
+          <div class="card" style="display:flex;gap:16px;align-items:center;padding:22px 26px;"><span
+              class="flow__num">01</span>
+            <div><b>Quem está começando do zero</b>
+              <p class="muted" style="margin:4px 0 0;font-size:.92rem;">Do primeiro passo à primeira venda.</p>
+            </div>
+          </div>
+          <div class="card" style="display:flex;gap:16px;align-items:center;padding:22px 26px;"><span
+              class="flow__num">02</span>
+            <div><b>Quem quer formalizar e organizar</b>
+              <p class="muted" style="margin:4px 0 0;font-size:.92rem;">Estrutura, processos e conformidade.</p>
+            </div>
+          </div>
+          <div class="card" style="display:flex;gap:16px;align-items:center;padding:22px 26px;"><span
+              class="flow__num">03</span>
+            <div><b>Quem já vende, mas precisa estruturar</b>
+              <p class="muted" style="margin:4px 0 0;font-size:.92rem;">Organização para escalar com segurança.</p>
+            </div>
+          </div>
+          <div class="card" style="display:flex;gap:16px;align-items:center;padding:22px 26px;"><span
+              class="flow__num">04</span>
+            <div><b>Quem quer crescer com consistência</b>
+              <p class="muted" style="margin:4px 0 0;font-size:.92rem;">Decisões guiadas por dados e resultado.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EMPRESAS DO GRUPO ============ -->
+  <section class="section eco-section" id="empresas">
+    <div class="eco-float-layer" id="ecoFloatLayer"></div>
+    <div class="wrap">
+
+      <!-- Header -->
+      <div class="eco-header reveal">
+        <div class="eco-dots-eyebrow">
+          <div class="eco-dot" style="background:#1B3A8C"></div>
+          <div class="eco-dot" style="background:#F47B20"></div>
+          <div class="eco-dot" style="background:#7B3FE4"></div>
+          <div class="eco-dot" style="background:#1B8C4E"></div>
+          <span>As Empresas do Grupo</span>
+        </div>
+        <h2 class="h2 eco-title">
+          <span>Conheça as empresas que </span><span class="eco-grad-title">sustentam essa estrutura.</span>
+        </h2>
+        <p class="eco-subtitle">Quatro empresas especializadas, atuando de forma integrada para acelerar agências de
+          viagens em todo o Brasil.</p>
+      </div>
+
+
+      <!-- Indicador de empresa ativa -->
+      <div class="eco-indicator-bar">
+        <button class="eco-ind-btn eco-ind--on" type="button" data-id="educacional" aria-pressed="true">
+          <div class="eco-ind-line"></div><span class="eco-ind-label">Fly Educacional</span>
+        </button>
+        <button class="eco-ind-btn" type="button" data-id="voefly" aria-pressed="false">
+          <div class="eco-ind-line"></div><span class="eco-ind-label">Voefly Viagens</span>
+        </button>
+        <button class="eco-ind-btn" type="button" data-id="viajaflux" aria-pressed="false">
+          <div class="eco-ind-line"></div><span class="eco-ind-label">ViajaFlux</span>
+        </button>
+        <button class="eco-ind-btn" type="button" data-id="flyone" aria-pressed="false">
+          <div class="eco-ind-line"></div><span class="eco-ind-label">Fly One Contabilidade</span>
+        </button>
+      </div>
+
+
+
+      <!-- Cards grid -->
+      <div class="eco-grid">
+
+        <!-- Fly Educacional -->
+        <div class="eco-card eco-card--on" data-id="educacional">
+          <div class="eco-glow-blob"></div>
+          <div class="eco-card-top">
+            <span class="eco-category">EDUCAÇÃO</span>
+            <span class="eco-num">01</span>
+          </div>
+          <div class="eco-body">
+            <div class="eco-logo-row">
+              <div class="eco-logo-bubble"><img src="assets/fly-educacional.png" alt="Fly Educacional"></div>
+              <div>
+                <h3 class="eco-name">Fly Educacional</h3>
+                <p class="eco-group-label">Grupo Fly</p>
+              </div>
+            </div>
+            <div class="eco-tags">
+              <span class="eco-tag">Educação</span>
+              <span class="eco-tag">Marketing</span>
+              <span class="eco-tag">Consultoria</span>
+            </div>
+            <p class="eco-tagline">Você não precisa descobrir tudo sozinho.</p>
+            <p class="eco-desc">Responsável pela formação de empreendedores do turismo, com cursos e treinamentos
+              completos para abertura, estruturação e crescimento de agências.</p>
+            <div class="eco-services">
+              <ul class="eco-svc-list">
+                <li class="eco-svc-item"><span class="eco-svc-dot"></span><span class="eco-svc-title">Universidade
+                    Corporativa</span><span class="eco-svc-sub"> — trilhas para agentes e equipes</span></li>
+                <li class="eco-svc-item"><span class="eco-svc-dot"></span><span class="eco-svc-title">Serviços de
+                    Marketing</span><span class="eco-svc-sub"> — especializados em turismo</span></li>
+                <li class="eco-svc-item"><span class="eco-svc-dot"></span><span class="eco-svc-title">Consultoria de
+                    Negócio</span><span class="eco-svc-sub"> — para agências em crescimento</span></li>
+                <li class="eco-svc-item"><span class="eco-svc-dot"></span><span class="eco-svc-title">Mastermind
+                    Exclusivo</span><span class="eco-svc-sub"> — com líderes do setor</span></li>
+                <li class="eco-svc-item"><span class="eco-svc-dot"></span><span class="eco-svc-title">Implementação de
+                    Negócio</span><span class="eco-svc-sub"> — metodologia prática</span></li>
+              </ul>
+            </div>
+            <div class="eco-footer-link">Conhecer empresa <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg></div>
+          </div>
+          <div class="eco-bottom-bar"></div>
+        </div>
+
+        <!-- Voefly Viagens -->
+        <div class="eco-card" data-id="voefly">
+          <div class="eco-glow-blob"></div>
+          <div class="eco-card-top">
+            <span class="eco-category">OPERAÇÃO</span>
+            <span class="eco-num">02</span>
+          </div>
+          <div class="eco-body">
+            <div class="eco-logo-row">
+              <div class="eco-logo-bubble"><img src="assets/voefly.png" alt="Voefly Viagens"></div>
+              <div>
+                <h3 class="eco-name">Voefly Viagens</h3>
+                <p class="eco-group-label">Grupo Fly</p>
+              </div>
+            </div>
+            <div class="eco-tags">
+              <span class="eco-tag">Lazer</span>
+              <span class="eco-tag">Corporativo</span>
+              <span class="eco-tag">Concierge</span>
+              <span class="eco-tag">Operação</span>
+            </div>
+            <p class="eco-tagline">Nossa agência porta para rua.</p>
+            <p class="eco-desc">Agência com operação real no mercado, utilizada como laboratório prático para validação
+              de estratégias e aplicação das metodologias ensinadas dentro do ecossistema.</p>
+            <div class="eco-services">
+              <ul class="eco-svc-list">
+                <li class="eco-svc-item"><span class="eco-svc-dot"></span><span
+                    class="eco-svc-title">Assessoria</span><span class="eco-svc-sub"> — vistos e documentações</span>
+                </li>
+                <li class="eco-svc-item"><span class="eco-svc-dot"></span><span class="eco-svc-title">Gestão de
+                    Pontos</span><span class="eco-svc-sub"> — e programas de fidelidade</span></li>
+                <li class="eco-svc-item"><span class="eco-svc-dot"></span><span class="eco-svc-title">Viagens
+                    Corporativas</span><span class="eco-svc-sub"> — com gestão especializada</span></li>
+                <li class="eco-svc-item"><span class="eco-svc-dot"></span><span class="eco-svc-title">Lazer</span><span
+                    class="eco-svc-sub"> — nacional e internacional</span></li>
+                <li class="eco-svc-item"><span class="eco-svc-dot"></span><span class="eco-svc-title">Intercâmbio ·
+                    Eventos · Convenções</span></li>
+              </ul>
+            </div>
+            <div class="eco-footer-link">Conhecer empresa <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg></div>
+          </div>
+          <div class="eco-bottom-bar"></div>
+        </div>
+
+        <!-- ViajaFlux -->
+        <div class="eco-card" data-id="viajaflux">
+          <div class="eco-glow-blob"></div>
+          <div class="eco-card-top">
+            <span class="eco-category">TECNOLOGIA</span>
+            <span class="eco-num">03</span>
+          </div>
+          <div class="eco-body">
+            <div class="eco-logo-row">
+              <div class="eco-logo-bubble"><img src="assets/viajaflux.png" alt="ViajaFlux"></div>
+              <div>
+                <h3 class="eco-name">ViajaFlux</h3>
+                <p class="eco-group-label">Grupo Fly</p>
+              </div>
+            </div>
+            <div class="eco-tags">
+              <span class="eco-tag">BackOffice</span>
+              <span class="eco-tag">ERP</span>
+              <span class="eco-tag">CRM</span>
+              <span class="eco-tag">Banco</span>
+            </div>
+            <p class="eco-tagline">Mais controle, mais tempo, mais escala.</p>
+            <p class="eco-desc">Sistema de gestão exclusivo para agências de turismo, focado em produtividade,
+              automação, controle financeiro e escalabilidade. O único ALL IN ONE do setor.</p>
+            <div class="eco-services">
+              <ul class="eco-svc-list">
+                <li class="eco-svc-item"><span class="eco-svc-dot"></span><span class="eco-svc-title">CRM</span><span
+                    class="eco-svc-sub"> — pipeline de vendas e clientes</span></li>
+                <li class="eco-svc-item"><span class="eco-svc-dot"></span><span class="eco-svc-title">ERP
+                    Financeiro</span><span class="eco-svc-sub"> — integrado</span></li>
+                <li class="eco-svc-item"><span class="eco-svc-dot"></span><span class="eco-svc-title">Emissão e
+                    Operação</span><span class="eco-svc-sub"> — de viagens</span></li>
+                <li class="eco-svc-item"><span class="eco-svc-dot"></span><span class="eco-svc-title">BI e
+                    Relatórios</span><span class="eco-svc-sub"> — de desempenho</span></li>
+                <li class="eco-svc-item"><span class="eco-svc-dot"></span><span
+                    class="eco-svc-title">ViajaFlux.CASH</span><span class="eco-svc-sub"> — banco digital próprio
+                    (breve)</span></li>
+                <li class="eco-svc-item"><span class="eco-svc-dot"></span><span class="eco-svc-title">Construtor de
+                    Websites</span><span class="eco-svc-sub"> — para agências</span></li>
+              </ul>
+            </div>
+            <div class="eco-footer-link">Conhecer empresa <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg></div>
+          </div>
+          <div class="eco-bottom-bar"></div>
+        </div>
+
+        <!-- Fly One Contabilidade -->
+        <div class="eco-card" data-id="flyone">
+          <div class="eco-glow-blob"></div>
+          <div class="eco-card-top">
+            <span class="eco-category">CONTABILIDADE</span>
+            <span class="eco-num">04</span>
+          </div>
+          <div class="eco-body">
+            <div class="eco-logo-row">
+              <div class="eco-logo-bubble"><img src="assets/fly-one.png" alt="Fly One Contabilidade"></div>
+              <div>
+                <h3 class="eco-name">Fly One Contabilidade</h3>
+                <p class="eco-group-label">Grupo Fly</p>
+              </div>
+            </div>
+            <div class="eco-tags">
+              <span class="eco-tag">Contabilidade</span>
+              <span class="eco-tag">Jurídico</span>
+              <span class="eco-tag">BPO</span>
+              <span class="eco-tag">Fiscal</span>
+            </div>
+            <p class="eco-tagline">A maioria dos donos de agência travam aqui.</p>
+            <p class="eco-desc">Contabilidade especializada para turismo, com suporte jurídico, tributário, fiscal e
+              societário — pensada para o setor, não adaptada.</p>
+            <div class="eco-services">
+              <ul class="eco-svc-list">
+                <li class="eco-svc-item"><span class="eco-svc-dot"></span><span class="eco-svc-title">Registro de
+                    Marca</span><span class="eco-svc-sub"> — proteção da identidade</span></li>
+                <li class="eco-svc-item"><span class="eco-svc-dot"></span><span class="eco-svc-title">Abertura e
+                    Legalização</span><span class="eco-svc-sub"> — de empresa</span></li>
+                <li class="eco-svc-item"><span class="eco-svc-dot"></span><span class="eco-svc-title">Serviços
+                    Contábeis</span><span class="eco-svc-sub"> — completos</span></li>
+                <li class="eco-svc-item"><span class="eco-svc-dot"></span><span class="eco-svc-title">BPO</span><span
+                    class="eco-svc-sub"> — Financeiro e Administrativo</span></li>
+                <li class="eco-svc-item"><span class="eco-svc-dot"></span><span class="eco-svc-title">Consultoria
+                    Tributária</span><span class="eco-svc-sub"> — e Planejamento</span></li>
+                <li class="eco-svc-item"><span class="eco-svc-dot"></span><span class="eco-svc-title">Assessoria
+                    Jurídica</span></li>
+              </ul>
+            </div>
+            <div class="eco-footer-link">Conhecer empresa <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg></div>
+          </div>
+          <div class="eco-bottom-bar"></div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============ NOSSA ESSÊNCIA ============ -->
+  <section class="section essence-section" id="essencia">
+
+    <!-- Ambiente de fundo -->
+    <div class="ess-bg">
+      <div class="ess-bg-orb ess-bg-orb--1"></div>
+      <div class="ess-bg-orb ess-bg-orb--2"></div>
+      <div class="ess-bg-orb ess-bg-orb--3"></div>
+      <div class="ess-bg-grid"></div>
+    </div>
+
+    <div class="wrap ess-wrap">
+
+      <!-- Header -->
+      <div class="ess-header reveal">
+        <div class="ess-eyebrow">
+          <span class="ess-eyebrow-dot"></span>
+          <span>Identidade do Grupo</span>
+        </div>
+        <h2 class="h2 ess-title">Nossa <span class="ess-title-grad">Essência</span></h2>
+        <p class="ess-subtitle">Os princípios que sustentam todo o Ecossistema Fly.</p>
+      </div>
+
+      <!-- Cards -->
+      <div class="ess-grid">
+
+        <!-- Missão -->
+        <div class="ess-card ess-card--mission reveal">
+          <div class="ess-card-inner">
+            <div class="ess-card-top">
+              <span class="ess-card-num">01 — MISSÃO</span>
+              <div class="ess-card-icon">
+                <svg width="28" height="28" viewBox="0 0 48 48" fill="none">
+                  <defs>
+                    <linearGradient id="gm1" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+                      <stop offset="0%" stop-color="#FFD166" />
+                      <stop offset="100%" stop-color="#F5A623" />
+                    </linearGradient>
+                  </defs>
+                  <circle cx="24" cy="24" r="20" stroke="url(#gm1)" stroke-width="1.4" opacity=".45" />
+                  <circle cx="24" cy="24" r="13" stroke="url(#gm1)" stroke-width="1.4" opacity=".7" />
+                  <circle cx="24" cy="24" r="6" stroke="url(#gm1)" stroke-width="1.6" />
+                  <circle cx="24" cy="24" r="2.5" fill="#F5A623" />
+                  <path d="M12 24h12" stroke="#F5A623" stroke-width="2" stroke-linecap="round" />
+                  <path d="M24 18l6 6-6 6" stroke="#F5A623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M20 18l-6-6" stroke="#F5A623" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </div>
+            </div>
+            <div class="ess-card-label">Missão</div>
+            <p class="ess-card-text">Formar 5.000 agências na nossa rede até 2030 e transformar o turismo em um
+              caminho real de empreendedorismo, oferecendo um ecossistema completo que une operação de viagens,
+              educação prática, tecnologia inteligente e contabilidade especializada — para que pessoas e agências
+              possam empreender com clareza, segurança e excelência na execução.</p>
+            <div class="ess-card-glow"></div>
+          </div>
+        </div>
+
+        <!-- Visão -->
+        <div class="ess-card ess-card--vision reveal">
+          <div class="ess-card-inner">
+            <div class="ess-card-top">
+              <span class="ess-card-num">02 — VISÃO</span>
+              <div class="ess-card-icon">
+                <svg width="28" height="28" viewBox="0 0 48 48" fill="none">
+                  <defs>
+                    <linearGradient id="gv1" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+                      <stop offset="0%" stop-color="#FFD166" />
+                      <stop offset="100%" stop-color="#F5A623" />
+                    </linearGradient>
+                  </defs>
+                  <path d="M4 24C4 24 11 10 24 10C37 10 44 24 44 24C44 24 37 38 24 38C11 38 4 24 4 24Z"
+                    stroke="url(#gv1)" stroke-width="1.5" opacity=".6" />
+                  <circle cx="24" cy="24" r="8" stroke="url(#gv1)" stroke-width="1.5" />
+                  <circle cx="24" cy="24" r="4" stroke="#F5A623" stroke-width="1.2" opacity=".6" />
+                  <circle cx="24" cy="24" r="2" fill="#F5A623" />
+                  <path d="M24 10V6M14 12L11 9M34 12L37 9" stroke="#F5A623" stroke-width="1.3" stroke-linecap="round"
+                    opacity=".4" />
+                </svg>
+              </div>
+            </div>
+            <div class="ess-card-label">Visão</div>
+            <p class="ess-card-text">Ser o ecossistema de turismo mais eficiente e confiável do país, referência na
+              formação de empreendedores, na gestão profissional de agências de viagens e na integração entre
+              operação, tecnologia e inteligência contábil para geração de negócios sólidos e duradouros.</p>
+            <div class="ess-card-glow"></div>
+          </div>
+        </div>
+
+        <!-- Valores -->
+        <div class="ess-card ess-card--values reveal">
+          <div class="ess-card-inner">
+            <div class="ess-card-top">
+              <span class="ess-card-num">03 — VALORES</span>
+              <div class="ess-card-icon">
+                <svg width="28" height="28" viewBox="0 0 48 48" fill="none">
+                  <defs>
+                    <linearGradient id="gval1" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+                      <stop offset="0%" stop-color="#FFD166" />
+                      <stop offset="100%" stop-color="#F5A623" />
+                    </linearGradient>
+                  </defs>
+                  <path d="M24 8l14 14-14 14-14-14 14-14Z" stroke="url(#gval1)" stroke-width="1.5" fill="none" opacity=".5" />
+                  <path d="M24 12l10 10-10 10-10-10 10-10Z" stroke="url(#gval1)" stroke-width="1.5" fill="none" />
+                  <path d="M24 16l6 6-6 6-6-6 6-6Z" fill="#F5A623" opacity=".8" />
+                </svg>
+              </div>
+            </div>
+            <div class="ess-card-label">Valores</div>
+            <div class="ess-values-grid">
+              <div class="ess-value-chip">
+                <span class="ess-value-bullet">
+                  <svg viewBox="0 0 12 12" fill="none">
+                    <path d="M6 1L7.5 5H12L8.5 7.5L10 11L6 8.5L2 11L3.5 7.5L0 5H4.5Z" fill="#F5A623" />
+                  </svg>
+                </span>
+                <span>
+                  <b class="ess-value-name">Obsessão pelo cliente</b>
+                  <span class="ess-value-desc">Cada decisão começa pela experiência de quem confia em nós.</span>
+                </span>
+              </div>
+              <div class="ess-value-chip">
+                <span class="ess-value-bullet">
+                  <svg viewBox="0 0 12 12" fill="none">
+                    <path d="M6 1L7.5 5H12L8.5 7.5L10 11L6 8.5L2 11L3.5 7.5L0 5H4.5Z" fill="#F5A623" />
+                  </svg>
+                </span>
+                <span>
+                  <b class="ess-value-name">Entrega acima da função</b>
+                  <span class="ess-value-desc">Aqui ninguém tem "braço curto" — fazemos o que precisa ser feito.</span>
+                </span>
+              </div>
+              <div class="ess-value-chip">
+                <span class="ess-value-bullet">
+                  <svg viewBox="0 0 12 12" fill="none">
+                    <path d="M6 1L7.5 5H12L8.5 7.5L10 11L6 8.5L2 11L3.5 7.5L0 5H4.5Z" fill="#F5A623" />
+                  </svg>
+                </span>
+                <span>
+                  <b class="ess-value-name">Compromisso é sagrado</b>
+                  <span class="ess-value-desc">Cumprir prazos, metas e promessas é o mínimo.</span>
+                </span>
+              </div>
+              <div class="ess-value-chip">
+                <span class="ess-value-bullet">
+                  <svg viewBox="0 0 12 12" fill="none">
+                    <path d="M6 1L7.5 5H12L8.5 7.5L10 11L6 8.5L2 11L3.5 7.5L0 5H4.5Z" fill="#F5A623" />
+                  </svg>
+                </span>
+                <span>
+                  <b class="ess-value-name">Atitude de dono</b>
+                  <span class="ess-value-desc">Cuidamos do negócio como se fosse nosso, porque em parte é.</span>
+                </span>
+              </div>
+              <div class="ess-value-chip">
+                <span class="ess-value-bullet">
+                  <svg viewBox="0 0 12 12" fill="none">
+                    <path d="M6 1L7.5 5H12L8.5 7.5L10 11L6 8.5L2 11L3.5 7.5L0 5H4.5Z" fill="#F5A623" />
+                  </svg>
+                </span>
+                <span>
+                  <b class="ess-value-name">Crescimento com dados</b>
+                  <span class="ess-value-desc">Decisão sem dado é opinião. Operamos com indicadores claros.</span>
+                </span>
+              </div>
+              <div class="ess-value-chip">
+                <span class="ess-value-bullet">
+                  <svg viewBox="0 0 12 12" fill="none">
+                    <path d="M6 1L7.5 5H12L8.5 7.5L10 11L6 8.5L2 11L3.5 7.5L0 5H4.5Z" fill="#F5A623" />
+                  </svg>
+                </span>
+                <span>
+                  <b class="ess-value-name">Meta é resultado</b>
+                  <span class="ess-value-desc">Esforço sem entrega não gera valor. Aqui resultado não é pressão, é
+                    direção.</span>
+                </span>
+              </div>
+            </div>
+            <div class="ess-card-glow"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============ COMO ATUAMOS ============ -->
+  <section class="section" id="atuacao">
+    <div class="wrap">
+      <div style="max-width:720px;">
+        <span class="eyebrow reveal">Como atuamos</span>
+        <h2 class="h2 reveal" style="margin-top:18px;">Uma atuação integrada, do começo ao crescimento.</h2>
+        <p class="lead reveal" style="margin-top:18px;">Cada etapa é sustentada por uma empresa do grupo, garantindo
+          suporte completo ao empreendedor.</p>
+      </div>
+      <div class="card reveal" style="margin-top:40px;padding:8px;">
+        <div class="flow">
+          <div class="flow__step">
+            <span class="flow__num">Etapa 01</span>
+            <h3 class="h3" style="margin:10px 0 6px;">Educação</h3>
+            <p class="muted" style="margin:0;font-size:.9rem;">Fly Educacional</p>
+            <svg class="flow__arrow" data-lucide="chevron-right"></svg>
+          </div>
+          <div class="flow__step">
+            <span class="flow__num">Etapa 02</span>
+            <h3 class="h3" style="margin:10px 0 6px;">Estruturação</h3>
+            <p class="muted" style="margin:0;font-size:.9rem;">Fly One Contabilidade</p>
+            <svg class="flow__arrow" data-lucide="chevron-right"></svg>
+          </div>
+          <div class="flow__step">
+            <span class="flow__num">Etapa 03</span>
+            <h3 class="h3" style="margin:10px 0 6px;">Gestão</h3>
+            <p class="muted" style="margin:0;font-size:.9rem;">Viajaflux</p>
+            <svg class="flow__arrow" data-lucide="chevron-right"></svg>
+          </div>
+          <div class="flow__step">
+            <span class="flow__num">Etapa 04</span>
+            <h3 class="h3" style="margin:10px 0 6px;">Crescimento</h3>
+            <p class="muted" style="margin:0;font-size:.9rem;">Voefly Viagens</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROVA ============ -->
+  <section class="section" style="background:var(--bg-2);">
+    <div class="wrap">
+      <div style="text-align:center;max-width:680px;margin:0 auto;">
+        <span class="eyebrow eyebrow--center reveal" style="justify-content:center;">Resultados</span>
+        <h2 class="h2 reveal" style="margin-top:18px;">Números que validam nossa atuação.</h2>
+      </div>
+      <div class="bignums reveal" style="margin-top:48px;">
+        <div class="card bignum"><b class="grad">+1.700</b><span>agências criadas</span></div>
+        <div class="card bignum"><b class="grad">+R$ 400 mi</b><span>movimentados no turismo</span></div>
+      </div>
+      <p class="muted reveal" style="text-align:center;margin:28px auto 0;max-width:620px;">Esses números refletem a
+        aplicação prática das soluções do grupo no mercado real.</p>
+    </div>
+  </section>
+
+  <!-- ============ MISSÃO, VISÃO E VALORES ============ -->
+  <section class="section" id="mvv">
+    <div class="wrap">
+      <span class="eyebrow reveal">Missão, visão e valores</span>
+      <div class="mvv-top reveal" style="margin-top:24px;">
+        <div class="card" style="padding:36px;">
+          <h3 class="h3" style="color:var(--accent);">Missão</h3>
+          <p style="margin:14px 0 0;font-size:1.12rem;line-height:1.6;">Alcançar <b>5.000 agências</b> em nossa rede até
+            2030, transformando o turismo em um caminho real de empreendedorismo por meio de uma estrutura integrada que
+            conecta operação, educação, tecnologia e contabilidade.</p>
+        </div>
+        <div class="card" style="padding:36px;">
+          <h3 class="h3" style="color:var(--accent-2);">Visão</h3>
+          <p style="margin:14px 0 0;font-size:1.12rem;line-height:1.6;">Ser a estrutura de turismo mais eficiente e
+            confiável do Brasil, referência na formação de empreendedores e na gestão profissional de agências de
+            viagens.</p>
+        </div>
+      </div>
+      <div class="values">
+        <div class="card value reveal">
+          <div class="vn">Obsessão pelo cliente</div>
+          <p class="muted" style="margin:0;font-size:.95rem;">Cada decisão começa pela experiência de quem confia em
+            nós.</p>
+        </div>
+        <div class="card value reveal">
+          <div class="vn">Entrega acima da função</div>
+          <p class="muted" style="margin:0;font-size:.95rem;">Responsabilidade não tem limite de cargo.</p>
+        </div>
+        <div class="card value reveal">
+          <div class="vn">Compromisso é sagrado</div>
+          <p class="muted" style="margin:0;font-size:.95rem;">Cumprir prazos, metas e promessas é o mínimo.</p>
+        </div>
+        <div class="card value reveal">
+          <div class="vn">Atitude de dono</div>
+          <p class="muted" style="margin:0;font-size:.95rem;">Cuidamos do negócio com responsabilidade e visão de longo
+            prazo.</p>
+        </div>
+        <div class="card value reveal">
+          <div class="vn">Crescimento com dados</div>
+          <p class="muted" style="margin:0;font-size:.95rem;">Decisões baseadas em indicadores claros.</p>
+        </div>
+        <div class="card value reveal">
+          <div class="vn">Foco em resultado</div>
+          <p class="muted" style="margin:0;font-size:.95rem;">Resultado não é pressão — é direção.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SÓCIOS ============ -->
+  <section class="section" id="socios" style="background:var(--bg-2);">
+    <div class="wrap">
+      <div style="max-width:680px;">
+        <span class="eyebrow reveal">Liderança</span>
+        <h2 class="h2 reveal" style="margin-top:18px;">A liderança do Grupo Fly.</h2>
+      </div>
+      <div class="socios reveal" style="margin-top:40px;">
+        <div class="card socio">
+          <div class="avatar"><img src="assets/luiz.jpg" alt="Luiz Gregatti" /></div>
+          <div class="name-row"><b>Luiz Gregatti</b><svg class="verified-badge" viewBox="-4 -4 48 48" fill="none"
+              xmlns="http://www.w3.org/2000/svg" aria-label="Verificado">
+              <path
+                d="M17.837,3.843 Q20,1 22.163,3.843 Q24.326,6.685 27.747,5.657 Q31.168,4.629 31.247,8.2 Q31.326,11.771 34.699,12.95 Q38.071,14.129 36.036,17.065 Q34,20 36.036,22.936 Q38.071,25.871 34.699,27.05 Q31.326,28.229 31.247,31.8 Q31.168,35.371 27.747,34.343 Q24.326,33.315 22.163,36.158 Q20,39 17.837,36.158 Q15.674,33.315 12.253,34.343 Q8.832,35.371 8.753,31.8 Q8.674,28.229 5.302,27.05 Q1.929,25.871 3.965,22.936 Q6,20 3.965,17.065 Q1.929,14.129 5.302,12.95 Q8.674,11.771 8.753,8.2 Q8.832,4.629 12.253,5.657 Q15.674,6.685 17.837,3.843Z"
+                fill="#0095F6" />
+              <path d="M11 21l7 7L30 13" stroke="#fff" stroke-width="4" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg></div>
+          <div class="role">Marketing e Comercial</div>
+          <p class="muted" style="margin:12px 0 0;font-size:.92rem;">Estratégia de crescimento, aquisição de clientes e
+            posicionamento do grupo.</p>
+        </div>
+        <div class="card socio">
+          <div class="avatar"><img src="assets/pablo.jpg" alt="Pablo Alexandrino" /></div>
+          <div class="name-row"><b>Pablo Alexandrino</b><svg class="verified-badge" viewBox="-4 -4 48 48" fill="none"
+              xmlns="http://www.w3.org/2000/svg" aria-label="Verificado">
+              <path
+                d="M17.837,3.843 Q20,1 22.163,3.843 Q24.326,6.685 27.747,5.657 Q31.168,4.629 31.247,8.2 Q31.326,11.771 34.699,12.95 Q38.071,14.129 36.036,17.065 Q34,20 36.036,22.936 Q38.071,25.871 34.699,27.05 Q31.326,28.229 31.247,31.8 Q31.168,35.371 27.747,34.343 Q24.326,33.315 22.163,36.158 Q20,39 17.837,36.158 Q15.674,33.315 12.253,34.343 Q8.832,35.371 8.753,31.8 Q8.674,28.229 5.302,27.05 Q1.929,25.871 3.965,22.936 Q6,20 3.965,17.065 Q1.929,14.129 5.302,12.95 Q8.674,11.771 8.753,8.2 Q8.832,4.629 12.253,5.657 Q15.674,6.685 17.837,3.843Z"
+                fill="#0095F6" />
+              <path d="M11 21l7 7L30 13" stroke="#fff" stroke-width="4" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg></div>
+          <div class="role">Tecnologia</div>
+          <p class="muted" style="margin:12px 0 0;font-size:.92rem;">Desenvolvimento e evolução das soluções
+            tecnológicas.</p>
+        </div>
+        <div class="card socio">
+          <div class="avatar"><img src="assets/zanini.jpg" alt="João Zanini" /></div>
+          <div class="name-row"><b>João Zanini</b><svg class="verified-badge" viewBox="-4 -4 48 48" fill="none"
+              xmlns="http://www.w3.org/2000/svg" aria-label="Verificado">
+              <path
+                d="M17.837,3.843 Q20,1 22.163,3.843 Q24.326,6.685 27.747,5.657 Q31.168,4.629 31.247,8.2 Q31.326,11.771 34.699,12.95 Q38.071,14.129 36.036,17.065 Q34,20 36.036,22.936 Q38.071,25.871 34.699,27.05 Q31.326,28.229 31.247,31.8 Q31.168,35.371 27.747,34.343 Q24.326,33.315 22.163,36.158 Q20,39 17.837,36.158 Q15.674,33.315 12.253,34.343 Q8.832,35.371 8.753,31.8 Q8.674,28.229 5.302,27.05 Q1.929,25.871 3.965,22.936 Q6,20 3.965,17.065 Q1.929,14.129 5.302,12.95 Q8.674,11.771 8.753,8.2 Q8.832,4.629 12.253,5.657 Q15.674,6.685 17.837,3.843Z"
+                fill="#0095F6" />
+              <path d="M11 21l7 7L30 13" stroke="#fff" stroke-width="4" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg></div>
+          <div class="role">Pós-venda</div>
+          <p class="muted" style="margin:12px 0 0;font-size:.92rem;">Experiência do cliente e desenvolvimento das
+            agências.</p>
+        </div>
+        <div class="card socio">
+          <div class="avatar"><img src="assets/viviane.jpg" alt="Viviane Gregatti" /></div>
+          <div class="name-row"><b>Viviane Gregatti</b><svg class="verified-badge" viewBox="-4 -4 48 48" fill="none"
+              xmlns="http://www.w3.org/2000/svg" aria-label="Verificado">
+              <path
+                d="M17.837,3.843 Q20,1 22.163,3.843 Q24.326,6.685 27.747,5.657 Q31.168,4.629 31.247,8.2 Q31.326,11.771 34.699,12.95 Q38.071,14.129 36.036,17.065 Q34,20 36.036,22.936 Q38.071,25.871 34.699,27.05 Q31.326,28.229 31.247,31.8 Q31.168,35.371 27.747,34.343 Q24.326,33.315 22.163,36.158 Q20,39 17.837,36.158 Q15.674,33.315 12.253,34.343 Q8.832,35.371 8.753,31.8 Q8.674,28.229 5.302,27.05 Q1.929,25.871 3.965,22.936 Q6,20 3.965,17.065 Q1.929,14.129 5.302,12.95 Q8.674,11.771 8.753,8.2 Q8.832,4.629 12.253,5.657 Q15.674,6.685 17.837,3.843Z"
+                fill="#0095F6" />
+              <path d="M11 21l7 7L30 13" stroke="#fff" stroke-width="4" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg></div>
+          <div class="role">Administrativo e Financeiro</div>
+          <p class="muted" style="margin:12px 0 0;font-size:.92rem;">Gestão financeira e organização estrutural do
+            grupo.</p>
+        </div>
+      </div>
+      <p class="reveal" style="margin-top:30px;font-size:1.12rem;max-width:720px;">A atuação conjunta dessas lideranças
+        garante <span class="grad" style="font-weight:600;">visão estratégica e execução especializada.</span></p>
+    </div>
+  </section>
+
+  <!-- ============ PARA QUEM É ============ -->
+  <section class="section" id="paraquem">
+    <div class="wrap">
+      <div style="max-width:680px;">
+        <span class="eyebrow reveal">Para quem é</span>
+        <h2 class="h2 reveal" style="margin-top:18px;">Feito para quem quer empreender no turismo.</h2>
+      </div>
+      <div class="audience reveal" style="margin-top:36px;">
+        <div class="aud">
+          <div class="n">01</div>
+          <h3 class="h3" style="margin:10px 0 0;font-size:1.05rem;">Abrir uma agência de viagens</h3>
+        </div>
+        <div class="aud">
+          <div class="n">02</div>
+          <h3 class="h3" style="margin:10px 0 0;font-size:1.05rem;">Agências em crescimento</h3>
+        </div>
+        <div class="aud">
+          <div class="n">03</div>
+          <h3 class="h3" style="margin:10px 0 0;font-size:1.05rem;">Empreendedores que querem escalar</h3>
+        </div>
+        <div class="aud">
+          <div class="n">04</div>
+          <h3 class="h3" style="margin:10px 0 0;font-size:1.05rem;">Começar do zero no turismo</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA FINAL ============ -->
+  <section class="section" id="cta">
+    <div class="wrap">
+      <div class="cta-final reveal" style="position: relative">
+        <div class="glow absolute"
+          style="position: absolute; width:520px;height:520px;background:var(--accent);opacity:.16;left:50%;top:0;transform:translate(-50%,-40%);">
+        </div>
+        <div class="glow absolute"
+          style="position: absolute; width:360px;height:360px;background:var(--accent-2);opacity:.10;left:20%;bottom:0;">
+        </div>
+        <span class="eyebrow eyebrow--center" style="justify-content:center;">Vamos conversar</span>
+        <h2 class="h2" style="margin-top:18px;font-size:clamp(2.2rem,4.6vw,3.8rem);">Pronto para empreender
+          no<br />turismo <span class="grad">com estrutura?</span></h2>
+        <p class="lead" style="margin:22px auto 0;max-width:560px;">Fale com o Grupo Fly e entenda como podemos apoiar o
+          seu crescimento.</p>
+        <div class="cta-btns">
+          <a href="https://wa.me/5518991871456" target="_blank" rel="noopener" class="btn btn--wa"><svg
+              data-lucide="message-circle"></svg> Chamar no WhatsApp</a>
+          <a href="mailto:administrativo@grupofly.co" class="btn btn--ghost"><svg data-lucide="mail"></svg> Enviar
+            e-mail</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTATO ============ -->
+  <section class="section section--tight" id="contato">
+    <div class="wrap">
+      <div class="contact reveal">
+        <a class="cinfo" href="mailto:administrativo@grupofly.co">
+          <div class="icon-chip"><svg data-lucide="mail"></svg></div>
+          <div><small>E-mail</small><span>administrativo@grupofly.co</span></div>
+        </a>
+        <a class="cinfo" href="https://wa.me/5518991871456" target="_blank" rel="noopener">
+          <div class="icon-chip"><svg data-lucide="phone"></svg></div>
+          <div><small>Telefone / WhatsApp</small><span>(18) 99187-1456</span></div>
+        </a>
+        <div class="cinfo">
+          <div class="icon-chip"><svg data-lucide="map-pin"></svg></div>
+          <div><small>Endereço</small><span>Rua Bandeirantes, 92 — Araçatuba/SP</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <img class="footer__logo" src="assets/grupofly-white.png" alt="Grupo Fly" />
+      <span class="muted-3" style="font-size:.85rem;">© 2026 Grupo Fly · Educação · Operação · Tecnologia ·
+        Contabilidade</span>
+    </div>
+  </footer>
+
+  <!-- ============ WHATSAPP FLOATER ============ -->
+  <a class="wa-float" href="https://wa.me/5518991871456" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg data-lucide="message-circle"></svg>
+  </a>
+
+  <!-- ============ MOBILE MENU ============ -->
+  <div id="mobileMenu"
+    style="position:fixed;inset:0;z-index:100;background:var(--bg);display:none;flex-direction:column;padding:28px;">
+    <div style="display:flex;justify-content:space-between;align-items:center;">
+      <img src="assets/grupofly-white.png" alt="Grupo Fly" style="height:28px;filter:var(--logo-filter);" />
+      <button id="closeMenu" style="background:none;border:0;color:var(--fg);cursor:pointer;"><svg data-lucide="x"
+          style="width:28px;height:28px;"></svg></button>
+    </div>
+    <nav
+      style="display:flex;flex-direction:column;gap:6px;margin-top:40px;font-family:var(--font-display);font-weight:700;font-size:1.8rem;">
+      <a href="#solucao" class="mm">Solução</a>
+      <a href="#empresas" class="mm">Empresas</a>
+      <a href="#atuacao" class="mm">Como atuamos</a>
+      <a href="#socios" class="mm">Sócios</a>
+      <a href="#contato" class="mm">Contato</a>
+    </nav>
+    <a href="#cta" class="btn btn--primary mm" style="margin-top:auto;justify-content:center;">Falar com um
+      especialista</a>
+  </div>
+
+  <!-- icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <!-- tweaks island -->
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js"
+    integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js"
+    integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js"
+    integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y"
+    crossorigin="anonymous"></script>
+  <script type="text/babel" src="tweaks-panel.jsx"></script>
+  <script type="text/babel" src="tweaks-app.jsx"></script>
+
+  <script>
+    // icons
+    function renderIcons() { if (window.lucide) window.lucide.createIcons(); }
+    renderIcons();
+
+    // nav scroll state
+    const nav = document.getElementById('nav');
+    const onScroll = () => { nav.classList.toggle('scrolled', window.scrollY > 24); };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    // reveal on scroll
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+    // 3D tilt nos cards de essência
+    document.querySelectorAll('.ess-card').forEach(function (card) {
+      card.addEventListener('mouseenter', function () {
+        card.style.transition = 'box-shadow .4s var(--ease), border-color .4s var(--ease)';
+      });
+      card.addEventListener('mousemove', function (e) {
+        var rect = card.getBoundingClientRect();
+        var x = (e.clientX - rect.left) / rect.width - 0.5;
+        var y = (e.clientY - rect.top) / rect.height - 0.5;
+        card.style.transform = 'perspective(900px) rotateX(' + (-y * 7) + 'deg) rotateY(' + (x * 7) + 'deg) translateY(-4px) scale(1.012)';
+      });
+      card.addEventListener('mouseleave', function () {
+        card.style.transition = 'transform .5s cubic-bezier(0.34,1.56,0.64,1), box-shadow .4s var(--ease), border-color .4s var(--ease)';
+        card.style.transform = '';
+      });
+    });
+
+    // ---- dados dos ícones por empresa ----
+    var COMPANY_ICONS = {
+      educacional: {
+        side: 'left',
+        cc: '#1B3A8C', ca: '#D4A017',
+        bg: 'rgba(27,58,140,0.11)', border: 'rgba(27,58,140,0.24)',
+        glow: 'rgba(27,58,140,0.28)', tooltipBorder: 'rgba(27,58,140,0.45)',
+        items: [
+          { icon: 'graduation-cap', label: 'Universidade Corporativa' },
+          { icon: 'megaphone', label: 'Serviços de Marketing' },
+          { icon: 'briefcase', label: 'Consultoria de Negócio' },
+          { icon: 'users', label: 'Mastermind Exclusivo' },
+          { icon: 'rocket', label: 'Implementação de Negócio' },
+        ]
+      },
+      voefly: {
+        side: 'right',
+        cc: '#F47B20', ca: '#F47B20',
+        bg: 'rgba(244,123,32,0.11)', border: 'rgba(244,123,32,0.24)',
+        glow: 'rgba(244,123,32,0.28)', tooltipBorder: 'rgba(244,123,32,0.45)',
+        items: [
+          { icon: 'file-check', label: 'Vistos e Documentações' },
+          { icon: 'star', label: 'Pontos e Fidelidade' },
+          { icon: 'building-2', label: 'Viagens Corporativas' },
+          { icon: 'sun', label: 'Lazer' },
+          { icon: 'compass', label: 'Expedições' },
+          { icon: 'calendar', label: 'Eventos e Convenções' },
+          { icon: 'globe', label: 'Intercâmbio' },
+        ]
+      },
+      viajaflux: {
+        side: 'left',
+        cc: '#7B3FE4', ca: '#a78bfa',
+        bg: 'rgba(123,63,228,0.11)', border: 'rgba(123,63,228,0.24)',
+        glow: 'rgba(123,63,228,0.28)', tooltipBorder: 'rgba(123,63,228,0.45)',
+        items: [
+          { icon: 'users', label: 'CRM' },
+          { icon: 'database', label: 'ERP Financeiro' },
+          { icon: 'plane', label: 'Emissão de Viagens' },
+          { icon: 'zap', label: 'Automação de Marketing' },
+          { icon: 'bar-chart-2', label: 'BI e Relatórios' },
+          { icon: 'landmark', label: 'Banco Digital Próprio' },
+          { icon: 'layout', label: 'Construtor de Websites' },
+        ]
+      },
+      flyone: {
+        side: 'right',
+        cc: '#1B8C4E', ca: '#34D399',
+        bg: 'rgba(27,140,78,0.11)', border: 'rgba(27,140,78,0.24)',
+        glow: 'rgba(27,140,78,0.28)', tooltipBorder: 'rgba(27,140,78,0.45)',
+        items: [
+          { icon: 'shield-check', label: 'Registro de Marca' },
+          { icon: 'monitor', label: 'Planejamento Digital' },
+          { icon: 'calculator', label: 'Tributário' },
+          { icon: 'scale', label: 'Assessoria Jurídica' },
+          { icon: 'book-open', label: 'Serviços Contábeis' },
+          { icon: 'clipboard-list', label: 'BPO Financeiro e Fiscal' },
+          { icon: 'user-check', label: 'RH e Departamento Pessoal' },
+          { icon: 'badge-check', label: 'Abertura e Legalização' },
+        ]
+      }
+    };
+
+    var activeFloatIcons = [];
+
+    function clearFloatingIcons() {
+      activeFloatIcons.forEach(function (el) {
+        el.classList.remove('eco-float--visible');
+        var ref = el;
+        setTimeout(function () { if (ref.parentNode) ref.parentNode.removeChild(ref); }, 380);
+      });
+      activeFloatIcons = [];
+    }
+
+    function spawnFloatingIcons(cardId) {
+      clearFloatingIcons();
+      if (!cardId) return;
+      var data = COMPANY_ICONS[cardId];
+      if (!data) return;
+
+      var card = document.querySelector('.eco-card[data-id="' + cardId + '"]');
+      var layer = document.getElementById('ecoFloatLayer');
+      if (!card || !layer) return;
+
+      var cardRect = card.getBoundingClientRect();
+      var layerRect = layer.getBoundingClientRect();
+      var cx = cardRect.left - layerRect.left;
+      var cy = cardRect.top - layerRect.top;
+      var cw = cardRect.width;
+      var ch = cardRect.height;
+
+      var ICON_SIZE = 44;
+      var GAP_X = 14;  // distância horizontal da borda do card
+      var ICON_GAP = 9;   // espaço vertical entre ícones
+
+      var items = data.items;
+      var n = items.length;
+      var side = data.side; // 'left' ou 'right'
+
+      // coluna centralizada verticalmente no card
+      var totalH = n * ICON_SIZE + (n - 1) * ICON_GAP;
+      var startY = cy + (ch - totalH) / 2;
+
+      var x = side === 'left'
+        ? cx - ICON_SIZE - GAP_X
+        : cx + cw + GAP_X;
+
+      items.forEach(function (item, i) {
+        var y = startY + i * (ICON_SIZE + ICON_GAP);
+
+        var el = document.createElement('div');
+        el.className = 'eco-float-icon eco-float--' + side;
+        el.style.left = Math.round(x) + 'px';
+        el.style.top = Math.round(y) + 'px';
+        el.style.background = data.bg;
+        el.style.border = '1px solid ' + data.border;
+        el.style.color = data.ca;
+        el.style.boxShadow = '0 0 0 0 ' + data.glow;
+
+        // SVG ícone
+        var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+        svg.setAttribute('data-lucide', item.icon);
+        svg.style.width = '18px';
+        svg.style.height = '18px';
+        el.appendChild(svg);
+
+        // Tooltip
+        var tip = document.createElement('span');
+        tip.className = 'eco-float-tooltip';
+        tip.textContent = item.label;
+        tip.style.borderColor = data.tooltipBorder;
+        tip.style.color = data.ca;
+        el.appendChild(tip);
+
+        // Hover glow
+        el.addEventListener('mouseenter', function () {
+          el.style.boxShadow = '0 0 22px ' + data.glow;
+          el.style.background = 'rgba(' + hexToRgb(data.cc) + ',0.22)';
+        });
+        el.addEventListener('mouseleave', function () {
+          el.style.boxShadow = '0 0 0 0 ' + data.glow;
+          el.style.background = data.bg;
+        });
+
+        layer.appendChild(el);
+        activeFloatIcons.push(el);
+
+        setTimeout(function () { el.classList.add('eco-float--visible'); }, 30 + i * 45);
+      });
+
+      // render ícones lucide recém-criados
+      setTimeout(function () { if (window.lucide) window.lucide.createIcons(); }, 60);
+    }
+
+    function hexToRgb(hex) {
+      var r = parseInt(hex.slice(1, 3), 16);
+      var g = parseInt(hex.slice(3, 5), 16);
+      var b = parseInt(hex.slice(5, 7), 16);
+      return r + ',' + g + ',' + b;
+    }
+
+    // interatividade empresas
+    function selectCompany(id) {
+      document.querySelectorAll('.eco-card').forEach(function (card) {
+        card.classList.toggle('eco-card--on', card.dataset.id === id);
+      });
+      document.querySelectorAll('.eco-ind-btn').forEach(function (button) {
+        var isActive = button.dataset.id === id;
+        button.classList.toggle('eco-ind--on', isActive);
+        button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+      });
+      spawnFloatingIcons(id);
+    }
+
+    document.querySelectorAll('.eco-card').forEach(function (card) {
+      card.addEventListener('click', function () { selectCompany(this.dataset.id); });
+    });
+    document.querySelectorAll('.eco-ind-btn').forEach(function (button) {
+      button.addEventListener('click', function () { selectCompany(this.dataset.id); });
+    });
+
+    // reposicionar ao redimensionar
+    var resizeTimer;
+    window.addEventListener('resize', function () {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(function () {
+        var activeCard = document.querySelector('.eco-card--on');
+        if (activeCard) spawnFloatingIcons(activeCard.dataset.id);
+      }, 120);
+    });
+
+    // spawn ícones do card ativo inicial após layout estabilizar
+    window.addEventListener('load', function () {
+      setTimeout(function () {
+        var activeCard = document.querySelector('.eco-card--on');
+        if (activeCard) spawnFloatingIcons(activeCard.dataset.id);
+      }, 300);
+    });
+
+
+    // mobile menu
+    const mm = document.getElementById('mobileMenu');
+    document.getElementById('burger').addEventListener('click', () => { mm.style.display = 'flex'; });
+    document.getElementById('closeMenu').addEventListener('click', () => { mm.style.display = 'none'; });
+    document.querySelectorAll('.mm').forEach(a => a.addEventListener('click', () => { mm.style.display = 'none'; }));
+  </script>
 
 </body>
+
 </html>
