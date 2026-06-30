@@ -1,0 +1,222 @@
+/* ================================================================
+   nav.css — Navbar compartilhada, Grupo Fly
+   Usa: Plus Jakarta Sans (Google Fonts)
+================================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+
+/* ── Resets essenciais que garantem o funcionamento do nav ── */
+.nav {
+  position: sticky !important;
+  top: 0;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 200;
+  background: rgba(255,255,255,.94) !important;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(0,0,0,0.07) !important;
+  border-top: none !important;
+  box-shadow: none;
+  transition: box-shadow .3s ease;
+  transform: none !important;
+}
+.nav.scrolled {
+  box-shadow: 0 4px 20px rgba(0,0,0,.07);
+}
+
+/* ── Inner ── */
+.nav .nav__inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* ── Logo ── */
+.nav .nav__logo-link {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+.nav .nav__logo-link img {
+  height: 50px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  filter: none !important;
+}
+
+/* ── Links desktop ── */
+.nav .nav__links {
+  display: none;
+  align-items: center;
+  gap: 28px;
+  flex: 1;
+  justify-content: center;
+}
+@media (min-width: 1100px) {
+  .nav .nav__links { display: flex; }
+}
+.nav .nav__links a {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #0d1117;
+  opacity: .72;
+  transition: opacity .2s, color .2s;
+  text-decoration: none;
+  white-space: nowrap;
+  background: none !important;
+}
+.nav .nav__links a:hover { opacity: 1; }
+.nav .nav__links .nav__link--active,
+.nav .nav__mobile .nav__link--active {
+  color: #6B5CF6;
+  opacity: 1;
+  font-weight: 600;
+}
+
+/* ── CTA ── */
+.nav .nav__cta {
+  display: none;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+@media (min-width: 1100px) { .nav .nav__cta { display: flex; } }
+
+.nav .btn--ghost-sm {
+  padding: 9px 18px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #0d1117;
+  background: transparent;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: background .2s;
+}
+.nav .btn--ghost-sm:hover { background: #f0f0f5 !important; transform: none; }
+
+.nav .btn--purple-sm {
+  padding: 9px 20px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  background: #6B5CF6;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 2px 12px rgba(107,92,246,.3);
+  transition: opacity .2s, transform .15s;
+}
+.nav .btn--purple-sm:hover { opacity: .88; transform: translateY(-1px); }
+
+/* ── Burger ── */
+.nav .nav__burger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0d1117;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  flex-shrink: 0;
+}
+@media (min-width: 1100px) { .nav .nav__burger { display: none; } }
+
+/* ── Mobile menu (slide-down) ── */
+.nav .nav__mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 0 24px;
+  background: #fff;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .35s cubic-bezier(0.22,1,0.36,1), padding .3s;
+}
+.nav .nav__mobile.open {
+  max-height: 520px;
+  padding: 8px 24px 20px;
+  border-top: 1px solid rgba(0,0,0,0.06);
+}
+.nav .nav__mobile a {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #0d1117;
+  padding: 10px 0;
+  display: block;
+  text-decoration: none;
+  opacity: .78;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  background: none !important;
+  transition: color .2s, opacity .2s;
+}
+.nav .nav__mobile a:last-child { border-bottom: none; }
+.nav .nav__mobile a:hover { opacity: 1; color: #6B5CF6; }
+
+.nav .nav__mobile-cta {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 16px;
+  margin-top: 4px;
+  border-top: 1px solid rgba(0,0,0,0.06);
+}
+.nav .nav__mobile-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: opacity .2s, background .2s, transform .15s;
+  opacity: 1;
+}
+.nav .nav__mobile-btn--ghost {
+  background: #f0f0f5;
+  color: #0d1117;
+  border: 1px solid rgba(0,0,0,0.08);
+}
+.nav .nav__mobile-btn--ghost:hover { background: #e4e4ee; color: #0d1117; opacity: 1; }
+.nav .nav__mobile-btn--purple {
+  background: #6B5CF6;
+  color: #fff;
+  box-shadow: 0 2px 12px rgba(107,92,246,.28);
+}
+.nav .nav__mobile-btn--purple:hover { opacity: .88; transform: translateY(-1px); color: #fff; }
+
+/*
+  Estado intermediário 1100–1379px:
+  Links visíveis mas gap reduzido + botão ghost oculto.
+  Com gap 14px os 8 links cabem em ~642px (disponível ~678px).
+*/
+@media (min-width: 1100px) and (max-width: 1379px) {
+  .nav .nav__links { gap: 14px; }
+  .nav .nav__cta .btn--ghost-sm { display: none; }
+}
