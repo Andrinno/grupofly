@@ -1,0 +1,1447 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light" data-anim="on">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Summit Grupo Fly — O maior encontro de empreendedores do turismo</title>
+  <meta name="description" content="O Summit Grupo Fly é o maior encontro de empreendedores do turismo da nossa rede — conectando, educando e impulsionando o ecossistema." />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/summit.css" />
+  <link rel="stylesheet" href="../css/nav.css" />
+</head>
+
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo-link">
+        <img src="../assets/grupofly-black.png" alt="Grupo Fly" />
+      </a>
+      <div class="nav__links">
+        <a href="index.html#solucao">Solução</a>
+        <a href="index.html#empresas">Empresas</a>
+        <a href="index.html#essencia">Nossa Essência</a>
+        <a href="index.html#socios">Sócios</a>
+        <a href="index.html#atuacao">Como atuamos</a>
+        <a href="noticias.html">Notícias</a>
+        <a href="summit.html" class="nav__link--active">Summit</a>
+        <a href="index.html#contato">Contato</a>
+      </div>
+      <div class="nav__cta">
+        <a href="index.html" class="btn--ghost-sm">Conhecer soluções</a>
+        <a href="index.html#cta" class="btn--purple-sm">Falar com especialista</a>
+      </div>
+      <button class="nav__burger" id="nav-burger" aria-label="Menu">
+        <svg id="icon-menu" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg id="icon-x" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="nav__mobile" id="nav-mobile">
+      <a href="index.html#solucao">Solução</a>
+      <a href="index.html#empresas">Empresas</a>
+      <a href="index.html#essencia">Nossa Essência</a>
+      <a href="index.html#socios">Sócios</a>
+      <a href="index.html#atuacao">Como atuamos</a>
+      <a href="noticias.html">Notícias</a>
+      <a href="summit.html" class="nav__link--active">Summit</a>
+      <a href="index.html#contato">Contato</a>
+      <div class="nav__mobile-cta">
+        <a href="index.html" class="nav__mobile-btn nav__mobile-btn--ghost">Conhecer soluções</a>
+        <a href="index.html#cta" class="nav__mobile-btn nav__mobile-btn--purple">Falar com especialista</a>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ============ HERO ============ -->
+  <header class="summit-hero" id="top">
+
+    <!--
+      FOTO DE FUNDO: substitua a tag abaixo pela imagem real do Summit.
+      Exemplo: <img class="summit-hero__photo" src="../assets/summit/hero-principal.jpg" alt="Summit Grupo Fly" />
+    -->
+    <div class="summit-hero__overlay"></div>
+    <div class="summit-hero__mesh"></div>
+
+    <div class="summit-orb summit-orb--1"></div>
+    <div class="summit-orb summit-orb--2"></div>
+    <div class="summit-orb summit-orb--3"></div>
+
+    <!-- Partículas geradas via JS -->
+    <div class="summit-particles" id="summitParticles"></div>
+
+    <div class="wrap summit-hero__inner">
+      <div class="summit-hero__content reveal">
+
+        <div class="summit-badge" style="background:rgba(147,51,234,.13);border-color:rgba(147,51,234,.30);">
+          <span class="summit-badge-dot"></span>
+          6ª Edição · Evento Oficial
+        </div>
+
+        <h1 class="summit-hero__title">
+          VIAJAFLUX<br><span class="grad">SUMMIT 2026</span>
+        </h1>
+
+        <p class="summit-hero__sub">
+          O maior encontro de agências de viagens do Brasil.
+        </p>
+
+        <p class="summit-hero__desc">
+          Dois dias de imersão em tecnologia, inteligência artificial, vendas e inovação aplicada ao turismo —
+          com mais de 1.500 profissionais reunidos na Arena Olímpia, SP.
+        </p>
+
+        <div class="summit-hero__actions">
+          <a href="#sobre" class="btn btn--primary btn--lg">
+            <svg data-lucide="play-circle"></svg> Reviver o evento
+          </a>
+          <a href="#parceiros" class="btn btn--ghost btn--lg">
+            <svg data-lucide="handshake"></svg> Parceiros
+          </a>
+        </div>
+
+        <div class="summit-hero__meta">
+          <div class="summit-meta-item">
+            <svg data-lucide="map-pin"></svg>
+            <span>Arena Olímpia, SP</span>
+          </div>
+          <div class="summit-meta-divider"></div>
+          <div class="summit-meta-item">
+            <svg data-lucide="calendar"></svg>
+            <span>28 e 29 de maio de 2026</span>
+          </div>
+          <div class="summit-meta-divider"></div>
+          <div class="summit-meta-item">
+            <svg data-lucide="users"></svg>
+            <span>+1.500 participantes</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="summit-scroll-indicator">
+      <div class="summit-scroll-mouse"><div class="summit-scroll-wheel"></div></div>
+      <span>scroll</span>
+    </div>
+  </header>
+
+
+  <!-- ============ NÚMEROS DO EVENTO ============ -->
+  <section class="section summit-numbers" id="numeros">
+    <div class="wrap">
+
+      <div class="summit-section-header reveal">
+        <span class="eyebrow eyebrow--center">Os números falam por si</span>
+        <h2 class="h2" style="margin-top:16px;">Impacto real.<br><span class="grad">Resultados concretos.</span></h2>
+      </div>
+
+      <div class="summit-numbers__grid">
+
+        <div class="summit-stat-card reveal">
+          <div class="summit-stat-card__icon"><svg data-lucide="users"></svg></div>
+          <div class="summit-stat-card__num">
+            <span class="summit-counter" data-target="1500" data-prefix="+" data-suffix="">+1.500</span>
+          </div>
+          <div class="summit-stat-card__label">Participantes</div>
+          <div class="summit-stat-card__desc">Profissionais do turismo de todo o Brasil</div>
+        </div>
+
+        <div class="summit-stat-card reveal">
+          <div class="summit-stat-card__icon"><svg data-lucide="building-2"></svg></div>
+          <div class="summit-stat-card__num">
+            <span class="summit-counter" data-target="1000" data-prefix="+" data-suffix="">+1.000</span>
+          </div>
+          <div class="summit-stat-card__label">Agências representadas</div>
+          <div class="summit-stat-card__desc">Agências de viagens em toda a rede</div>
+        </div>
+
+        <div class="summit-stat-card reveal">
+          <div class="summit-stat-card__icon"><svg data-lucide="clock"></svg></div>
+          <div class="summit-stat-card__num">
+            <span class="summit-counter" data-target="16" data-prefix="" data-suffix="h">16h</span>
+          </div>
+          <div class="summit-stat-card__label">Horas de conteúdo</div>
+          <div class="summit-stat-card__desc">Das 08h às 18h nos dois dias do evento</div>
+        </div>
+
+        <div class="summit-stat-card reveal">
+          <div class="summit-stat-card__icon"><svg data-lucide="trophy"></svg></div>
+          <div class="summit-stat-card__num">
+            <span class="summit-counter" data-target="150" data-prefix="+" data-suffix="">150+</span>
+          </div>
+          <div class="summit-stat-card__label">Agências premiadas</div>
+          <div class="summit-stat-card__desc">Reconhecidas por faixas de vendas de R$ 25K a R$ 45M</div>
+        </div>
+
+        <div class="summit-stat-card reveal">
+          <div class="summit-stat-card__icon"><svg data-lucide="handshake"></svg></div>
+          <div class="summit-stat-card__num">
+            <span class="summit-counter" data-target="10" data-prefix="+" data-suffix="">10+</span>
+          </div>
+          <div class="summit-stat-card__label">Expositores</div>
+          <div class="summit-stat-card__desc">CVC, Azul Viagens, HotelDO, BeFly e outros</div>
+        </div>
+
+        <div class="summit-stat-card reveal">
+          <div class="summit-stat-card__icon"><svg data-lucide="flag"></svg></div>
+          <div class="summit-stat-card__num">
+            <span class="summit-counter" data-target="6" data-prefix="" data-suffix="ª ed.">6ª ed.</span>
+          </div>
+          <div class="summit-stat-card__label">Edição do evento</div>
+          <div class="summit-stat-card__desc">Primeira vez fora da capital de São Paulo</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============ SOBRE O EVENTO ============ -->
+  <section class="section" id="sobre">
+    <div class="wrap">
+      <div class="summit-about__grid">
+
+        <div class="summit-about__copy reveal">
+          <span class="eyebrow">Sobre o Summit</span>
+          <h2 class="h2" style="margin-top:16px;">O evento que reuniu o turismo brasileiro em Olímpia.</h2>
+          <p class="lead" style="margin-top:20px;">
+            Nos dias 28 e 29 de maio de 2026, a Arena Olímpia — ao lado do Solar das Águas Park Resort —
+            sediou a 6ª edição do ViajaFlux Summit, pela primeira vez fora da capital paulista.
+          </p>
+          <p style="margin-top:16px;color:var(--fg-2);">
+            Durante dois dias, das 8h às 18h, mais de 1.500 profissionais do turismo de todo o Brasil
+            mergulharam em conteúdo sobre tecnologia, inteligência artificial, marketing digital, vendas,
+            gestão financeira e as principais tendências do setor.
+          </p>
+          <p style="margin-top:16px;color:var(--fg-2);">
+            O evento contou com fair de expositores das maiores operadoras do país, cerimônia de premiação
+            reconhecendo mais de 150 agências e o tradicional happy hour de encerramento que marcou a
+            edição mais marcante da história do Summit.
+          </p>
+
+          <div class="summit-about__stats">
+            <div class="summit-about__stat">
+              <span class="grad" style="font-family:var(--font-display);font-weight:700;font-size:2rem;letter-spacing:-.03em;">2 dias</span>
+              <span style="font-size:.82rem;color:var(--fg-3);">28 e 29 de maio de 2026</span>
+            </div>
+            <div class="summit-about__stat-divider"></div>
+            <div class="summit-about__stat">
+              <span class="grad" style="font-family:var(--font-display);font-weight:700;font-size:2rem;letter-spacing:-.03em;">6ª ed.</span>
+              <span style="font-size:.82rem;color:var(--fg-3);">edição histórica</span>
+            </div>
+            <div class="summit-about__stat-divider"></div>
+            <div class="summit-about__stat">
+              <span class="grad" style="font-family:var(--font-display);font-weight:700;font-size:2rem;letter-spacing:-.03em;">Arena</span>
+              <span style="font-size:.82rem;color:var(--fg-3);">Olímpia, SP</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="summit-about__visual reveal">
+          <div class="summit-about__img-frame">
+            <img src="../assets/summitbanner.png" alt="Participantes do ViajaFlux Summit 2026 na Arena Olímpia" style="width:100%;height:100%;object-fit:cover;" />
+            <div class="summit-about__img-badge">
+              <svg data-lucide="map-pin"></svg>
+              <span>Arena Olímpia, SP</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============ DESTAQUES ============ -->
+  <section class="section summit-highlights" id="destaques">
+    <div class="wrap">
+
+      <div class="summit-section-header reveal">
+        <span class="eyebrow eyebrow--center">Destaques do evento</span>
+        <h2 class="h2" style="margin-top:16px;">Uma experiência completa<br><span class="grad">em múltiplas dimensões.</span></h2>
+        <p class="lead muted" style="margin-top:16px;max-width:58ch;margin-left:auto;margin-right:auto;">Cada detalhe do Summit foi pensado para entregar o máximo valor para os participantes.</p>
+      </div>
+
+      <div class="summit-highlights__grid">
+
+        <div class="summit-hl-card reveal">
+          <div class="summit-hl-card__icon"><svg data-lucide="network"></svg></div>
+          <h3 class="h3">Networking</h3>
+          <p>Rodadas estruturadas para conexões estratégicas entre empresários do mesmo setor.</p>
+        </div>
+
+        <div class="summit-hl-card reveal">
+          <div class="summit-hl-card__icon"><svg data-lucide="mic-2"></svg></div>
+          <h3 class="h3">Palestras</h3>
+          <p>Especialistas nacionais compartilhando visão estratégica, cases reais e tendências de mercado.</p>
+        </div>
+
+        <div class="summit-hl-card reveal">
+          <div class="summit-hl-card__icon"><svg data-lucide="trophy"></svg></div>
+          <h3 class="h3">Premiações</h3>
+          <p>Reconhecimento especial para os empresários e parceiros que se destacaram na rede.</p>
+        </div>
+
+        <div class="summit-hl-card reveal">
+          <div class="summit-hl-card__icon"><svg data-lucide="brain"></svg></div>
+          <h3 class="h3">Mentorias</h3>
+          <p>Sessões exclusivas com mentores da rede para solucionar desafios reais de negócio.</p>
+        </div>
+
+        <div class="summit-hl-card reveal">
+          <div class="summit-hl-card__icon"><svg data-lucide="users-round"></svg></div>
+          <h3 class="h3">Mastermind</h3>
+          <p>Grupos de mentes brilhantes trocando experiências e construindo soluções coletivas.</p>
+        </div>
+
+        <div class="summit-hl-card reveal">
+          <div class="summit-hl-card__icon"><svg data-lucide="cpu"></svg></div>
+          <h3 class="h3">Tecnologia</h3>
+          <p>Apresentação das principais inovações e ferramentas transformando o turismo.</p>
+        </div>
+
+        <div class="summit-hl-card reveal">
+          <div class="summit-hl-card__icon"><svg data-lucide="trending-up"></svg></div>
+          <h3 class="h3">Crescimento Empresarial</h3>
+          <p>Estratégias práticas de escalonamento para agências em diferentes estágios de maturidade.</p>
+        </div>
+
+        <div class="summit-hl-card reveal">
+          <div class="summit-hl-card__icon"><svg data-lucide="globe"></svg></div>
+          <h3 class="h3">Ecossistema</h3>
+          <p>Integração entre as empresas do Grupo Fly potencializando o negócio de cada participante.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============ GALERIA ============ -->
+  <section class="section" id="galeria">
+    <div class="wrap">
+
+      <div class="summit-section-header reveal">
+        <span class="eyebrow eyebrow--center">Galeria</span>
+        <h2 class="h2" style="margin-top:16px;">Reviva os melhores<br><span class="grad">momentos do Summit.</span></h2>
+        <p class="lead muted" style="margin-top:16px;max-width:58ch;margin-left:auto;margin-right:auto;">
+          Imagens que capturam a essência de um evento histórico para o ecossistema Grupo Fly.
+        </p>
+      </div>
+
+      <!--
+        Layout 3 colunas × 3 linhas sem espaços:
+        Row1: [1-tall] [2]     [3]  
+        Row2: [1-tall] [4-wide→    ]
+        Row3: [5]      [6]     [7]
+      -->
+      <div class="summit-gallery reveal" id="summitGallery">
+
+        <div class="summit-gallery__item summit-gallery__item--tall" data-gallery-index="0">
+          <div class="summit-gallery__img">
+            <img src="../assets/noticias/n4-viajaflux-novidades.jpg" alt="ViajaFlux Summit 2026 — Abertura Dia 1 na Arena Olímpia" />
+            <div class="summit-gallery__overlay"><svg data-lucide="zoom-in"></svg></div>
+          </div>
+        </div>
+
+        <div class="summit-gallery__item" data-gallery-index="1">
+          <div class="summit-gallery__img">
+            <img src="../assets/noticias/n2-viajaflux-concierge.jpg" alt="ViajaFlux Summit 2026 — Arena Olímpia vista aérea" />
+            <div class="summit-gallery__overlay"><svg data-lucide="zoom-in"></svg></div>
+          </div>
+        </div>
+
+        <div class="summit-gallery__item" data-gallery-index="2">
+          <div class="summit-gallery__img">
+            <img src="../assets/summit/CRE00107.jpg" alt="ViajaFlux Summit 2026 — Palestrante no palco" />
+            <div class="summit-gallery__overlay"><svg data-lucide="zoom-in"></svg></div>
+          </div>
+        </div>
+
+        <div class="summit-gallery__item summit-gallery__item--wide" data-gallery-index="3">
+          <div class="summit-gallery__img">
+            <img src="../assets/summitbanner.png" alt="ViajaFlux Summit 2026 — Fair de expositores e parceiros" />
+            <div class="summit-gallery__overlay"><svg data-lucide="zoom-in"></svg></div>
+          </div>
+        </div>
+
+        <div class="summit-gallery__item" data-gallery-index="4">
+          <div class="summit-gallery__img">
+            <img src="../assets/CEOS.png" alt="ViajaFlux Summit 2026 — Cerimônia de premiação" />
+            <div class="summit-gallery__overlay"><svg data-lucide="zoom-in"></svg></div>
+          </div>
+        </div>
+
+        <div class="summit-gallery__item" data-gallery-index="5">
+          <div class="summit-gallery__img">
+            <img src="../assets/summit/midia-panrotas-dia2.jpg" alt="ViajaFlux Summit 2026 — Dia 2 conteúdo e networking" />
+            <div class="summit-gallery__overlay"><svg data-lucide="zoom-in"></svg></div>
+          </div>
+        </div>
+
+        <div class="summit-gallery__item" data-gallery-index="6">
+          <div class="summit-gallery__img">
+            <img src="../assets/noticias/n5-summit-happyhour.jpg" alt="ViajaFlux Summit 2026 — Happy Hour de encerramento" />
+            <div class="summit-gallery__overlay"><svg data-lucide="zoom-in"></svg></div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Lightbox -->
+      <div class="summit-lightbox" id="summitLightbox" role="dialog" aria-modal="true" aria-label="Foto ampliada">
+        <img class="summit-lightbox__img" id="lightboxImg" src="" alt="" />
+        <button class="summit-lightbox__close" id="lightboxClose" aria-label="Fechar">✕</button>
+        <button class="summit-lightbox__nav summit-lightbox__prev" id="lightboxPrev" aria-label="Foto anterior">
+          <svg data-lucide="chevron-left"></svg>
+        </button>
+        <button class="summit-lightbox__nav summit-lightbox__next" id="lightboxNext" aria-label="Próxima foto">
+          <svg data-lucide="chevron-right"></svg>
+        </button>
+        <div class="summit-lightbox__counter" id="lightboxCounter"></div>
+      </div>
+
+      <div style="text-align:center;margin-top:36px;">
+        <a href="#galeria" class="btn btn--ghost">
+          Ver mais fotos <svg data-lucide="arrow-right"></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============ PALESTRANTES ============ -->
+  <section class="section summit-speakers" id="palestrantes">
+    <div class="wrap">
+
+      <div class="summit-section-header reveal">
+        <span class="eyebrow eyebrow--center">Palestrantes</span>
+        <h2 class="h2" style="margin-top:16px;">Vozes que transformam<br><span class="grad">perspectivas.</span></h2>
+        <p class="lead muted" style="margin-top:16px;max-width:58ch;margin-left:auto;margin-right:auto;">
+          Especialistas e líderes que trouxeram conteúdo de alto impacto para os participantes do Summit.
+        </p>
+      </div>
+
+      <div class="summit-speakers__carousel-wrapper reveal">
+        <div class="summit-spk-slider">
+          <div class="summit-spk-track">
+
+            <!-- set original -->
+            <div class="summit-spk-card">
+              <div class="summit-spk-card__img"><img src="../assets/speakers/luiz.png" alt="Luiz Gregatti" /></div>
+              <div class="summit-spk-card__info">
+                <strong class="summit-spk-card__name">Luiz Gregatti</strong>
+                <span class="summit-spk-card__role">CEO &amp; Fundador</span>
+                <span class="summit-spk-card__company">ViajaFlux / Grupo Fly</span>
+              </div>
+            </div>
+            <div class="summit-spk-card">
+              <div class="summit-spk-card__img"><img src="../assets/speakers/pablo.png" alt="Pablo Alexandrino" /></div>
+              <div class="summit-spk-card__info">
+                <strong class="summit-spk-card__name">Pablo Alexandrino</strong>
+                <span class="summit-spk-card__role">Tecnologia</span>
+                <span class="summit-spk-card__company">Grupo Fly</span>
+              </div>
+            </div>
+            <div class="summit-spk-card">
+              <div class="summit-spk-card__img"><img src="../assets/speakers/joao.png" alt="João Zanini" /></div>
+              <div class="summit-spk-card__info">
+                <strong class="summit-spk-card__name">João Zanini</strong>
+                <span class="summit-spk-card__role">Pós-venda</span>
+                <span class="summit-spk-card__company">ViajaFlux</span>
+              </div>
+            </div>
+            <div class="summit-spk-card">
+              <div class="summit-spk-card__img"><img src="../assets/speakers/edney.png" alt="Edney Souza" /></div>
+              <div class="summit-spk-card__info">
+                <strong class="summit-spk-card__name">Edney Souza</strong>
+                <span class="summit-spk-card__role">Especialista em IA</span>
+                <span class="summit-spk-card__company">Professor ESPM</span>
+              </div>
+            </div>
+            <div class="summit-spk-card">
+              <div class="summit-spk-card__img"><img src="../assets/speakers/guilherme.png" alt="Guilherme Wroclawski" /></div>
+              <div class="summit-spk-card__info">
+                <strong class="summit-spk-card__name">Guilherme Wroclawski</strong>
+                <span class="summit-spk-card__role">CEO</span>
+                <span class="summit-spk-card__company">Hero Seguros</span>
+              </div>
+            </div>
+            <div class="summit-spk-card">
+              <div class="summit-spk-card__img"><img src="../assets/speakers/daniel.png" alt="Daniel Toledo" /></div>
+              <div class="summit-spk-card__info">
+                <strong class="summit-spk-card__name">Daniel Toledo</strong>
+                <span class="summit-spk-card__role">CEO</span>
+                <span class="summit-spk-card__company">Grupo Pátria</span>
+              </div>
+            </div>
+            <div class="summit-spk-card">
+              <div class="summit-spk-card__img"><img src="../assets/speakers/joice.png" alt="Joice Ferreira" /></div>
+              <div class="summit-spk-card__info">
+                <strong class="summit-spk-card__name">Joice Ferreira</strong>
+                <span class="summit-spk-card__role">Fundadora</span>
+                <span class="summit-spk-card__company">Magic Blue Turismo</span>
+              </div>
+            </div>
+            <div class="summit-spk-card">
+              <div class="summit-spk-card__img"><img src="../assets/speakers/rodrigo-alvim.png" alt="Rodrigo Alvim" /></div>
+              <div class="summit-spk-card__info">
+                <strong class="summit-spk-card__name">Rodrigo Alvim</strong>
+                <span class="summit-spk-card__role">Advogado · Criador</span>
+                <span class="summit-spk-card__company">Viaje sem B.O.</span>
+              </div>
+            </div>
+            <div class="summit-spk-card">
+              <div class="summit-spk-card__img"><img src="../assets/speakers/kaio.png" alt="Kaio Souza" /></div>
+              <div class="summit-spk-card__info">
+                <strong class="summit-spk-card__name">Kaio Souza</strong>
+                <span class="summit-spk-card__role">Influenciador</span>
+                <span class="summit-spk-card__company">Turismo Digital</span>
+              </div>
+            </div>
+            <div class="summit-spk-card">
+              <div class="summit-spk-card__img"><img src="../assets/speakers/zubaran.png" alt="Alexandre Zubaran" /></div>
+              <div class="summit-spk-card__info">
+                <strong class="summit-spk-card__name">Alexandre Zubaran</strong>
+                <span class="summit-spk-card__role">CEO</span>
+                <span class="summit-spk-card__company">Enjoy Hotéis &amp; Resorts</span>
+              </div>
+            </div>
+            <div class="summit-spk-card">
+              <div class="summit-spk-card__img"><img src="../assets/speakers/marcio.png" alt="Marcio Nogueira" /></div>
+              <div class="summit-spk-card__info">
+                <strong class="summit-spk-card__name">Marcio Nogueira</strong>
+                <span class="summit-spk-card__role">Diretor-geral</span>
+                <span class="summit-spk-card__company">HotelDO</span>
+              </div>
+            </div>
+            <div class="summit-spk-card">
+              <div class="summit-spk-card__img"><img src="../assets/speakers/eduardo.png" alt="Eduardo Vansan" /></div>
+              <div class="summit-spk-card__info">
+                <strong class="summit-spk-card__name">Eduardo Vansan</strong>
+                <span class="summit-spk-card__role">Diretor</span>
+                <span class="summit-spk-card__company">Orinter</span>
+              </div>
+            </div>
+            <div class="summit-spk-card">
+              <div class="summit-spk-card__img"><img src="../assets/speakers/wagner.png" alt="Wagner Chaves" /></div>
+              <div class="summit-spk-card__info">
+                <strong class="summit-spk-card__name">Wagner Chaves</strong>
+                <span class="summit-spk-card__role">Liderança Comercial</span>
+                <span class="summit-spk-card__company">Sakura Consolidadora</span>
+              </div>
+            </div>
+            <div class="summit-spk-card">
+              <div class="summit-spk-card__img"><img src="../assets/speakers/rodrigo.png" alt="Rodrigo Vaz" /></div>
+              <div class="summit-spk-card__info">
+                <strong class="summit-spk-card__name">Rodrigo Vaz</strong>
+                <span class="summit-spk-card__role">Representante</span>
+                <span class="summit-spk-card__company">Hot Beach</span>
+              </div>
+            </div>
+            <div class="summit-spk-card">
+              <div class="summit-spk-card__img"><img src="../assets/speakers/geninho.png" alt="Geninho Zuliani" /></div>
+              <div class="summit-spk-card__info">
+                <strong class="summit-spk-card__name">Geninho Zuliani</strong>
+                <span class="summit-spk-card__role">Prefeito</span>
+                <span class="summit-spk-card__company">Olímpia, SP</span>
+              </div>
+            </div>
+            <div class="summit-spk-card">
+              <div class="summit-spk-card__img"><img src="../assets/speakers/andre.png" alt="André" /></div>
+              <div class="summit-spk-card__info">
+                <strong class="summit-spk-card__name">André</strong>
+                <span class="summit-spk-card__role">Palestrante</span>
+                <span class="summit-spk-card__company">ViajaFlux Summit 2026</span>
+              </div>
+            </div>
+            <div class="summit-spk-card">
+              <div class="summit-spk-card__img"><img src="../assets/speakers/marcelo.png" alt="Marcelo" /></div>
+              <div class="summit-spk-card__info">
+                <strong class="summit-spk-card__name">Marcelo</strong>
+                <span class="summit-spk-card__role">Palestrante</span>
+                <span class="summit-spk-card__company">ViajaFlux Summit 2026</span>
+              </div>
+            </div>
+            <div class="summit-spk-card">
+              <div class="summit-spk-card__img"><img src="../assets/speakers/marcos.png" alt="Marcos" /></div>
+              <div class="summit-spk-card__info">
+                <strong class="summit-spk-card__name">Marcos</strong>
+                <span class="summit-spk-card__role">Palestrante</span>
+                <span class="summit-spk-card__company">ViajaFlux Summit 2026</span>
+              </div>
+            </div>
+            <div class="summit-spk-card">
+              <div class="summit-spk-card__img"><img src="../assets/speakers/alexandre.png" alt="Alexandre" /></div>
+              <div class="summit-spk-card__info">
+                <strong class="summit-spk-card__name">Alexandre</strong>
+                <span class="summit-spk-card__role">Palestrante</span>
+                <span class="summit-spk-card__company">ViajaFlux Summit 2026</span>
+              </div>
+            </div>
+            <div class="summit-spk-card">
+              <div class="summit-spk-card__img"><img src="../assets/speakers/amanda.png" alt="Amanda" /></div>
+              <div class="summit-spk-card__info">
+                <strong class="summit-spk-card__name">Amanda</strong>
+                <span class="summit-spk-card__role">Palestrante</span>
+                <span class="summit-spk-card__company">ViajaFlux Summit 2026</span>
+              </div>
+            </div>
+            <div class="summit-spk-card">
+              <div class="summit-spk-card__img"><img src="../assets/speakers/ze.png" alt="Zé" /></div>
+              <div class="summit-spk-card__info">
+                <strong class="summit-spk-card__name">Zé</strong>
+                <span class="summit-spk-card__role">Palestrante</span>
+                <span class="summit-spk-card__company">ViajaFlux Summit 2026</span>
+              </div>
+            </div>
+
+            <!-- set duplicado para loop seamless -->
+            <div class="summit-spk-card" aria-hidden="true">
+              <div class="summit-spk-card__img"><img src="../assets/speakers/luiz.png" alt="" /></div>
+              <div class="summit-spk-card__info">
+                <strong class="summit-spk-card__name">Luiz Gregatti</strong>
+                <span class="summit-spk-card__role">CEO &amp; Fundador</span>
+                <span class="summit-spk-card__company">ViajaFlux / Grupo Fly</span>
+              </div>
+            </div>
+            <div class="summit-spk-card" aria-hidden="true">
+              <div class="summit-spk-card__img"><img src="../assets/speakers/pablo.png" alt="" /></div>
+              <div class="summit-spk-card__info">
+                <strong class="summit-spk-card__name">Pablo Alexandrino</strong>
+                <span class="summit-spk-card__role">Tecnologia</span>
+                <span class="summit-spk-card__company">Grupo Fly</span>
+              </div>
+            </div>
+            <div class="summit-spk-card" aria-hidden="true">
+              <div class="summit-spk-card__img"><img src="../assets/speakers/joao.png" alt="" /></div>
+              <div class="summit-spk-card__info">
+                <strong class="summit-spk-card__name">João Zanini</strong>
+                <span class="summit-spk-card__role">Pós-venda</span>
+                <span class="summit-spk-card__company">ViajaFlux</span>
+              </div>
+            </div>
+            <div class="summit-spk-card" aria-hidden="true">
+              <div class="summit-spk-card__img"><img src="../assets/speakers/edney.png" alt="" /></div>
+              <div class="summit-spk-card__info">
+                <strong class="summit-spk-card__name">Edney Souza</strong>
+                <span class="summit-spk-card__role">Especialista em IA</span>
+                <span class="summit-spk-card__company">Professor ESPM</span>
+              </div>
+            </div>
+            <div class="summit-spk-card" aria-hidden="true">
+              <div class="summit-spk-card__img"><img src="../assets/speakers/guilherme.png" alt="" /></div>
+              <div class="summit-spk-card__info">
+                <strong class="summit-spk-card__name">Guilherme Wroclawski</strong>
+                <span class="summit-spk-card__role">CEO</span>
+                <span class="summit-spk-card__company">Hero Seguros</span>
+              </div>
+            </div>
+            <div class="summit-spk-card" aria-hidden="true">
+              <div class="summit-spk-card__img"><img src="../assets/speakers/daniel.png" alt="" /></div>
+              <div class="summit-spk-card__info">
+                <strong class="summit-spk-card__name">Daniel Toledo</strong>
+                <span class="summit-spk-card__role">CEO</span>
+                <span class="summit-spk-card__company">Grupo Pátria</span>
+              </div>
+            </div>
+            <div class="summit-spk-card" aria-hidden="true">
+              <div class="summit-spk-card__img"><img src="../assets/speakers/joice.png" alt="" /></div>
+              <div class="summit-spk-card__info">
+                <strong class="summit-spk-card__name">Joice Ferreira</strong>
+                <span class="summit-spk-card__role">Fundadora</span>
+                <span class="summit-spk-card__company">Magic Blue Turismo</span>
+              </div>
+            </div>
+            <div class="summit-spk-card" aria-hidden="true">
+              <div class="summit-spk-card__img"><img src="../assets/speakers/rodrigo-alvim.png" alt="" /></div>
+              <div class="summit-spk-card__info">
+                <strong class="summit-spk-card__name">Rodrigo Alvim</strong>
+                <span class="summit-spk-card__role">Advogado · Criador</span>
+                <span class="summit-spk-card__company">Viaje sem B.O.</span>
+              </div>
+            </div>
+            <div class="summit-spk-card" aria-hidden="true">
+              <div class="summit-spk-card__img"><img src="../assets/speakers/kaio.png" alt="" /></div>
+              <div class="summit-spk-card__info">
+                <strong class="summit-spk-card__name">Kaio Souza</strong>
+                <span class="summit-spk-card__role">Influenciador</span>
+                <span class="summit-spk-card__company">Turismo Digital</span>
+              </div>
+            </div>
+            <div class="summit-spk-card" aria-hidden="true">
+              <div class="summit-spk-card__img"><img src="../assets/speakers/zubaran.png" alt="" /></div>
+              <div class="summit-spk-card__info">
+                <strong class="summit-spk-card__name">Alexandre Zubaran</strong>
+                <span class="summit-spk-card__role">CEO</span>
+                <span class="summit-spk-card__company">Enjoy Hotéis &amp; Resorts</span>
+              </div>
+            </div>
+            <div class="summit-spk-card" aria-hidden="true">
+              <div class="summit-spk-card__img"><img src="../assets/speakers/marcio.png" alt="" /></div>
+              <div class="summit-spk-card__info">
+                <strong class="summit-spk-card__name">Marcio Nogueira</strong>
+                <span class="summit-spk-card__role">Diretor-geral</span>
+                <span class="summit-spk-card__company">HotelDO</span>
+              </div>
+            </div>
+            <div class="summit-spk-card" aria-hidden="true">
+              <div class="summit-spk-card__img"><img src="../assets/speakers/eduardo.png" alt="" /></div>
+              <div class="summit-spk-card__info">
+                <strong class="summit-spk-card__name">Eduardo Vansan</strong>
+                <span class="summit-spk-card__role">Diretor</span>
+                <span class="summit-spk-card__company">Orinter</span>
+              </div>
+            </div>
+            <div class="summit-spk-card" aria-hidden="true">
+              <div class="summit-spk-card__img"><img src="../assets/speakers/wagner.png" alt="" /></div>
+              <div class="summit-spk-card__info">
+                <strong class="summit-spk-card__name">Wagner Chaves</strong>
+                <span class="summit-spk-card__role">Liderança Comercial</span>
+                <span class="summit-spk-card__company">Sakura Consolidadora</span>
+              </div>
+            </div>
+            <div class="summit-spk-card" aria-hidden="true">
+              <div class="summit-spk-card__img"><img src="../assets/speakers/rodrigo.png" alt="" /></div>
+              <div class="summit-spk-card__info">
+                <strong class="summit-spk-card__name">Rodrigo Vaz</strong>
+                <span class="summit-spk-card__role">Representante</span>
+                <span class="summit-spk-card__company">Hot Beach</span>
+              </div>
+            </div>
+            <div class="summit-spk-card" aria-hidden="true">
+              <div class="summit-spk-card__img"><img src="../assets/speakers/geninho.png" alt="" /></div>
+              <div class="summit-spk-card__info">
+                <strong class="summit-spk-card__name">Geninho Zuliani</strong>
+                <span class="summit-spk-card__role">Prefeito</span>
+                <span class="summit-spk-card__company">Olímpia, SP</span>
+              </div>
+            </div>
+            <div class="summit-spk-card" aria-hidden="true">
+              <div class="summit-spk-card__img"><img src="../assets/speakers/andre.png" alt="" /></div>
+              <div class="summit-spk-card__info">
+                <strong class="summit-spk-card__name">André</strong>
+                <span class="summit-spk-card__role">Palestrante</span>
+                <span class="summit-spk-card__company">ViajaFlux Summit 2026</span>
+              </div>
+            </div>
+            <div class="summit-spk-card" aria-hidden="true">
+              <div class="summit-spk-card__img"><img src="../assets/speakers/marcelo.png" alt="" /></div>
+              <div class="summit-spk-card__info">
+                <strong class="summit-spk-card__name">Marcelo</strong>
+                <span class="summit-spk-card__role">Palestrante</span>
+                <span class="summit-spk-card__company">ViajaFlux Summit 2026</span>
+              </div>
+            </div>
+            <div class="summit-spk-card" aria-hidden="true">
+              <div class="summit-spk-card__img"><img src="../assets/speakers/marcos.png" alt="" /></div>
+              <div class="summit-spk-card__info">
+                <strong class="summit-spk-card__name">Marcos</strong>
+                <span class="summit-spk-card__role">Palestrante</span>
+                <span class="summit-spk-card__company">ViajaFlux Summit 2026</span>
+              </div>
+            </div>
+            <div class="summit-spk-card" aria-hidden="true">
+              <div class="summit-spk-card__img"><img src="../assets/speakers/alexandre.png" alt="" /></div>
+              <div class="summit-spk-card__info">
+                <strong class="summit-spk-card__name">Alexandre</strong>
+                <span class="summit-spk-card__role">Palestrante</span>
+                <span class="summit-spk-card__company">ViajaFlux Summit 2026</span>
+              </div>
+            </div>
+            <div class="summit-spk-card" aria-hidden="true">
+              <div class="summit-spk-card__img"><img src="../assets/speakers/amanda.png" alt="" /></div>
+              <div class="summit-spk-card__info">
+                <strong class="summit-spk-card__name">Amanda</strong>
+                <span class="summit-spk-card__role">Palestrante</span>
+                <span class="summit-spk-card__company">ViajaFlux Summit 2026</span>
+              </div>
+            </div>
+            <div class="summit-spk-card" aria-hidden="true">
+              <div class="summit-spk-card__img"><img src="../assets/speakers/ze.png" alt="" /></div>
+              <div class="summit-spk-card__info">
+                <strong class="summit-spk-card__name">Zé</strong>
+                <span class="summit-spk-card__role">Palestrante</span>
+                <span class="summit-spk-card__company">ViajaFlux Summit 2026</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============ NOTÍCIAS E MATÉRIAS ============ -->
+  <section class="section" id="imprensa">
+    <div class="wrap">
+
+      <div class="summit-section-header reveal">
+        <span class="eyebrow eyebrow--center">Na mídia</span>
+        <h2 class="h2" style="margin-top:16px;">O que falaram<br><span class="grad">sobre o Summit.</span></h2>
+        <p class="lead muted" style="margin-top:16px;max-width:58ch;margin-left:auto;margin-right:auto;">
+          Cobertura da imprensa especializada e veículos que reconheceram o impacto do evento.
+        </p>
+      </div>
+
+      <!--
+        NOTÍCIAS: substitua os placeholders pelas imagens e informações reais.
+        Cada .summit-news-card__img pode receber um <img> em vez do background.
+      -->
+      <div class="summit-news__grid">
+
+        <div class="summit-news-card reveal">
+          <div class="summit-news-card__img">
+            <img src="../assets/summit/midia-panrotas-dia1.jpg" alt="ViajaFlux Summit 2026 - Dia 1 - Panrotas" style="width:100%;height:100%;object-fit:cover;" />
+          </div>
+          <div class="summit-news-card__content">
+            <div class="summit-news-card__meta">
+              <span class="summit-news-card__date">28 mai. 2026</span>
+              <span class="summit-news-card__source">Panrotas</span>
+            </div>
+            <h4 class="summit-news-card__title">ViajaFlux Summit 2026 tem início em Olímpia, SP, conectando agentes e fornecedores</h4>
+            <p class="summit-news-card__excerpt">Cobertura completa do primeiro dia do evento, com fair de expositores, palestras e a chegada de mais de 1.500 profissionais do turismo.</p>
+            <a href="https://www.panrotas.com.br/agencias-de-viagens/eventos/2026/05/viajaflux-summit-2026-tem-inicio-em-olimpia-sp-conectando-agentes-e-fornecedores-fotos_228954.html" target="_blank" rel="noopener" class="btn btn--ghost" style="margin-top:12px;align-self:flex-start;font-size:.9rem;padding:10px 18px;">
+              Ler Matéria <svg data-lucide="external-link"></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="summit-news-card reveal">
+          <div class="summit-news-card__img">
+            <img src="../assets/summit/midia-panrotas-dia2.jpg" alt="ViajaFlux Summit 2026 - Dia 2 - Panrotas" style="width:100%;height:100%;object-fit:cover;" />
+          </div>
+          <div class="summit-news-card__content">
+            <div class="summit-news-card__meta">
+              <span class="summit-news-card__date">29 mai. 2026</span>
+              <span class="summit-news-card__source">Panrotas</span>
+            </div>
+            <h4 class="summit-news-card__title">ViajaFlux Summit 2026 une agências e fornecedores em Olímpia, SP</h4>
+            <p class="summit-news-card__excerpt">Segundo dia do evento reuniu capacitações com produtos de parceiros como CVC, Azul Viagens, Sakura e BeFly, seguido de happy hour de encerramento.</p>
+            <a href="https://www.panrotas.com.br/agencias-de-viagens/eventos/2026/05/viajaflux-summit-2026-une-agencias-e-fornecedores-em-olimpia-sp-veja-fotos-do-2o-dia_229004.html" target="_blank" rel="noopener" class="btn btn--ghost" style="margin-top:12px;align-self:flex-start;font-size:.9rem;padding:10px 18px;">
+              Ler Matéria <svg data-lucide="external-link"></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="summit-news-card reveal">
+          <div class="summit-news-card__img">
+            <img src="../assets/summit/midia-olimpia.png" alt="Arena Olímpia sedia ViajaFlux Summit" style="width:100%;height:100%;object-fit:cover;" />
+          </div>
+          <div class="summit-news-card__content">
+            <div class="summit-news-card__meta">
+              <span class="summit-news-card__date">mai. 2026</span>
+              <span class="summit-news-card__source">Olímpia Minha Cidade</span>
+            </div>
+            <h4 class="summit-news-card__title">Arena Olímpia sedia ViajaFlux Summit com palestra de Alexandre Zubaran</h4>
+            <p class="summit-news-card__excerpt">O CEO da Enjoy Hotéis & Resorts apresentou o ecossistema regional de turismo e as estratégias de integração entre resorts e parques temáticos da região.</p>
+            <a href="https://www.olimpiaminhacidade.com.br/noticia/arena-olimpia-sedia-viajaflux-summit-com-palestra-de-alexandre-zubaran" target="_blank" rel="noopener" class="btn btn--ghost" style="margin-top:12px;align-self:flex-start;font-size:.9rem;padding:10px 18px;">
+              Ler Matéria <svg data-lucide="external-link"></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============ PREMIAÇÕES ============ -->
+  <section class="section summit-awards" id="premiacoes">
+    <div class="wrap">
+
+      <div class="summit-section-header reveal">
+        <span class="eyebrow eyebrow--center">Premiações</span>
+        <h2 class="h2" style="margin-top:16px;">Reconhecendo os<br><span class="summit-gold-grad">protagonistas da rede.</span></h2>
+        <p class="lead muted" style="margin-top:16px;max-width:62ch;margin-left:auto;margin-right:auto;">
+          Mais de 150 agências foram homenageadas com placas de reconhecimento por faixas de vendas — de R$ 25 mil até R$ 45 milhões. Participantes vieram de todo o Brasil e do exterior para receber o prêmio.
+        </p>
+      </div>
+
+      <div class="summit-awards__grid">
+
+        <div class="summit-award-card reveal">
+          <div class="summit-award-card__icon"><svg data-lucide="award"></svg></div>
+          <div class="summit-award-card__body">
+            <span class="summit-award-card__category">Faixas Iniciais</span>
+            <h4 class="summit-award-card__name">R$ 25K · R$ 50K · R$ 100K</h4>
+            <p class="summit-award-card__desc">Reconhecimento para as agências que alcançaram seus primeiros grandes marcos de faturamento, consolidando sua operação no ecossistema ViajaFlux.</p>
+          </div>
+          <div class="summit-award-card__shine"></div>
+        </div>
+
+        <div class="summit-award-card reveal">
+          <div class="summit-award-card__icon"><svg data-lucide="medal"></svg></div>
+          <div class="summit-award-card__body">
+            <span class="summit-award-card__category">Faixas Intermediárias</span>
+            <h4 class="summit-award-card__name">R$ 250K · R$ 500K · R$ 1M</h4>
+            <p class="summit-award-card__desc">Agências que escalaram sua operação e atingiram volumes significativos de vendas, provando a força do modelo de negócio estruturado.</p>
+          </div>
+          <div class="summit-award-card__shine"></div>
+        </div>
+
+        <div class="summit-award-card reveal">
+          <div class="summit-award-card__icon"><svg data-lucide="trophy"></svg></div>
+          <div class="summit-award-card__body">
+            <span class="summit-award-card__category">Faixas de Alto Volume</span>
+            <h4 class="summit-award-card__name">R$ 2M · R$ 3M · R$ 4M · R$ 5M</h4>
+            <p class="summit-award-card__desc">Operações de alto desempenho que se tornaram referência dentro da rede — agências que transformaram o turismo em um negócio sólido e escalável.</p>
+          </div>
+          <div class="summit-award-card__shine"></div>
+        </div>
+
+        <div class="summit-award-card reveal">
+          <div class="summit-award-card__icon"><svg data-lucide="star"></svg></div>
+          <div class="summit-award-card__body">
+            <span class="summit-award-card__category">Faixas Elite</span>
+            <h4 class="summit-award-card__name">R$ 10M · R$ 15M · R$ 20M · R$ 45M</h4>
+            <p class="summit-award-card__desc">O patamar mais alto da rede. Agências que quebraram recordes históricos e vieram de todo o Brasil — e até do exterior — para receber o reconhecimento.</p>
+          </div>
+          <div class="summit-award-card__shine"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============ PARCEIROS ============ -->
+  <section class="section" id="parceiros">
+    <div class="wrap">
+
+      <div class="summit-section-header reveal">
+        <span class="eyebrow eyebrow--center">Parceiros</span>
+        <h2 class="h2" style="margin-top:16px;">Marcas que acreditam<br><span class="grad">neste ecossistema.</span></h2>
+        <p class="lead muted" style="margin-top:16px;max-width:58ch;margin-left:auto;margin-right:auto;">
+          Empresas que apoiaram, patrocinaram e integraram o Summit Grupo Fly.
+        </p>
+      </div>
+
+      <!-- Realizadores -->
+      <div class="summit-partners-tier">
+        <span class="summit-partners-tier__label reveal">Realização</span>
+        <div class="summit-partners__grid summit-partners__grid--featured">
+          <div class="summit-partner-logo summit-partner-logo--featured reveal" style="--brand:147,51,234; transition-delay:.08s">
+            <img src="../assets/viajaflux.png" alt="ViajaFlux" />
+          </div>
+          <div class="summit-partner-logo summit-partner-logo--featured summit-partner-logo--edu reveal" style="--brand:26,62,198; transition-delay:.18s">
+            <img src="../assets/fly-educacional.png" alt="Fly Educacional" />
+          </div>
+          <div class="summit-partner-logo summit-partner-logo--featured reveal" style="--brand:255,102,0; transition-delay:.28s">
+            <img src="../assets/voefly.png" alt="VoeFly Viagens" />
+          </div>
+          <div class="summit-partner-logo summit-partner-logo--featured reveal" style="--brand:22,163,74; transition-delay:.38s">
+            <img src="../assets/fly-one.png" alt="Fly One Contabilidade" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Carrossel de Parceiros — infinite marquee -->
+      <div class="summit-partners-tier reveal" style="margin-top:56px;">
+        <span class="summit-partners-tier__label">Expositores &amp; Parceiros do Destino</span>
+        <div class="summit-slider">
+          <div class="summit-slide-track">
+            <!-- set original — --brand: R,G,B da cor principal de cada marca -->
+            <div class="summit-slide" style="--brand:232,0,61"><img src="../assets/partners/cvc.png" alt="CVC" /></div>
+            <div class="summit-slide" style="--brand:0,82,165"><img src="../assets/partners/azul-viagens.png" alt="Azul Viagens" /></div>
+            <div class="summit-slide" style="--brand:255,107,0"><img src="../assets/partners/hoteldo.png" alt="HotelDO" /></div>
+            <div class="summit-slide" style="--brand:99,28,220"><img src="../assets/partners/befly.png" alt="BeFly" /></div>
+            <div class="summit-slide" style="--brand:0,102,204"><img src="../assets/partners/orinter.png" alt="Orinter" /></div>
+            <div class="summit-slide" style="--brand:218,44,110"><img src="../assets/partners/sakura.png" alt="Sakura Consolidadora" /></div>
+            <div class="summit-slide" style="--brand:230,88,0"><img src="../assets/partners/brt.png" alt="BRT Operadora" /></div>
+            <div class="summit-slide" style="--brand:0,140,90"><img src="../assets/partners/enjoy.png" alt="Enjoy Hotéis &amp; Resorts" /></div>
+            <div class="summit-slide" style="--brand:0,155,210"><img src="../assets/partners/termas.png" alt="Termas dos Laranjais" /></div>
+            <div class="summit-slide" style="--brand:255,90,30"><img src="../assets/partners/hot-beach.png" alt="Hot Beach Parques &amp; Resorts" /></div>
+            <!-- set duplicado para loop seamless -->
+            <div class="summit-slide" style="--brand:232,0,61" aria-hidden="true"><img src="../assets/partners/cvc.png" alt="" /></div>
+            <div class="summit-slide" style="--brand:0,82,165" aria-hidden="true"><img src="../assets/partners/azul-viagens.png" alt="" /></div>
+            <div class="summit-slide" style="--brand:255,107,0" aria-hidden="true"><img src="../assets/partners/hoteldo.png" alt="" /></div>
+            <div class="summit-slide" style="--brand:99,28,220" aria-hidden="true"><img src="../assets/partners/befly.png" alt="" /></div>
+            <div class="summit-slide" style="--brand:0,102,204" aria-hidden="true"><img src="../assets/partners/orinter.png" alt="" /></div>
+            <div class="summit-slide" style="--brand:218,44,110" aria-hidden="true"><img src="../assets/partners/sakura.png" alt="" /></div>
+            <div class="summit-slide" style="--brand:230,88,0" aria-hidden="true"><img src="../assets/partners/brt.png" alt="" /></div>
+            <div class="summit-slide" style="--brand:0,140,90" aria-hidden="true"><img src="../assets/partners/enjoy.png" alt="" /></div>
+            <div class="summit-slide" style="--brand:0,155,210" aria-hidden="true"><img src="../assets/partners/termas.png" alt="" /></div>
+            <div class="summit-slide" style="--brand:255,90,30" aria-hidden="true"><img src="../assets/partners/hot-beach.png" alt="" /></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============ DEPOIMENTOS ============ -->
+  <section class="section summit-testimonials" id="depoimentos">
+    <div class="wrap">
+
+      <div class="summit-section-header reveal">
+        <span class="eyebrow eyebrow--center">Depoimentos</span>
+        <h2 class="h2" style="margin-top:16px;">A voz de quem<br><span class="grad">viveu o Summit.</span></h2>
+      </div>
+
+      <div class="summit-testimonials__slider reveal">
+        <div class="summit-testimonials__track" id="testimonialTrack">
+
+          <div class="summit-testimonial-card">
+            <div class="summit-testimonial-card__quote"><svg data-lucide="quote"></svg></div>
+            <p class="summit-testimonial-card__text">
+              "O Summit Grupo Fly foi simplesmente transformador. As conexões que fiz lá geraram parcerias
+              que mudaram o rumo da minha agência. Saí de lá com um mindset completamente diferente sobre
+              o que é possível no turismo."
+            </p>
+            <div class="summit-testimonial-card__author">
+              <div class="summit-testimonial-card__avatar summit-testimonial-card__avatar--1">
+                <svg data-lucide="user"></svg>
+              </div>
+              <div>
+                <strong>Maria Silva</strong>
+                <span>CEO, Agência Viajar Melhor</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="summit-testimonial-card">
+            <div class="summit-testimonial-card__quote"><svg data-lucide="quote"></svg></div>
+            <p class="summit-testimonial-card__text">
+              "Nunca imaginei que um evento de turismo pudesse ter esse nível. As palestras foram
+              extraordinárias, o networking foi genuíno e as mentorias me deram clareza para
+              dobrar meu faturamento no próximo ciclo."
+            </p>
+            <div class="summit-testimonial-card__author">
+              <div class="summit-testimonial-card__avatar summit-testimonial-card__avatar--2">
+                <svg data-lucide="user"></svg>
+              </div>
+              <div>
+                <strong>Carlos Mendes</strong>
+                <span>Diretor, Turismo Sem Fronteiras</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="summit-testimonial-card">
+            <div class="summit-testimonial-card__quote"><svg data-lucide="quote"></svg></div>
+            <p class="summit-testimonial-card__text">
+              "O que mais me impressionou foi a qualidade das pessoas presentes. Todos queriam crescer
+              de verdade, compartilhar conhecimento e construir algo maior. O Summit capturou a
+              essência do que é o ecossistema Grupo Fly."
+            </p>
+            <div class="summit-testimonial-card__author">
+              <div class="summit-testimonial-card__avatar summit-testimonial-card__avatar--3">
+                <svg data-lucide="user"></svg>
+              </div>
+              <div>
+                <strong>Ana Costa</strong>
+                <span>Fundadora, Fly Dreams Travel</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="summit-testimonial-card">
+            <div class="summit-testimonial-card__quote"><svg data-lucide="quote"></svg></div>
+            <p class="summit-testimonial-card__text">
+              "Participar do Summit foi a melhor decisão do meu ano. A premiação que recebi foi o
+              reconhecimento que me motivou a ir ainda mais longe. Obrigado Grupo Fly por
+              acreditar em nós empreendedores."
+            </p>
+            <div class="summit-testimonial-card__author">
+              <div class="summit-testimonial-card__avatar summit-testimonial-card__avatar--4">
+                <svg data-lucide="user"></svg>
+              </div>
+              <div>
+                <strong>Ricardo Santos</strong>
+                <span>Sócio, RS Travels Premium</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="summit-testimonials__controls">
+          <button class="summit-testimonials__btn" id="testimonialPrev" aria-label="Anterior">
+            <svg data-lucide="chevron-left"></svg>
+          </button>
+          <div class="summit-testimonials__dots" id="testimonialDots"></div>
+          <button class="summit-testimonials__btn" id="testimonialNext" aria-label="Próximo">
+            <svg data-lucide="chevron-right"></svg>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============ TIMELINE ============ -->
+  <section class="section" id="programacao">
+    <div class="wrap">
+
+      <div class="summit-section-header reveal">
+        <span class="eyebrow eyebrow--center">Programação</span>
+        <h2 class="h2" style="margin-top:16px;">Como foi a<br><span class="grad">jornada do Summit.</span></h2>
+        <p class="lead muted" style="margin-top:16px;max-width:58ch;margin-left:auto;margin-right:auto;">
+          Cada etapa foi pensada para maximizar experiência, aprendizado e conexões.
+        </p>
+      </div>
+
+      <div class="summit-timeline">
+        <div class="summit-timeline__line"></div>
+
+        <div class="summit-tl-item summit-tl-item--left reveal">
+          <div class="summit-tl-card">
+            <span class="summit-tl-card__time">08:00 — 28/05 · Dia 1</span>
+            <h4 class="summit-tl-card__title">Credenciamento & Abertura</h4>
+            <p class="summit-tl-card__desc">Recepção dos mais de 1.500 participantes na Arena Olímpia, credenciamento, welcome coffee e abertura oficial com Luiz Gregatti e a equipe ViajaFlux.</p>
+          </div>
+          <div class="summit-tl-dot"><svg data-lucide="log-in"></svg></div>
+          <div class="summit-tl-spacer"></div>
+        </div>
+
+        <div class="summit-tl-item summit-tl-item--right reveal">
+          <div class="summit-tl-spacer"></div>
+          <div class="summit-tl-dot"><svg data-lucide="mic-2"></svg></div>
+          <div class="summit-tl-card">
+            <span class="summit-tl-card__time">09:00 — 12:00 · Dia 1</span>
+            <h4 class="summit-tl-card__title">Palestras: Marketing, IA e Vendas</h4>
+            <p class="summit-tl-card__desc">Conteúdo sobre marketing digital para agências, inteligência artificial aplicada ao turismo, estratégias de vendas e gestão comercial de alto desempenho.</p>
+          </div>
+        </div>
+
+        <div class="summit-tl-item summit-tl-item--left reveal">
+          <div class="summit-tl-card">
+            <span class="summit-tl-card__time">12:10 — Dia 1</span>
+            <h4 class="summit-tl-card__title">Palestra: Alexandre Zubaran</h4>
+            <p class="summit-tl-card__desc">O CEO da Enjoy Hotéis & Resorts apresentou o ecossistema turístico de Olímpia e estratégias de conversão de vendas integradas entre resorts e parques temáticos.</p>
+          </div>
+          <div class="summit-tl-dot"><svg data-lucide="presentation"></svg></div>
+          <div class="summit-tl-spacer"></div>
+        </div>
+
+        <div class="summit-tl-item summit-tl-item--right reveal">
+          <div class="summit-tl-spacer"></div>
+          <div class="summit-tl-dot"><svg data-lucide="handshake"></svg></div>
+          <div class="summit-tl-card">
+            <span class="summit-tl-card__time">14:00 — 18:00 · Dia 1</span>
+            <h4 class="summit-tl-card__title">Fair de Expositores & Networking</h4>
+            <p class="summit-tl-card__desc">CVC, Azul Viagens, HotelDO, BeFly, Orinter, Sakura (IA para roteiros), BRT Operadora e outros parceiros apresentando produtos e fechando negócios com as agências.</p>
+          </div>
+        </div>
+
+        <div class="summit-tl-item summit-tl-item--left reveal">
+          <div class="summit-tl-card">
+            <span class="summit-tl-card__time">08:00 — 29/05 · Dia 2</span>
+            <h4 class="summit-tl-card__title">Palestras: Gestão, Cruzeiros e Destinos</h4>
+            <p class="summit-tl-card__desc">Conteúdo sobre gestão financeira, reforma tributária, home office, viagens em grupo, cruzeiros, Disney, vistos e comprovação social no turismo.</p>
+          </div>
+          <div class="summit-tl-dot"><svg data-lucide="mic-2"></svg></div>
+          <div class="summit-tl-spacer"></div>
+        </div>
+
+        <div class="summit-tl-item summit-tl-item--right reveal">
+          <div class="summit-tl-spacer"></div>
+          <div class="summit-tl-dot"><svg data-lucide="landmark"></svg></div>
+          <div class="summit-tl-card">
+            <span class="summit-tl-card__time">Dia 2 · Tarde</span>
+            <h4 class="summit-tl-card__title">Participação da Prefeitura de Olímpia</h4>
+            <p class="summit-tl-card__desc">O Prefeito Geninho Zuliani e o Secretário de Turismo Beto Puttini apresentaram os diferenciais de Olímpia como destino nacional e os investimentos em infraestrutura turística.</p>
+          </div>
+        </div>
+
+        <div class="summit-tl-item summit-tl-item--left reveal">
+          <div class="summit-tl-card">
+            <span class="summit-tl-card__time">18:00 — 29/05 · Encerramento</span>
+            <h4 class="summit-tl-card__title">Premiação + Happy Hour de Encerramento</h4>
+            <p class="summit-tl-card__desc">Cerimônia de reconhecimento de 150+ agências com placas de vendas de R$ 25K a R$ 45M, seguida do happy hour de encerramento da 6ª edição do ViajaFlux Summit.</p>
+          </div>
+          <div class="summit-tl-dot"><svg data-lucide="trophy"></svg></div>
+          <div class="summit-tl-spacer"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============ CTA FINAL ============ -->
+  <section class="summit-final-cta" id="cta">
+    <div class="summit-final-cta__bg">
+      <div class="summit-final-cta__grid"></div>
+      <div class="summit-final-cta__orb summit-final-cta__orb--1"></div>
+      <div class="summit-final-cta__orb summit-final-cta__orb--2"></div>
+    </div>
+    <div class="wrap summit-final-cta__inner reveal">
+      <div class="summit-final-cta__badge">
+        <svg data-lucide="calendar-plus"></svg>
+        7ª Edição em Breve
+      </div>
+      <h2 class="summit-final-cta__title">
+        Nos vemos na<br><span class="summit-gold-grad">próxima edição.</span>
+      </h2>
+      <p class="summit-final-cta__desc">
+        A 6ª edição em Olímpia ficará para a história. A 7ª edição do ViajaFlux Summit está por vir —
+        fique de olho para garantir sua vaga e viver essa experiência com a nossa rede.
+      </p>
+      <div class="summit-final-cta__actions">
+        <a href="index.html#cta" class="btn btn--primary btn--xl">
+          Quero participar da próxima edição <svg data-lucide="arrow-right"></svg>
+        </a>
+        <a href="index.html" class="btn btn--ghost btn--xl">
+          Conhecer o Ecossistema Grupo Fly
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <img class="footer__logo" src="../assets/grupofly-white.png" alt="Grupo Fly" />
+      <span class="muted-3" style="font-size:.85rem;">
+        © 2026 Grupo Fly · ViajaFlux Summit 2026 — Arena Olímpia, SP · Todos os direitos reservados
+      </span>
+    </div>
+  </footer>
+
+
+  <!-- ============ WA FLOATER ============ -->
+  <a class="wa-float" href="https://wa.me/5518991871456" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+  </a>
+
+
+  <!-- ============ SCRIPTS ============ -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script>
+    /* ── Ícones ─────────────────────────────────────────────── */
+    function renderIcons() { if (window.lucide) window.lucide.createIcons(); }
+    renderIcons();
+
+    /* ── Nav scroll state ───────────────────────────────────── */
+    var nav = document.getElementById('nav');
+    function onScroll() { nav.classList.toggle('scrolled', window.scrollY > 24); }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    /* ── Reveal on scroll ──────────────────────────────────── */
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) {
+          e.target.classList.add('in');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.10, rootMargin: '0px 0px -8% 0px' });
+    document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+
+    /* ── Partículas hero ────────────────────────────────────── */
+    (function () {
+      var container = document.getElementById('summitParticles');
+      if (!container) return;
+      var COLORS = ['#9333EA', '#00AAFF', '#C084FC'];
+      for (var i = 0; i < 40; i++) {
+        var p = document.createElement('div');
+        p.className = 'summit-particle';
+        p.style.cssText = [
+          'left:' + (Math.random() * 100) + '%;',
+          'top:' + (20 + Math.random() * 70) + '%;',
+          '--dur:' + (7 + Math.random() * 9) + 's;',
+          '--delay:' + (Math.random() * 8) + 's;',
+          '--op:' + (0.3 + Math.random() * 0.5) + ';',
+          'width:' + (1.5 + Math.random() * 2) + 'px;',
+          'height:' + (1.5 + Math.random() * 2) + 'px;',
+          'background:' + COLORS[i % COLORS.length] + ';'
+        ].join('');
+        container.appendChild(p);
+      }
+    })();
+
+    /* ── Contador animado ───────────────────────────────────── */
+    function animateCounter(el) {
+      var target  = parseInt(el.getAttribute('data-target'), 10);
+      var prefix  = el.getAttribute('data-prefix') || '';
+      var suffix  = el.getAttribute('data-suffix') || '';
+      var duration = 1800;
+      var start   = null;
+      function step(ts) {
+        if (!start) start = ts;
+        var pct = Math.min((ts - start) / duration, 1);
+        var ease = 1 - Math.pow(1 - pct, 3); /* ease-out-cubic */
+        var cur = Math.round(ease * target);
+        el.textContent = prefix + cur + suffix;
+        if (pct < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    }
+
+    var counterObs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) {
+          animateCounter(e.target);
+          counterObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('.summit-counter').forEach(function (el) {
+      counterObs.observe(el);
+    });
+
+    /* ── Carrossel de depoimentos ───────────────────────────── */
+    (function () {
+      var track  = document.getElementById('testimonialTrack');
+      var prev   = document.getElementById('testimonialPrev');
+      var next   = document.getElementById('testimonialNext');
+      var dotsEl = document.getElementById('testimonialDots');
+      if (!track) return;
+
+      var cards   = track.querySelectorAll('.summit-testimonial-card');
+      var total   = cards.length;
+      var current = 0;
+      var timer;
+
+      /* Build dots */
+      var dots = [];
+      for (var i = 0; i < total; i++) {
+        var d = document.createElement('div');
+        d.className = 'summit-tl-dot-nav';
+        d.setAttribute('data-i', i);
+        dotsEl.appendChild(d);
+        dots.push(d);
+      }
+
+      function goTo(idx) {
+        current = (idx + total) % total;
+        track.style.transform = 'translateX(-' + (current * 100) + '%)';
+        dots.forEach(function (d, i) {
+          d.classList.toggle('active', i === current);
+        });
+      }
+
+      function startTimer() {
+        clearInterval(timer);
+        timer = setInterval(function () { goTo(current + 1); }, 6000);
+      }
+
+      dotsEl.addEventListener('click', function (e) {
+        var i = e.target.getAttribute('data-i');
+        if (i !== null) { goTo(parseInt(i, 10)); startTimer(); }
+      });
+      prev.addEventListener('click', function () { goTo(current - 1); startTimer(); });
+      next.addEventListener('click', function () { goTo(current + 1); startTimer(); });
+
+      /* Touch / swipe */
+      var startX = 0;
+      track.addEventListener('touchstart', function (e) { startX = e.touches[0].clientX; }, { passive: true });
+      track.addEventListener('touchend', function (e) {
+        var dx = e.changedTouches[0].clientX - startX;
+        if (Math.abs(dx) > 50) { goTo(dx < 0 ? current + 1 : current - 1); startTimer(); }
+      });
+
+      goTo(0);
+      startTimer();
+    })();
+
+    /* ── Mobile menu (slide-down) ───────────────────────────── */
+    (function() {
+      var burger = document.getElementById('nav-burger');
+      var mobile = document.getElementById('nav-mobile');
+      var iconMenu = document.getElementById('icon-menu');
+      var iconX = document.getElementById('icon-x');
+      var open = false;
+      burger.addEventListener('click', function() {
+        open = !open;
+        mobile.classList.toggle('open', open);
+        iconMenu.style.display = open ? 'none' : '';
+        iconX.style.display = open ? '' : 'none';
+      });
+      mobile.querySelectorAll('a').forEach(function(a) {
+        a.addEventListener('click', function() {
+          open = false;
+          mobile.classList.remove('open');
+          iconMenu.style.display = '';
+          iconX.style.display = 'none';
+        });
+      });
+    })();
+
+
+    /* ── Re-render icons após manipulação de DOM ─────────────── */
+    renderIcons();
+
+    /* ── Lightbox da galeria ────────────────────────────────── */
+    (function () {
+      var gallery   = document.getElementById('summitGallery');
+      var lightbox  = document.getElementById('summitLightbox');
+      var lbImg     = document.getElementById('lightboxImg');
+      var lbClose   = document.getElementById('lightboxClose');
+      var lbPrev    = document.getElementById('lightboxPrev');
+      var lbNext    = document.getElementById('lightboxNext');
+      var lbCounter = document.getElementById('lightboxCounter');
+      if (!gallery || !lightbox) return;
+
+      var items = gallery.querySelectorAll('.summit-gallery__item[data-gallery-index]');
+      var images = [];
+      items.forEach(function (item) {
+        var img = item.querySelector('img');
+        if (img) images.push({ src: img.src, alt: img.alt });
+      });
+      var current = 0;
+
+      function openAt(idx) {
+        current = (idx + images.length) % images.length;
+        lbImg.src = images[current].src;
+        lbImg.alt = images[current].alt;
+        lbCounter.textContent = (current + 1) + ' / ' + images.length;
+        lightbox.classList.add('open');
+        document.body.style.overflow = 'hidden';
+        renderIcons();
+      }
+
+      function close() {
+        lightbox.classList.remove('open');
+        document.body.style.overflow = '';
+        lbImg.src = '';
+      }
+
+      items.forEach(function (item) {
+        item.addEventListener('click', function () {
+          openAt(parseInt(item.getAttribute('data-gallery-index'), 10));
+        });
+      });
+
+      lbClose.addEventListener('click', close);
+      lbPrev.addEventListener('click', function () { openAt(current - 1); });
+      lbNext.addEventListener('click', function () { openAt(current + 1); });
+
+      lightbox.addEventListener('click', function (e) {
+        if (e.target === lightbox) close();
+      });
+
+      document.addEventListener('keydown', function (e) {
+        if (!lightbox.classList.contains('open')) return;
+        if (e.key === 'Escape') close();
+        if (e.key === 'ArrowLeft') openAt(current - 1);
+        if (e.key === 'ArrowRight') openAt(current + 1);
+      });
+
+      /* touch swipe */
+      var touchStartX = 0;
+      lightbox.addEventListener('touchstart', function (e) {
+        touchStartX = e.touches[0].clientX;
+      }, { passive: true });
+      lightbox.addEventListener('touchend', function (e) {
+        var dx = e.changedTouches[0].clientX - touchStartX;
+        if (Math.abs(dx) > 50) openAt(dx < 0 ? current + 1 : current - 1);
+      });
+    })();
+  </script>
+
+</body>
+</html>

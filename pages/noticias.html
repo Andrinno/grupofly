@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grupo Fly — Notícias</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../css/noticias.css" />
+  <link rel="stylesheet" href="../css/nav.css" />
+</head>
+
+<body>
+
+  <!-- ═══════════ NAV ═══════════ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner wrap">
+
+      <a href="index.html" class="nav__logo-link">
+        <img src="../assets/grupofly-black.png" alt="Grupo Fly" />
+      </a>
+
+      <nav class="nav__links">
+        <a href="index.html#solucao">Solução</a>
+        <a href="index.html#empresas">Empresas</a>
+        <a href="index.html#essencia">Nossa Essência</a>
+        <a href="index.html#socios">Sócios</a>
+        <a href="index.html#atuacao">Como atuamos</a>
+        <a href="noticias.html" class="nav__link--active">Notícias</a>
+        <a href="summit.html">Summit</a>
+        <a href="index.html#contato">Contato</a>
+      </nav>
+
+      <div class="nav__cta">
+        <a href="index.html" class="btn--ghost-sm">Conhecer soluções</a>
+        <a href="index.html#cta" class="btn--purple-sm">Falar com especialista</a>
+      </div>
+
+      <button class="nav__burger" id="nav-burger" aria-label="Menu">
+        <svg id="icon-menu" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6" />
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <line x1="3" y1="18" x2="21" y2="18" />
+        </svg>
+        <svg id="icon-x" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" style="display:none">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="nav__mobile" id="nav-mobile">
+      <a href="index.html#solucao">Solução</a>
+      <a href="index.html#empresas">Empresas</a>
+      <a href="index.html#essencia">Nossa Essência</a>
+      <a href="index.html#socios">Sócios</a>
+      <a href="index.html#atuacao">Como atuamos</a>
+      <a href="noticias.html" class="nav__link--active">Notícias</a>
+      <a href="summit.html">Summit</a>
+      <a href="index.html#contato">Contato</a>
+      <div class="nav__mobile-cta">
+        <a href="index.html" class="nav__mobile-btn nav__mobile-btn--ghost">Conhecer soluções</a>
+        <a href="index.html#cta" class="nav__mobile-btn nav__mobile-btn--purple">Falar com especialista</a>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <section class="news-hero">
+    <div class="wrap">
+      <div class="news-hero__grid">
+
+        <!-- Esquerda -->
+        <div class="news-hero__left reveal">
+          <div class="eyebrow-pill" style="margin-bottom:20px">
+            <span class="eyebrow-dot"></span>
+            <span class="eyebrow-label">Central de Conteúdo</span>
+          </div>
+          <h1 class="news-hero__title">
+            Notícias, conteúdos e <span class="grad-text">novidades</span> do Grupo Fly.
+          </h1>
+          <p class="news-hero__sub">
+            Acompanhe os lançamentos, eventos, conquistas, artigos e tudo o que movimenta o ecossistema Grupo Fly.
+          </p>
+          <div class="news-hero__btns">
+            <a href="#noticias" class="btn btn--purple">
+              Ver notícias
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+            <a href="#eventos" class="btn btn--light">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round">
+                <path d="M12 20h9" />
+                <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
+              </svg>
+              Últimos eventos
+            </a>
+          </div>
+        </div>
+
+        <!-- Direita — cards flutuantes -->
+        <div class="news-hero__visual">
+          <div class="news-hero__glow"></div>
+
+          <div class="news-hero__card-main reveal-delay-1">
+            <img
+              src="../assets/eventos/Summit26.jpg"
+              alt="Summit Grupo Fly" />
+            <div class="news-hero__card-body">
+              <span class="badge badge--purple">Destaque</span>
+              <p class="news-hero__card-title">Networking, inovação e reconhecimento: GrupoFLY Summit 2026 reúne mais de 1.500 empreendedores</p>
+              <p class="news-hero__card-meta">29 Mai 2025 · 16 horas</p>
+            </div>
+          </div>
+
+          <div class="news-hero__card-sm reveal-delay-2">
+            <div class="news-hero__card-sm-head">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#6B5CF6" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2z" />
+                <path d="M16 2v4M8 2v4M3 10h18" />
+              </svg>
+              <span>Último artigo</span>
+            </div>
+            <p class="news-hero__card-sm-text">Como abrir uma agência do zero em 2025</p>
+          </div>
+
+          <div class="news-hero__pill reveal-delay-3">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#6B5CF6" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" />
+            </svg>
+            <span>+120 conteúdos publicados</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider wrap"></div>
+
+
+  <!-- ═══════════ DESTAQUE ═══════════ -->
+  <section class="section section--white">
+    <div class="wrap">
+      <div class="featured-card reveal">
+        <div class="featured-card__img">
+          <img src="/assets/summitbanner.png" alt="Destaque" />
+          <div class="featured-card__img-overlay"></div>
+          <span class="badge badge--purple featured-card__badge">⭐ Destaque</span>
+        </div>
+        <div class="featured-card__body">
+          <div class="news-meta">
+            <span class="badge" style="color:#6B5CF6;background:#f5f4ff">ViajaFlux</span>
+            <span class="meta-item">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                <line x1="16" y1="2" x2="16" y2="6" />
+                <line x1="8" y1="2" x2="8" y2="6" />
+                <line x1="3" y1="10" x2="21" y2="10" />
+              </svg>
+              29 Mai 2025
+            </span>
+            <span class="meta-item">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+              2 min
+            </span>
+          </div>
+          <h2 class="featured-card__title">Networking, inovação e reconhecimento: GrupoFLY Summit 2026 reúne mais de 1.500 empreendedores</h2>
+          <p class="featured-card__text">
+            O evento reuniu mais de 1.500 profissionais do turismo durante dois dias de palestras, networking e
+            inovação. O encerramento foi marcado pelo reconhecimento de agências que movimentaram mais de R$ 416 milhões
+            em vendas na plataforma ViajaFlux.
+          </p>
+          <button class="btn btn--purple" style="align-self:flex-start">
+            <a
+              href="https://www.mercadoeeventos.com.br/feiras-e-eventos/viajaflux-summit-2026-encerra-edicao-em-olimpia-com-premiacao-milionaria-veja-ultimas-fotos/">
+              Ler matéria completa
+            </a>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider wrap"></div>
+
+
+  <!-- ═══════════ FILTROS + GRID ═══════════ -->
+  <section class="section section--white" id="noticias">
+    <div class="wrap">
+
+      <div class="reveal" style="margin-bottom:40px">
+        <div class="eyebrow-pill" style="margin-bottom:16px">
+          <span class="eyebrow-dot"></span>
+          <span class="eyebrow-label">Últimas Notícias</span>
+        </div>
+        <h2 class="h2" style="margin-bottom:12px">Fique por dentro de tudo</h2>
+        <p class="lead">Filtre por empresa, categoria ou tema para encontrar o conteúdo certo para você.</p>
+      </div>
+
+      <div class="filter-bar reveal" id="filterBar"></div>
+      <div class="news-grid" id="newsGrid"></div>
+
+    </div>
+  </section>
+
+  <div class="divider wrap"></div>
+
+
+  <!-- ═══════════ EVENTOS ═══════════ -->
+  <section class="section" style="background:#fafafa" id="eventos">
+    <div class="wrap">
+
+      <div class="reveal" style="margin-bottom:40px">
+        <div class="eyebrow-pill" style="margin-bottom:16px">
+          <span class="eyebrow-dot"></span>
+          <span class="eyebrow-label">Eventos</span>
+        </div>
+        <h2 class="h2" style="margin-bottom:12px">Eventos <span class="grad-text">Grupo Fly</span></h2>
+        <p class="lead">Encontros, workshops e summits para empreendedores do turismo.</p>
+      </div>
+
+      <div class="events-list" id="eventsList"></div>
+
+    </div>
+  </section>
+
+  <div class="divider wrap"></div>
+
+
+  <!-- ═══════════ ARTIGOS ═══════════ -->
+  <section class="section section--white" id="artigos">
+    <div class="wrap">
+
+      <div class="reveal" style="margin-bottom:40px">
+        <div class="eyebrow-pill" style="margin-bottom:16px">
+          <span class="eyebrow-dot"></span>
+          <span class="eyebrow-label">Matérias</span>
+        </div>
+        <h2 class="h2" style="margin-bottom:12px">Artigos e guias institucionais</h2>
+        <p class="lead">Conteúdos práticos produzidos pela equipe do Grupo Fly para empreendedores do turismo.</p>
+      </div>
+
+      <div class="articles-grid" id="articlesGrid"></div>
+
+    </div>
+  </section>
+
+  <div class="divider wrap"></div>
+
+
+  <!-- ═══════════ CONTEÚDOS POR EMPRESA ═══════════ -->
+  <section class="section" style="background:#fafafa">
+    <div class="wrap">
+
+      <div class="reveal" style="margin-bottom:40px">
+        <div class="eyebrow-pill" style="margin-bottom:16px">
+          <span class="eyebrow-dot"></span>
+          <span class="eyebrow-label">Por Empresa</span>
+        </div>
+        <h2 class="h2" style="margin-bottom:12px">Conteúdo das empresa do grupo</h2>
+        <p class="lead">Explore notícias, artigos e novidades separados por cada empresa do ecossistema.</p>
+      </div>
+
+      <div class="companies-news-grid" id="companiesNewsGrid"></div>
+
+    </div>
+  </section>
+
+  <div class="divider wrap"></div>
+
+
+  <!-- ═══════════ NEWSLETTER ═══════════ -->
+  <section class="section section--white">
+    <div class="wrap">
+      <div class="newsletter reveal">
+        <div class="eyebrow-pill" style="margin-bottom:24px">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#6B5CF6" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+          <span class="eyebrow-label">Newsletter</span>
+        </div>
+        <h2 class="h2" style="margin-bottom:12px">Receba as novidades do Grupo Fly.</h2>
+        <p class="lead" style="max-width:500px;margin:0 auto 32px">
+          Conteúdo exclusivo sobre turismo, tecnologia e empreendedorismo direto na sua caixa de entrada. Sem spam,
+          apenas o que importa.
+        </p>
+        <div class="newsletter__form" id="newsletterForm">
+          <input type="email" placeholder="seu@email.com" class="newsletter__input" id="newsletterEmail" />
+          <button class="btn btn--purple" id="newsletterBtn" onclick="handleNewsletter()">Quero receber conteúdos</button>
+        </div>
+        <p class="newsletter__note">Um email será enviado para nosso contato.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider wrap"></div>
+
+
+  <!-- ═══════════ CTA FINAL ═══════════ -->
+  <section class="section section--white">
+    <div class="wrap">
+      <div class="cta-final reveal">
+        <div class="eyebrow-pill" style="margin-bottom:24px">
+          <span class="eyebrow-dot"></span>
+          <span class="eyebrow-label">Grupo Fly</span>
+        </div>
+        <h2 class="h2" style="margin-bottom:16px">
+          Continue acompanhando a evolução <span class="grad-text">do Grupo Fly.</span>
+        </h2>
+        <p class="lead" style="max-width:500px;margin:0 auto 40px">
+          Educação, tecnologia, operação, eventos e inovação reunidos em um único ecossistema.
+        </p>
+        <div class="cta-btns">
+          <a href="index.html#empresas" class="btn btn--purple">
+            Conhecer nossas empresas
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="https://wa.me/5518991871456" target="_blank" rel="noopener" class="btn btn--light">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+            </svg>
+            Entrar em contato
+          </a>
+        </div>
+        <div class="cta-stats">
+          <div class="cta-stat"><b class="cta-stat__val">120+</b><span class="cta-stat__label">Conteúdos
+              publicados</span></div>
+          <div class="cta-stat"><b class="cta-stat__val">4</b><span class="cta-stat__label">Empresas do grupo</span>
+          </div>
+          <div class="cta-stat"><b class="cta-stat__val">2025</b><span class="cta-stat__label">Ano de expansão</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <img class="footer__logo" src="../assets/grupofly-black.png" alt="Grupo Fly" />
+      <span class="footer__copy">© 2026 Grupo Fly · Educação · Operação · Tecnologia · Contabilidade</span>
+    </div>
+  </footer>
+
+
+  <!-- ============ WA FLOATER ============ -->
+  <a class="wa-float" href="https://wa.me/5518991871456" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+  </a>
+
+
+  <!-- ═══════════ SCRIPT ═══════════ -->
+  <script>
+    /* ── Dados ───────────────────────────────────────────────────────────── */
+    var FILTERS = ['Todos', 'Grupo Fly', 'ViajaFlux', 'Fly Educacional', 'Fly One', 'Voefly', 'Eventos', 'Tecnologia', 'Educação', 'Mercado'];
+
+    var NEWS = [
+      {
+        id: 1, cat: 'ViajaFlux', tag: 'Tecnologia', date: '29 Mai 2026', read: '4 min',
+        title: 'ViajaFlux aposta na conexão para educar e na gestão para crescer; conheça o sistema',
+        excerpt: 'O ViajaFlux realizou a 6ª edição do Summit em Olímpia (SP), conectando agências de viagens aos fornecedores e ao seu sistema de gestão. A plataforma funciona como um ERP "all in one", integrando Open Finance, consolidadoras e operadoras para centralizar toda a gestão financeira das agências.',
+        img: '../assets/CEOS.png',
+        url: 'https://www.panrotas.com.br/mercado/tecnologia/2026/05/viajaflux-aposta-na-conexao-para-educar-e-na-gestao-para-crescer-conheca-o-sistema_229031.html',
+        color: '#6B28D4', colorBg: '#F3EDFF'
+      },
+      {
+        id: 2, cat: 'ViajaFlux', tag: 'Nichos', date: '28 Mai 2026', read: '4 min',
+        title: 'ViajaFlux apresenta modelo de concierge para agências fidelizarem o cliente; entenda',
+        excerpt: 'O ViajaFlux apresentou um modelo inovador de "concierge de viagens" durante o Summit 2026 em Olímpia (SP). Com mensalidade, o cliente recebe acompanhamento contínuo da agência para emissão de passagens, gestão de milhas e suporte personalizado.',
+        img: '../assets/noticias/n2-viajaflux-concierge.jpg',
+        url: 'https://www.panrotas.com.br/agencias-de-viagens/nichos/2026/05/viajaflux-apresenta-modelo-de-concierge-para-agencias-fidelizarem-o-cliente-entenda_228982.html',
+        color: '#6B28D4', colorBg: '#F3EDFF'
+      },
+      {
+        id: 3, cat: 'Grupo Fly', tag: 'Eventos', date: '29 Mai 2026', read: '3 min',
+        title: 'ViajaFlux Summit: empresas apresentam novidades aos agentes de viagens em Olímpia (SP)',
+        excerpt: 'O ViajaFlux Summit reuniu 1.500 agências de viagens para dois dias de conteúdo e networking em Olímpia (SP). Hotelaria da região, operadoras e consolidadoras como CVC, Azul Viagens, HotelDO e BeFly destacaram seus diferenciais nesta edição.',
+        img: '../assets/noticias/n3-summit-parceiros.jpg',
+        url: 'https://www.panrotas.com.br/agencias-de-viagens/treinamento/2026/05/viajaflux-summit-capacita-agentes-com-produtos-de-parceiros-veja-destaques_229008.html',
+        color: '#6B5CF6', colorBg: '#F5F4FF'
+      },
+      {
+        id: 4, cat: 'ViajaFlux', tag: 'Tecnologia', date: '29 Mai 2026', read: '5 min',
+        title: 'ViajaFlux apresenta novidades do sistema para gestão das agências de viagens; confira',
+        excerpt: 'O ViajaFlux apresentou inovações em seu sistema de gestão durante o Summit em Olímpia (SP). A plataforma agora oferece financeiro integrado via Open Finance, ampliação de integrações com operadoras, website personalizado e parceria com a Oner Travel para motor de buscas.',
+        img: '../assets/noticias/n4-viajaflux-novidades.jpg',
+        url: 'https://www.panrotas.com.br/agencias-de-viagens/vendas/2026/05/viajaflux-apresenta-novidades-do-sistema-para-gestao-das-agencias-de-viagens-confira_229017.html',
+        color: '#6B28D4', colorBg: '#F3EDFF'
+      },
+      {
+        id: 5, cat: 'Grupo Fly', tag: 'Eventos', date: '29 Mai 2026', read: '3 min',
+        title: 'Networking com Happy Hour encerra 6ª edição do ViajaFlux Summit; fotos',
+        excerpt: 'A 6ª edição do ViajaFlux Summit encerrou em Olímpia (SP) reunindo aproximadamente 1.500 agências e fornecedores do setor turístico. O evento terminou com Happy Hour patrocinado pela Hero Seguros, fortalecendo conexões entre usuários e apresentando novidades da plataforma.',
+        img: '../assets/noticias/n5-summit-happyhour.jpg',
+        url: 'https://www.panrotas.com.br/agencias-de-viagens/eventos/2026/05/networking-com-happy-hour-encerra-6a-edicao-do-viajaflux-summit-fotos_229036.html',
+        color: '#6B5CF6', colorBg: '#F5F4FF'
+      },
+      {
+        id: 6, cat: 'Grupo Fly', tag: 'Eventos', date: '28 Mai 2026', read: '3 min',
+        title: 'ViajaFlux Summit 2026 tem início em Olímpia (SP) conectando agentes e fornecedores',
+        excerpt: 'Primeira edição fora da capital paulista reuniu mais de 1.500 profissionais do turismo na Arena Olímpia. O Summit contou com fair de expositores, palestras sobre IA e vendas, e cerimônia de premiação para mais de 150 agências da rede ViajaFlux.',
+        img: '../assets/summit/midia-panrotas-dia1.jpg',
+        url: 'https://www.panrotas.com.br/agencias-de-viagens/eventos/2026/05/viajaflux-summit-2026-tem-inicio-em-olimpia-sp-conectando-agentes-e-fornecedores-fotos_228954.html',
+        color: '#6B5CF6', colorBg: '#F5F4FF'
+      },
+    ];
+
+    var EVENTS = [
+      {
+        id: 1, name: 'Fly Scale', city: 'Araçatuba, SP', date: '27 - 28 Jun 2026',
+        desc: 'Sessão fechada de mentoria coletiva com líderes do turismo nacional. Vagas extremamente limitadas para membros do ecossistema.',
+        img: '../assets/eventos/FlyScale.jpg', highlight: true, ended: true
+      },
+      {
+        id: 2, name: 'Summit 2026 VIAJAFLUX', city: 'Olímpia - SP ', date: '28 - 31 Mai 2026',
+        desc: 'O GrupoFLY Summit 2026 reuniu especialistas, parceiros e líderes do turismo para compartilhar tendências, inovação, tecnologia e estratégias que impulsionam o futuro do setor, promovendo conexões e oportunidades de negócios.',
+        img: '../assets/eventos/Summit26.jpg', highlight: false, url: 'summit.html'
+      },
+    ];
+
+    var ARTICLES = [
+      {
+        id: 1, cat: 'Tecnologia', title: 'Descubra como a IA potencializa as vendas das agências de viagens', read: '5 min',
+        img: '../assets/noticias/a1-ia-vendas.jpg',
+        url: 'https://www.panrotas.com.br/mercado/tecnologia/2026/05/descubra-como-a-inteligencia-artificial-potencializa-as-vendas-das-agencias-de-viagens_228963.html'
+      },
+      {
+        id: 2, cat: 'Cruzeiros', title: '80% das vendas de cruzeiros no Brasil são feitas via agências de viagens', read: '4 min',
+        img: '../assets/noticias/a2-cruzeiros-agencias.jpg',
+        url: 'https://www.panrotas.com.br/mercado/cruzeiros/2026/04/80-das-vendas-de-cruzeiros-no-brasil-sao-feitas-via-agencias-de-viagens-veja-numeros_227870.html'
+      },
+      {
+        id: 3, cat: 'Cruzeiros', title: 'Quais oportunidades o setor de cruzeiros oferece aos agentes de viagens?', read: '5 min',
+        img: '../assets/noticias/a3-cruzeiros-oportunidades.jpg',
+        url: 'https://www.panrotas.com.br/mercado/cruzeiros/2026/05/quais-oportunidades-o-setor-de-cruzeiros-representa-para-os-agentes-de-viagens-confira_228869.html'
+      },
+      {
+        id: 4, cat: 'Mercado', title: 'Turismo corporativo supera R$ 6 bi e bate recorde histórico em 2026', read: '4 min',
+        img: '../assets/noticias/a4-turismo-corporativo.jpg',
+        url: 'https://www.gov.br/turismo/pt-br/assuntos/noticias/turismo-corporativo-cresce-10-supera-r-6-bilhoes-de-faturamento-e-bate-recorde-em-2026'
+      },
+      {
+        id: 5, cat: 'Mercado', title: 'DNA de Agente: como a Trotamundo Viagens transformou personalização em estratégia', read: '5 min',
+        img: '../assets/noticias/a5-dna-agente-trotamundo.jpg',
+        url: 'https://www.panrotas.com.br/agencias-de-viagens/mercado/2026/06/dna-de-agente-como-a-trotamundo-viagens-transformou-personalizacao-em-estrategia_229392.html'
+      },
+      {
+        id: 6, cat: 'Tecnologia', title: 'IA avança no turismo, mas adoção em escala ainda desafia distribuição B2B', read: '6 min',
+        img: '../assets/noticias/a6-ia-b2b-turismo.jpg',
+        url: 'https://www.panrotas.com.br/mercado/tecnologia/2026/05/ia-avanca-no-turismo-mas-adocao-em-escala-ainda-desafia-distribuicao-b2b-diz-pesquisa_228859.html'
+      },
+    ];
+
+    var COMPANIES_NEWS = [
+      {
+        id: 'educacional', name: 'Fly Educacional', desc: 'Formação, metodologia e crescimento para empreendedores do turismo.', count: 24, color: '#1B3A8C', colorBg: '#EEF2FF',
+        logo: '<img src="../assets/fly-educacional.png" alt="Fly Educacional" style="height:38px;width:auto;object-fit:contain;display:block;" />'
+      },
+      {
+        id: 'viajaflux', name: 'ViajaFlux', desc: 'Tecnologia, automação e sistema de gestão all-in-one para agências.', count: 18, color: '#6B28D4', colorBg: '#F3EDFF',
+        logo: '<img src="../assets/viajaflux.png" alt="ViajaFlux" style="height:38px;width:auto;object-fit:contain;display:block;" />'
+      },
+      {
+        id: 'flyone', name: 'Fly One Contabilidade', desc: 'Contabilidade e gestão tributária especializada no turismo.', count: 12, color: '#0F7040', colorBg: '#EDFAF3',
+        logo: '<img src="../assets/fly-one.png" alt="Fly One Contabilidade" style="height:38px;width:auto;object-fit:contain;display:block;" />'
+      },
+      {
+        id: 'voefly', name: 'Voefly Viagens', desc: 'Agência operacional de referência com foco em corporativo e pontos.', count: 15, color: '#D45E00', colorBg: '#FFF4EB',
+        logo: '<img src="../assets/voefly.png" alt="Voefly Viagens" style="height:38px;width:auto;object-fit:contain;display:block;" />'
+      },
+    ];
+
+    /* ── SVG helpers ─────────────────────────────────────────────────────── */
+    function svgArrow(s) { return '<svg width="' + s + '" height="' + s + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>'; }
+    function svgCalendar(s) { return '<svg width="' + s + '" height="' + s + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>'; }
+    function svgClock(s) { return '<svg width="' + s + '" height="' + s + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>'; }
+    function svgChevron(s) { return '<svg width="' + s + '" height="' + s + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>'; }
+    function svgPin(s) { return '<svg width="' + s + '" height="' + s + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>'; }
+    function svgNewspaper(s) { return '<svg width="' + s + '" height="' + s + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2z"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>'; }
+    function svgBook(s) { return '<svg width="' + s + '" height="' + s + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>'; }
+    function svgMoveRight(s) { return '<svg width="' + s + '" height="' + s + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>'; }
+
+    /* ── Nav ─────────────────────────────────────────────────────────────── */
+    var nav = document.getElementById('nav');
+    window.addEventListener('scroll', function () { nav.classList.toggle('scrolled', window.scrollY > 24); }, { passive: true });
+
+    var burger = document.getElementById('nav-burger');
+    var mobileMenu = document.getElementById('nav-mobile');
+    var iconMenu = document.getElementById('icon-menu');
+    var iconX = document.getElementById('icon-x');
+    var menuOpen = false;
+    burger.addEventListener('click', function () {
+      menuOpen = !menuOpen;
+      mobileMenu.classList.toggle('open', menuOpen);
+      iconMenu.style.display = menuOpen ? 'none' : '';
+      iconX.style.display = menuOpen ? '' : 'none';
+    });
+    mobileMenu.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () { menuOpen = false; mobileMenu.classList.remove('open'); iconMenu.style.display = ''; iconX.style.display = 'none'; });
+    });
+
+    /* ── Scroll reveal ───────────────────────────────────────────────────── */
+    var revealObs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); revealObs.unobserve(e.target); } });
+    }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+    document.querySelectorAll('.reveal, .reveal-delay-1, .reveal-delay-2, .reveal-delay-3').forEach(function (el) { revealObs.observe(el); });
+
+    /* ── Filtros ─────────────────────────────────────────────────────────── */
+    var currentFilter = 'Todos';
+    var filterBar = document.getElementById('filterBar');
+
+    filterBar.innerHTML = FILTERS.map(function (f) {
+      return '<button class="filter-btn' + (f === currentFilter ? ' filter-btn--on' : '') + '" data-f="' + f + '">' + f + '</button>';
+    }).join('');
+
+    filterBar.querySelectorAll('.filter-btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        currentFilter = this.getAttribute('data-f');
+        filterBar.querySelectorAll('.filter-btn').forEach(function (b) { b.classList.toggle('filter-btn--on', b.getAttribute('data-f') === currentFilter); });
+        renderNews();
+      });
+    });
+
+    /* ── Grid de notícias ────────────────────────────────────────────────── */
+    function renderNews() {
+      var grid = document.getElementById('newsGrid');
+      var list = currentFilter === 'Todos' ? NEWS : NEWS.filter(function (n) { return n.cat === currentFilter || n.tag === currentFilter; });
+
+      grid.style.opacity = '0'; grid.style.transform = 'translateY(10px)';
+      setTimeout(function () {
+        if (list.length === 0) {
+          grid.innerHTML = '<p class="news-empty">Nenhum conteúdo encontrado para este filtro.</p>';
+        } else {
+          grid.innerHTML = list.map(function (n, i) {
+            var tag = n.url ? 'a href="' + n.url + '" target="_blank" rel="noopener"' : 'article';
+            var closeTag = n.url ? 'a' : 'article';
+            return '<' + tag + ' class="news-card" style="animation-delay:' + (i * 0.07) + 's;display:block;text-decoration:none;color:inherit;">' +
+              '<div class="news-card__img"><img src="' + n.img + '" alt="' + n.title + '" loading="lazy"/></div>' +
+              '<div class="news-card__body">' +
+              '<div class="news-meta">' +
+              '<span class="badge" style="color:' + n.color + ';background:' + n.colorBg + '">' + n.cat + '</span>' +
+              '<span class="meta-item">' + svgCalendar(10) + n.date + '</span>' +
+              '<span class="meta-item">' + svgClock(10) + n.read + '</span>' +
+              '</div>' +
+              '<h3 class="news-card__title">' + n.title + '</h3>' +
+              '<p class="news-card__excerpt">' + n.excerpt + '</p>' +
+              '<div class="news-card__cta">Ler mais ' + svgChevron(12) + '</div>' +
+              '</div>' +
+              '</' + closeTag + '>';
+          }).join('');
+        }
+        grid.style.transition = 'opacity .3s,transform .3s';
+        grid.style.opacity = '1'; grid.style.transform = 'translateY(0)';
+        observeCards(grid);
+      }, 180);
+    }
+    renderNews();
+
+    /* ── Eventos ─────────────────────────────────────────────────────────── */
+    var eventsList = document.getElementById('eventsList');
+    eventsList.innerHTML = EVENTS.map(function (e, i) {
+      return '<div class="event-card' + (e.highlight ? ' event-card--highlight' : '') + '" style="animation-delay:' + (i * 0.1) + 's">' +
+        '<div class="event-card__img">' +
+        '<img src="' + e.img + '" alt="' + e.name + '" loading="lazy"/>' +
+        (e.highlight ? '<div class="event-badge-hl"><span class="badge badge--purple">Destaque</span></div>' : '') +
+        '</div>' +
+        '<div class="event-card__body">' +
+        '<h3 class="event-card__title">' + e.name + '</h3>' +
+        '<div class="event-card__meta">' +
+        '<span class="event-meta-item">' + svgPin(12) + e.city + '</span>' +
+        '<span class="event-meta-item">' + svgCalendar(12) + e.date + '</span>' +
+        '</div>' +
+        '<p class="event-card__desc">' + e.desc + '</p>' +
+        (e.ended
+          ? '<button class="btn" disabled style="margin-top:auto;align-self:flex-start;padding:10px 20px;opacity:0.45;cursor:not-allowed;background:#e5e7eb;color:#6b7280;border:none">Evento encerrado</button>'
+          : e.url
+            ? '<a href="' + e.url + '" class="btn ' + (e.highlight ? 'btn--purple' : 'btn--light') + '" style="margin-top:auto;align-self:flex-start;padding:10px 20px">' + (e.highlight ? 'Garantir minha vaga' : 'Saiba mais') + ' ' + svgArrow(13) + '</a>'
+            : '<button class="btn ' + (e.highlight ? 'btn--purple' : 'btn--light') + '" style="margin-top:auto;align-self:flex-start;padding:10px 20px">' + (e.highlight ? 'Garantir minha vaga' : 'Saiba mais') + ' ' + svgArrow(13) + '</button>'
+        ) +
+        '</div>' +
+        '</div>';
+    }).join('');
+
+    observeCards(eventsList);
+
+    /* ── Artigos ─────────────────────────────────────────────────────────── */
+    var articlesGrid = document.getElementById('articlesGrid');
+    articlesGrid.innerHTML = ARTICLES.map(function (a, i) {
+      var tag = a.url ? 'a href="' + a.url + '" target="_blank" rel="noopener"' : 'div';
+      var closeTag = a.url ? 'a' : 'div';
+      return '<' + tag + ' class="article-card" style="animation-delay:' + (i * 0.06) + 's;display:block;text-decoration:none;color:inherit;">' +
+        '<div class="article-card__img"><img src="' + a.img + '" alt="' + a.title + '" loading="lazy"/></div>' +
+        '<div class="article-card__body">' +
+        '<div class="article-card__meta-row">' +
+        '<span class="article-badge">' + a.cat + '</span>' +
+        '<span class="article-card__read">' + svgClock(9) + a.read + '</span>' +
+        '</div>' +
+        '<h4 class="article-card__title">' + a.title + '</h4>' +
+        '<div class="article-card__cta">' + svgBook(11) + ' Ler artigo</div>' +
+        '</div>' +
+        '</' + closeTag + '>';
+    }).join('');
+    observeCards(articlesGrid);
+
+    /* ── Observer de entrada para cards ─────────────────────────────────── */
+    function observeCards(container) {
+      var cards = container.querySelectorAll('.news-card, .event-card, .article-card, .co-news-card');
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) {
+            e.target.style.animationPlayState = 'running';
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+      cards.forEach(function (card) {
+        card.style.animationPlayState = 'paused';
+        io.observe(card);
+      });
+    }
+
+    /* ── Conteúdos por empresa ───────────────────────────────────────────── */
+    document.getElementById('companiesNewsGrid').innerHTML = COMPANIES_NEWS.map(function (c, i) {
+      return '<div class="co-news-card" style="border:1.5px solid ' + c.color + '20;animation-delay:' + (i * 0.09) + 's">' +
+        '<div class="co-news-card__head">' +
+        '<div class="co-news-logo" style="background:' + c.colorBg + '">' + c.logo + '</div>' +
+        '<h3 class="co-news-card__name">' + c.name + '</h3>' +
+        '</div>' +
+        '<p class="co-news-card__desc">' + c.desc + '</p>' +
+        '</div>';
+    }).join('');
+    observeCards(document.getElementById('companiesNewsGrid'));
+
+    function handleNewsletter() {
+      var input = document.getElementById('newsletterEmail');
+      var btn = document.getElementById('newsletterBtn');
+      var form = document.getElementById('newsletterForm');
+      var email = input.value.trim();
+      var valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+      if (!valid) {
+        input.style.borderColor = '#e53e3e';
+        input.focus();
+        setTimeout(function () { input.style.borderColor = ''; }, 2000);
+        return;
+      }
+      btn.disabled = true;
+      btn.textContent = 'Inscrito! ✓';
+      btn.style.background = '#22c55e';
+      input.value = '';
+      input.disabled = true;
+      setTimeout(function () {
+        btn.textContent = 'Quero receber conteúdos';
+        btn.style.background = '';
+        btn.disabled = false;
+        input.disabled = false;
+      }, 4000);
+    }
+  </script>
+</body>
+
+</html>
