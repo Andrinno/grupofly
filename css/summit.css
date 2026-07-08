@@ -487,7 +487,7 @@ html { color-scheme: dark; }
   color: var(--accent);
   margin-bottom: 20px;
   transition: box-shadow .4s;
-}
+} 
 .summit-hl-card:hover .summit-hl-card__icon { box-shadow: 0 0 22px -4px var(--accent-glow); }
 .summit-hl-card__icon svg { width: 24px; height: 24px; }
 .summit-hl-card .h3 { margin-bottom: 10px; }
@@ -662,7 +662,8 @@ html { color-scheme: dark; }
   animation: summit-spk-scroll  85s linear infinite;
 }
 
-.summit-spk-slider:hover .summit-spk-track {
+.summit-spk-slider:hover .summit-spk-track,
+.summit-spk-slider.is-paused .summit-spk-track {
   animation-play-state: paused;
 }
 
@@ -678,7 +679,8 @@ html { color-scheme: dark; }
               box-shadow .35s ease, transform .3s ease;
 }
 
-.summit-spk-card:hover {
+.summit-spk-card:hover,
+.summit-spk-card.is-active {
   border-color: rgba(147, 51, 234, .42);
   background: var(--card-2);
   transform: translateY(-6px) scale(1.02);
@@ -713,7 +715,8 @@ html { color-scheme: dark; }
   pointer-events: none;
 }
 
-.summit-spk-card:hover .summit-spk-card__img img {
+.summit-spk-card:hover .summit-spk-card__img img,
+.summit-spk-card.is-active .summit-spk-card__img img {
   transform: scale(1.06);
 }
 
@@ -915,6 +918,12 @@ html { color-scheme: dark; }
 
 /* ═══════════════════════════════════════════════════════════
    PARCEIROS
+   Mesma linguagem de card do resto da página (ver
+   .summit-stat-card / .summit-award-card): base var(--card) +
+   var(--border), lavagem diagonal sutil na cor da marca,
+   hover simples (borda + elevação + glow), sem escala nem
+   camadas extras. A cor de cada marca é só um tempero, não
+   domina o card inteiro.
    ═══════════════════════════════════════════════════════════ */
 .summit-partners-tier { margin-top: 44px; }
 .summit-partners-tier__label {
@@ -926,269 +935,179 @@ html { color-scheme: dark; }
 
 .summit-partners__grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 14px;
-  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  align-items: stretch;
 }
-.summit-partners__grid--featured { grid-template-columns: repeat(4, 1fr); }
 
 @media (max-width: 780px) {
-  .summit-partners__grid { grid-template-columns: repeat(3, 1fr); }
-  .summit-partners__grid--featured { grid-template-columns: repeat(2, 1fr); }
+  .summit-partners__grid { grid-template-columns: repeat(2, 1fr); }
 }
 
-.summit-partner-logo {
+/* ── Card base, compartilhado entre "Realização" e o carrossel ── */
+.summit-partner-card {
+  position: relative;
   background: var(--card);
   border: 1px solid var(--border);
-  border-radius: 1rem;
-  padding: 20px;
-  display: flex; align-items: center; justify-content: center;
-  min-height: 80px;
-  filter: grayscale(1) opacity(.45);
-  transition: filter .4s var(--ease), border-color .4s var(--ease), transform .3s var(--ease);
-}
-.summit-partner-logo:hover {
-  filter: grayscale(0) opacity(1);
-  border-color: var(--border-h);
-  transform: translateY(-2px);
-}
-.summit-partner-logo img { max-height: 38px; object-fit: contain; }
-.summit-partner-logo span {
-  font-size: .8rem; font-weight: 600;
-  color: var(--fg-4); text-align: center;
-}
-
-/* ── Cards de Realização com cor de marca ──────────────── */
-.summit-partner-logo--featured {
-  min-height: 120px;
-  padding: 28px 24px;
-  background: rgba(var(--brand, 255,255,255), .055);
-  border-color: rgba(var(--brand, 255,255,255), .16);
   border-radius: 1.3rem;
-  position: relative;
   overflow: hidden;
-  filter: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   cursor: pointer;
-  transition:
-    border-color .38s ease,
-    background .38s ease,
-    box-shadow .38s ease,
-    transform .32s ease;
+  box-shadow: 0 12px 28px -22px rgba(0, 0, 0, .7), inset 0 1px 0 rgba(255, 255, 255, .03);
+  transition: border-color .4s var(--ease), background .4s var(--ease),
+              transform .4s var(--ease), box-shadow .4s var(--ease);
 }
-
-.summit-partner-logo--featured::before {
+.summit-partner-card::before {
   content: '';
-  position: absolute;
-  top: -1px; left: 14%; right: 14%;
-  height: 2px;
-  border-radius: 999px;
-  background: rgba(var(--brand, 255,255,255), .85);
-  opacity: .35;
-  transition: opacity .38s ease, left .38s ease, right .38s ease;
-}
-
-.summit-partner-logo--featured::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  background: radial-gradient(ellipse 85% 65% at 50% 115%, rgba(var(--brand, 255,255,255), .22) 0%, transparent 70%);
-  opacity: 0;
-  transition: opacity .38s ease;
+  position: absolute; inset: 0;
+  background: linear-gradient(145deg, rgba(var(--brand, 147,51,234), .18) 0%, transparent 62%);
+  opacity: .7;
+  transition: opacity .4s var(--ease);
   pointer-events: none;
 }
+.summit-partner-card::after {
+  content: '';
+  position: absolute; top: -46px; right: -46px;
+  width: 150px; height: 150px;
+  background: radial-gradient(circle, rgba(var(--brand, 147,51,234), .24) 0%, transparent 70%);
+  opacity: .55;
+  transition: opacity .4s var(--ease);
+  pointer-events: none;
+}
+.summit-partner-card:hover,
+.summit-partner-card.is-active {
+  border-color: rgba(var(--brand, 147,51,234), .45);
+  background: var(--card-2);
+  transform: translateY(-5px);
+  box-shadow: 0 22px 44px -16px rgba(var(--brand, 147,51,234), .3),
+              inset 0 1px 0 rgba(255, 255, 255, .05);
+}
+.summit-partner-card:hover::before,
+.summit-partner-card.is-active::before,
+.summit-partner-card:hover::after,
+.summit-partner-card.is-active::after { opacity: 1; }
 
-.summit-partner-logo--featured:hover {
-  border-color: rgba(var(--brand, 255,255,255), .55);
-  background: rgba(var(--brand, 255,255,255), .11);
-  transform: translateY(-7px) scale(1.025);
-  box-shadow:
-    0 0 0 1px rgba(var(--brand, 255,255,255), .22),
-    0 18px 48px rgba(var(--brand, 255,255,255), .22),
-    0 4px 14px rgba(0, 0, 0, .48);
+.summit-partner-card__logo {
+  position: relative; z-index: 1;
+  max-height: 56px; max-width: 85%;
+  width: auto; object-fit: contain;
+  transition: transform .4s var(--ease);
+}
+.summit-partner-card:hover .summit-partner-card__logo,
+.summit-partner-card.is-active .summit-partner-card__logo {
+  transform: scale(1.06);
 }
 
-.summit-partner-logo--featured:hover::before {
+.summit-partner-card__name {
+  position: relative; z-index: 1;
+  font-size: .72rem; font-weight: 700;
+  letter-spacing: .04em; text-transform: uppercase;
+  color: var(--fg-4); text-align: center;
+  transition: color .35s var(--ease);
+}
+.summit-partner-card__name::before {
+  content: '';
+  display: block;
+  width: 22px; height: 2px;
+  margin: 0 auto 10px;
+  border-radius: 999px;
+  background: rgba(var(--brand, 147,51,234), .6);
+  opacity: .7;
+  transition: width .35s var(--ease), opacity .35s var(--ease);
+}
+.summit-partner-card:hover .summit-partner-card__name,
+.summit-partner-card.is-active .summit-partner-card__name {
+  color: var(--fg-2);
+}
+.summit-partner-card:hover .summit-partner-card__name::before,
+.summit-partner-card.is-active .summit-partner-card__name::before {
+  width: 32px;
   opacity: 1;
-  left: 6%;
-  right: 6%;
 }
 
-.summit-partner-logo--featured:hover::after {
-  opacity: 1;
+/* ── Variante "Realização" (grid estático) ───────────────── */
+.summit-partner-card--featured {
+  min-height: 132px;
+  padding: 22px 20px;
 }
+.summit-partner-card--featured .summit-partner-card__logo { max-height: 46px; }
 
-.summit-partner-logo--featured img {
-  max-height: 52px;
-  object-fit: contain;
-  position: relative;
-  z-index: 1;
-  filter: grayscale(1) brightness(2) opacity(.5);
-  transition: filter .38s ease, transform .32s ease;
-}
-
-.summit-partner-logo--featured:hover img {
-  filter: grayscale(0) brightness(1) opacity(1);
-  transform: scale(1.08);
-}
-
-.summit-partner-logo--edu {
-  background: linear-gradient(135deg,
-    rgba(26,62,198,.10) 0%,
-    rgba(245,166,35,.08) 50%,
-    rgba(26,62,198,.10) 100%);
-  border-color: rgba(26,62,198,.22);
-}
-.summit-partner-logo--edu:hover {
-  background: linear-gradient(135deg,
-    rgba(26,62,198,.18) 0%,
-    rgba(245,166,35,.14) 50%,
-    rgba(26,62,198,.18) 100%);
-}
-.summit-partner-logo--edu::before {
-  background: linear-gradient(90deg, #1A3EC6 0%, #F5A623 50%, #1A3EC6 100%);
-  left: 14%; right: 14%;
-}
-.summit-partner-logo--edu:hover::before {
-  background: linear-gradient(90deg, #1A3EC6 0%, #F5A623 50%, #1A3EC6 100%);
-  left: 6%; right: 6%;
-}
-
-
-/* ── Slider infinito de parceiros (marquee CSS) ─────────── */
+/* ── Slider infinito de expositores & parceiros do destino ── */
 
 @keyframes summit-partners-scroll {
   0%   { transform: translateX(0); }
-  100% { transform: translateX(calc(-340px * 10)); } /* card(300) + gap(40) × 10 items */
+  100% { transform: translateX(calc(-276px * 10)); } /* card(250) + gap(26) × 10 itens */
 }
 
 .summit-slider {
   position: relative;
   overflow: hidden;
   margin-top: 16px;
-  padding: 12px 0 20px;
+  padding: 14px 0 22px;
   -webkit-mask-image:
-    linear-gradient(to right, transparent 0%, black 200px, black calc(100% - 200px), transparent 100%);
+    linear-gradient(to right, transparent 0%, black 140px, black calc(100% - 140px), transparent 100%);
   mask-image:
-    linear-gradient(to right, transparent 0%, black 200px, black calc(100% - 200px), transparent 100%);
+    linear-gradient(to right, transparent 0%, black 140px, black calc(100% - 140px), transparent 100%);
 }
 
 .summit-slide-track {
   display: flex;
-  gap: 40px;
-  width: calc(340px * 20); /* (300px + 40px gap) × 20 itens duplicados */
-  animation: summit-partners-scroll 38s linear infinite;
+  gap: 26px;
+  width: calc(276px * 20); /* (250px + 26px gap) × 20 itens duplicados */
+  animation: summit-partners-scroll 44s linear infinite;
+  will-change: transform;
 }
 
-/* pausa ao hover */
-.summit-slider:hover .summit-slide-track {
+/* pausa ao hover (desktop) ou clique (mobile, sem hover) */
+.summit-slider:hover .summit-slide-track,
+.summit-slider.is-paused .summit-slide-track {
   animation-play-state: paused;
 }
 
-.summit-slide {
-  width: 300px;
+.summit-partner-card--slide {
+  width: 250px;
+  height: 158px;
   flex-shrink: 0;
-  height: 150px;
-  background: rgba(var(--brand, 255,255,255), .055);
-  border: 1px solid rgba(var(--brand, 255,255,255), .18);
-  border-radius: 1.4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 28px 28px;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  transition:
-    border-color .35s ease,
-    background .35s ease,
-    box-shadow .35s ease,
-    transform .3s ease;
+  padding: 24px 20px;
 }
-
-/* linha de brilho no topo */
-.summit-slide::before {
-  content: '';
-  position: absolute;
-  top: -1px; left: 12%; right: 12%;
-  height: 2px;
-  border-radius: 999px;
-  background: rgba(var(--brand, 255,255,255), .7);
-  opacity: .45;
-  transition: opacity .35s ease;
-}
-
-/* radial glow interno ao hover */
-.summit-slide::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: 1.4rem;
-  background: radial-gradient(ellipse 90% 70% at 50% 120%, rgba(var(--brand, 255,255,255), .22) 0%, transparent 70%);
-  opacity: 0;
-  transition: opacity .35s ease;
-}
-
-.summit-slide:hover {
-  border-color: rgba(var(--brand, 255,255,255), .60);
-  background: rgba(var(--brand, 255,255,255), .11);
-  transform: translateY(-6px) scale(1.02);
-  box-shadow:
-    0 0 0 1px rgba(var(--brand, 255,255,255), .24),
-    0 16px 48px rgba(var(--brand, 255,255,255), .20),
-    0 4px 14px rgba(0, 0, 0, .45);
-}
-
-.summit-slide:hover::before { opacity: 1; }
-.summit-slide:hover::after  { opacity: 1; }
-
-.summit-slide img {
-  position: relative;
-  z-index: 1;
-  max-height: 68px;
-  max-width: 220px;
-  width: auto;
-  object-fit: contain;
-  filter: grayscale(1) brightness(2) opacity(.55);
-  transition: filter .35s ease, transform .3s ease;
-}
-
-.summit-slide:hover img {
-  filter: grayscale(0) brightness(1) opacity(1);
-  transform: scale(1.06);
-}
+.summit-partner-card--slide .summit-partner-card__logo { max-height: 48px; max-width: 170px; }
 
 @media (max-width: 900px) {
-  .summit-slide { width: 240px; height: 130px; padding: 22px; }
-  .summit-slide img { max-height: 56px; max-width: 180px; }
+  .summit-partner-card--slide { width: 210px; height: 140px; padding: 18px 16px; }
+  .summit-partner-card--slide .summit-partner-card__logo { max-height: 40px; max-width: 140px; }
   .summit-slide-track {
-    gap: 28px;
-    width: calc(268px * 20);
+    gap: 20px;
+    width: calc(230px * 20);
     animation-name: summit-partners-scroll-md;
   }
   @keyframes summit-partners-scroll-md {
     0%   { transform: translateX(0); }
-    100% { transform: translateX(calc(-268px * 10)); }
+    100% { transform: translateX(calc(-230px * 10)); }
   }
 }
 
 @media (max-width: 560px) {
-  .summit-slide { width: 180px; height: 110px; padding: 16px 14px; border-radius: 1rem; }
-  .summit-slide img { max-height: 46px; max-width: 140px; }
+  .summit-partner-card--slide { width: 160px; height: 118px; padding: 14px 12px; border-radius: 1rem; }
+  .summit-partner-card--slide .summit-partner-card__logo { max-height: 32px; max-width: 120px; }
+  .summit-partner-card--slide .summit-partner-card__name { font-size: .64rem; }
   .summit-slide-track {
-    gap: 20px;
-    width: calc(200px * 20);
+    gap: 14px;
+    width: calc(174px * 20);
     animation-name: summit-partners-scroll-sm;
   }
   @keyframes summit-partners-scroll-sm {
     0%   { transform: translateX(0); }
-    100% { transform: translateX(calc(-200px * 10)); }
+    100% { transform: translateX(calc(-174px * 10)); }
   }
   .summit-slider {
     -webkit-mask-image:
-      linear-gradient(to right, transparent 0%, black 80px, black calc(100% - 80px), transparent 100%);
+      linear-gradient(to right, transparent 0%, black 70px, black calc(100% - 70px), transparent 100%);
     mask-image:
-      linear-gradient(to right, transparent 0%, black 80px, black calc(100% - 80px), transparent 100%);
+      linear-gradient(to right, transparent 0%, black 70px, black calc(100% - 70px), transparent 100%);
   }
 }
 
@@ -1588,4 +1507,114 @@ html { color-scheme: dark; }
   /* Partner logos 1 coluna em telas muito pequenas */
   .summit-partners__grid { grid-template-columns: 1fr; }
   .summit-partners__grid--featured { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
+   NAVBAR — mesma navbar do site (nav.css), só que na versão
+   dark, para não destoar do restante da página do Summit.
+   Mantém layout, espaçamentos e comportamento idênticos ao
+   padrão usado em index.html/noticias.html — muda só a paleta.
+
+   Usa o seletor #nav (ID) de propósito: nav.css aplica várias
+   regras em .nav com !important, e uma classe extra
+   (.nav--summit) empataria em especificidade com .nav, perdendo
+   o desempate por ordem de carregamento (nav.css vem por último).
+   O ID garante que este bloco sempre vença, em qualquer ordem.
+   ============================================================ */
+#nav.nav--summit {
+  background: rgba(5, 10, 22, .92) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, .08) !important;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+#nav.nav--summit.scrolled {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, .35);
+}
+
+/* ── Links desktop ── */
+#nav.nav--summit .nav__links a,
+#nav.nav--summit .nav__top-link {
+  color: #E8EEF8;
+}
+#nav.nav--summit .nav__links .nav__link--active {
+  color: var(--accent);
+}
+#nav.nav--summit .nav__top-link:hover { background: rgba(255, 255, 255, .08); }
+#nav.nav--summit .nav__item.is-open .nav__top-link {
+  color: var(--accent);
+  background: rgba(147, 51, 234, .14);
+}
+#nav.nav--summit .nav__item.is-current > .nav__top-link { color: var(--accent); }
+
+/* ── Dropdown ── */
+#nav.nav--summit .nav__dropdown {
+  background: #0b0f1e;
+  border: 1px solid rgba(255, 255, 255, .1);
+  box-shadow: 0 24px 55px -14px rgba(0, 0, 0, .55), 0 6px 18px rgba(0, 0, 0, .3);
+}
+#nav.nav--summit .nav__dropdown::before {
+  background: #0b0f1e;
+  border-left: 1px solid rgba(255, 255, 255, .1);
+  border-top: 1px solid rgba(255, 255, 255, .1);
+}
+#nav.nav--summit .nav__dropdown-link { color: #E8EEF8; }
+#nav.nav--summit .nav__dropdown-link small { color: #8890a6; }
+#nav.nav--summit .nav__dropdown-link:hover {
+  background: rgba(147, 51, 234, .16);
+  color: var(--accent);
+}
+#nav.nav--summit .nav__dropdown-link:hover small { color: var(--accent); }
+#nav.nav--summit .nav__dropdown-link.nav__link--active {
+  background: rgba(147, 51, 234, .16);
+  color: var(--accent);
+}
+#nav.nav--summit .nav__dropdown-link--featured {
+  background: linear-gradient(135deg, var(--accent), #b45ff0);
+  color: #fff;
+}
+#nav.nav--summit .nav__dropdown-link--featured:hover {
+  background: linear-gradient(135deg, #7c2bd1, #a34fe0);
+}
+
+/* ── CTAs ── */
+#nav.nav--summit .btn--ghost-sm { color: #E8EEF8; }
+#nav.nav--summit .btn--ghost-sm:hover { background: rgba(255, 255, 255, .08) !important; }
+#nav.nav--summit .btn--purple-sm {
+  background: var(--accent);
+  box-shadow: 0 2px 12px var(--accent-glow);
+}
+
+/* ── Burger ── */
+#nav.nav--summit .nav__burger { color: #E8EEF8; }
+
+/* ── Menu mobile ── */
+#nav.nav--summit .nav__mobile { background: #05070f; }
+#nav.nav--summit .nav__mobile.open { border-top: 1px solid rgba(255, 255, 255, .08); }
+
+#nav.nav--summit .nav__mobile-group { border-bottom: 1px solid rgba(255, 255, 255, .07); }
+#nav.nav--summit .nav__mobile-group-toggle { color: #E8EEF8; }
+#nav.nav--summit .nav__mobile-group-toggle .nav__chevron { color: #8890a6; }
+#nav.nav--summit .nav__mobile-group.is-current .nav__mobile-group-toggle,
+#nav.nav--summit .nav__mobile-group.is-current .nav__mobile-group-toggle .nav__chevron { color: var(--accent); }
+#nav.nav--summit .nav__mobile-group-panel a {
+  color: #E8EEF8;
+  border-left: 2px solid rgba(255, 255, 255, .12);
+}
+#nav.nav--summit .nav__mobile-group-panel a:hover,
+#nav.nav--summit .nav__mobile-group-panel a.nav__link--active {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+#nav.nav--summit .nav__mobile-group-panel a.nav__dropdown-link--featured { color: var(--accent); }
+
+#nav.nav--summit .nav__mobile-cta { border-top: 1px solid rgba(255, 255, 255, .08); }
+#nav.nav--summit .nav__mobile-btn--ghost {
+  background: rgba(255, 255, 255, .06);
+  color: #E8EEF8;
+  border: 1px solid rgba(255, 255, 255, .1);
+}
+#nav.nav--summit .nav__mobile-btn--ghost:hover { background: rgba(255, 255, 255, .12); color: #fff; }
+#nav.nav--summit .nav__mobile-btn--purple {
+  background: var(--accent);
+  box-shadow: 0 2px 12px var(--accent-glow);
 }

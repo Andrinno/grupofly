@@ -24,16 +24,63 @@
         <img src="../assets/grupofly-black.png" alt="Grupo Fly" />
       </a>
 
-      <nav class="nav__links">
-        <a href="index.html#solucao">Solução</a>
-        <a href="index.html#empresas">Empresas</a>
-        <a href="index.html#essencia">Nossa Essência</a>
-        <a href="index.html#socios">Sócios</a>
-        <a href="index.html#atuacao">Como atuamos</a>
-        <a href="noticias.html" class="nav__link--active">Notícias</a>
-        <a href="summit.html">Summit</a>
-        <a href="index.html#contato">Contato</a>
-      </nav>
+      <div class="nav__links">
+
+        <div class="nav__item" data-menu="home">
+          <button class="nav__top-link" type="button" aria-haspopup="true" aria-expanded="false">
+            Home
+            <svg class="nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="nav__dropdown nav__dropdown--grid">
+            <a href="index.html" class="nav__dropdown-link nav__dropdown-link--featured">
+              <strong>Voltar à página inicial</strong>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="index.html#solucao" class="nav__dropdown-link"><strong>Solução</strong><small>Como funciona</small></a>
+            <a href="index.html#empresas" class="nav__dropdown-link"><strong>Empresas</strong><small>Nosso ecossistema</small></a>
+            <a href="index.html#essencia" class="nav__dropdown-link"><strong>Nossa Essência</strong><small>Valores e propósito</small></a>
+            <a href="index.html#socios" class="nav__dropdown-link"><strong>Sócios</strong><small>Quem lidera</small></a>
+            <a href="index.html#atuacao" class="nav__dropdown-link"><strong>Como atuamos</strong><small>Nosso método</small></a>
+            <a href="index.html#contato" class="nav__dropdown-link"><strong>Contato</strong><small>Fale conosco</small></a>
+          </div>
+        </div>
+
+        <div class="nav__item is-current" data-menu="noticias">
+          <button class="nav__top-link" type="button" aria-haspopup="true" aria-expanded="false">
+            Notícias
+            <svg class="nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="nav__dropdown">
+            <a href="noticias.html" class="nav__dropdown-link nav__dropdown-link--featured">
+              <strong>Topo da página</strong>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#noticias" class="nav__dropdown-link"><strong>Últimas Notícias</strong><small>Atualizações do grupo</small></a>
+            <a href="#eventos" class="nav__dropdown-link"><strong>Eventos</strong><small>Agenda e coberturas</small></a>
+            <a href="#artigos" class="nav__dropdown-link"><strong>Matérias</strong><small>Conteúdos e análises</small></a>
+          </div>
+        </div>
+
+        <div class="nav__item" data-menu="summit">
+          <button class="nav__top-link" type="button" aria-haspopup="true" aria-expanded="false">
+            Summit
+            <svg class="nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="nav__dropdown nav__dropdown--grid">
+            <a href="summit.html" class="nav__dropdown-link nav__dropdown-link--featured">
+              <strong>Ver página do Summit</strong>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="summit.html#sobre" class="nav__dropdown-link"><strong>Sobre o Summit</strong><small>O que é o evento</small></a>
+            <a href="summit.html#destaques" class="nav__dropdown-link"><strong>Destaques</strong><small>Momentos marcantes</small></a>
+            <a href="summit.html#palestrantes" class="nav__dropdown-link"><strong>Palestrantes</strong><small>Quem esteve no palco</small></a>
+            <a href="summit.html#programacao" class="nav__dropdown-link"><strong>Programação</strong><small>Como foi a jornada</small></a>
+            <a href="summit.html#parceiros" class="nav__dropdown-link"><strong>Parceiros</strong><small>Marcas apoiadoras</small></a>
+            <a href="summit.html#premiacoes" class="nav__dropdown-link"><strong>Premiações</strong><small>Reconhecimento da rede</small></a>
+          </div>
+        </div>
+
+      </div>
 
       <div class="nav__cta">
         <a href="index.html" class="btn--ghost-sm">Conhecer soluções</a>
@@ -56,14 +103,64 @@
     </div>
 
     <div class="nav__mobile" id="nav-mobile">
-      <a href="index.html#solucao">Solução</a>
-      <a href="index.html#empresas">Empresas</a>
-      <a href="index.html#essencia">Nossa Essência</a>
-      <a href="index.html#socios">Sócios</a>
-      <a href="index.html#atuacao">Como atuamos</a>
-      <a href="noticias.html" class="nav__link--active">Notícias</a>
-      <a href="summit.html">Summit</a>
-      <a href="index.html#contato">Contato</a>
+
+      <div class="nav__mobile-group">
+        <button class="nav__mobile-group-toggle" type="button" aria-expanded="false">
+          Home
+          <svg class="nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="nav__mobile-group-panel-wrap">
+          <div class="nav__mobile-group-panel">
+            <div class="nav__mobile-group-panel-inner">
+              <a href="index.html" class="nav__dropdown-link--featured">Voltar à página inicial</a>
+              <a href="index.html#solucao">Solução</a>
+              <a href="index.html#empresas">Empresas</a>
+              <a href="index.html#essencia">Nossa Essência</a>
+              <a href="index.html#socios">Sócios</a>
+              <a href="index.html#atuacao">Como atuamos</a>
+              <a href="index.html#contato">Contato</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav__mobile-group is-current">
+        <button class="nav__mobile-group-toggle" type="button" aria-expanded="false">
+          Notícias
+          <svg class="nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="nav__mobile-group-panel-wrap">
+          <div class="nav__mobile-group-panel">
+            <div class="nav__mobile-group-panel-inner">
+              <a href="noticias.html" class="nav__dropdown-link--featured">Topo da página</a>
+              <a href="#noticias">Últimas Notícias</a>
+              <a href="#eventos">Eventos</a>
+              <a href="#artigos">Matérias</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav__mobile-group">
+        <button class="nav__mobile-group-toggle" type="button" aria-expanded="false">
+          Summit
+          <svg class="nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="nav__mobile-group-panel-wrap">
+          <div class="nav__mobile-group-panel">
+            <div class="nav__mobile-group-panel-inner">
+              <a href="summit.html" class="nav__dropdown-link--featured">Ver página do Summit</a>
+              <a href="summit.html#sobre">Sobre o Summit</a>
+              <a href="summit.html#destaques">Destaques</a>
+              <a href="summit.html#palestrantes">Palestrantes</a>
+              <a href="summit.html#programacao">Programação</a>
+              <a href="summit.html#parceiros">Parceiros</a>
+              <a href="summit.html#premiacoes">Premiações</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="nav__mobile-cta">
         <a href="index.html" class="nav__mobile-btn nav__mobile-btn--ghost">Conhecer soluções</a>
         <a href="index.html#cta" class="nav__mobile-btn nav__mobile-btn--purple">Falar com especialista</a>
@@ -157,7 +254,7 @@
     <div class="wrap">
       <div class="featured-card reveal">
         <div class="featured-card__img">
-          <img src="/assets/summitbanner.png" alt="Destaque" />
+          <img src="../assets/summitbanner.png" alt="Destaque" />
           <div class="featured-card__img-overlay"></div>
           <span class="badge badge--purple featured-card__badge">⭐ Destaque</span>
         </div>
@@ -356,7 +453,7 @@
               publicados</span></div>
           <div class="cta-stat"><b class="cta-stat__val">4</b><span class="cta-stat__label">Empresas do grupo</span>
           </div>
-          <div class="cta-stat"><b class="cta-stat__val">2025</b><span class="cta-stat__label">Ano de expansão</span>
+          <div class="cta-stat"><b class="cta-stat__val">2026</b><span class="cta-stat__label">Ano de expansão</span>
           </div>
         </div>
       </div>
@@ -368,10 +465,37 @@
   <footer class="footer">
     <div class="wrap footer__inner">
       <img class="footer__logo" src="../assets/grupofly-black.png" alt="Grupo Fly" />
-      <span class="footer__copy">© 2026 Grupo Fly · Educação · Operação · Tecnologia · Contabilidade</span>
+      <span class="footer__copy">© 2026 Grupo Fly · Educação · Tecnologia · Contabilidade · Operação </span>
     </div>
   </footer>
 
+
+  <!-- ============ EVENT MODAL ============ -->
+  <div class="event-modal" id="eventModal" aria-hidden="true">
+    <div class="event-modal__overlay" id="eventModalOverlay"></div>
+    <div class="event-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="eventModalTitle">
+      <button class="event-modal__close" id="eventModalClose" aria-label="Fechar">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 6 6 18M6 6l12 12" />
+        </svg>
+      </button>
+      <div class="event-modal__cover">
+        <img id="eventModalImg" src="" alt="" />
+        <div class="event-modal__cover-grad"></div>
+        <span class="event-modal__cover-badge" id="eventModalBadge"></span>
+      </div>
+      <div class="event-modal__body">
+        <h3 class="event-modal__title" id="eventModalTitle"></h3>
+        <div class="event-modal__meta" id="eventModalMeta"></div>
+        <p class="event-modal__desc" id="eventModalDesc"></p>
+        <div class="event-modal__stats" id="eventModalStats"></div>
+        <h4 class="event-modal__subtitle">Como funciona</h4>
+        <ul class="event-modal__list" id="eventModalList"></ul>
+        <div class="event-modal__footer" id="eventModalFooter"></div>
+      </div>
+    </div>
+  </div>
 
   <!-- ============ WA FLOATER ============ -->
   <a class="wa-float" href="https://wa.me/5518991871456" target="_blank" rel="noopener" aria-label="WhatsApp">
@@ -383,6 +507,7 @@
 
 
   <!-- ═══════════ SCRIPT ═══════════ -->
+  <script src="../js/nav.js"></script>
   <script>
     /* ── Dados ───────────────────────────────────────────────────────────── */
     var FILTERS = ['Todos', 'Grupo Fly', 'ViajaFlux', 'Fly Educacional', 'Fly One', 'Voefly', 'Eventos', 'Tecnologia', 'Educação', 'Mercado'];
@@ -441,13 +566,37 @@
     var EVENTS = [
       {
         id: 1, name: 'Fly Scale', city: 'Araçatuba, SP', date: '27 - 28 Jun 2026',
-        desc: 'Sessão fechada de mentoria coletiva com líderes do turismo nacional. Vagas extremamente limitadas para membros do ecossistema.',
-        img: '../assets/eventos/FlyScale.jpg', highlight: true, ended: true
+        desc: 'Sessão fechada de mentoria coletiva com líderes do turismo nacional, realizada mensalmente há mais de 2 anos dentro do ecossistema Grupo Fly. Vagas extremamente limitadas para membros do ecossistema.',
+        img: '../assets/eventos/FlyScale.jpg', highlight: false, tagText: 'Evento mensal', ended: true,
+        info: {
+          stats: [
+            { icon: 'repeat', label: 'Frequência', value: 'Todo mês' },
+            { icon: 'clock', label: 'Em atividade há', value: '+2 anos' },
+            { icon: 'lock', label: 'Acesso', value: 'Somente convite' }
+          ],
+          how: [
+            'Encontro presencial e fechado, com dois dias de imersão dedicados à escala de agências e empresas do ecossistema Grupo Fly.',
+            'Acontece todos os meses e já soma mais de 2 anos de edições contínuas — uma das mentorias mais tradicionais do ecossistema.',
+            'Mentoria coletiva conduzida por líderes e sócios do Grupo Fly, com estudos de caso reais de crescimento e estruturação.',
+            'Mesas de trabalho em grupos reduzidos para diagnóstico do negócio e construção de plano de ação individual.',
+            'Networking direcionado entre membros do ecossistema para geração de parcerias e novas oportunidades.',
+            'Acesso liberado apenas por convite, respeitando o limite de vagas de cada edição.'
+          ],
+          footerNote: 'Esta edição já foi realizada e as vagas foram encerradas — mas o Fly Scale continua acontecendo todo mês. Fique de olho nas próximas edições.'
+        }
       },
       {
         id: 2, name: 'Summit 2026 VIAJAFLUX', city: 'Olímpia - SP ', date: '28 - 31 Mai 2026',
         desc: 'O GrupoFLY Summit 2026 reuniu especialistas, parceiros e líderes do turismo para compartilhar tendências, inovação, tecnologia e estratégias que impulsionam o futuro do setor, promovendo conexões e oportunidades de negócios.',
-        img: '../assets/eventos/Summit26.jpg', highlight: false, url: 'summit.html'
+        img: '../assets/eventos/Summit26.jpg', highlight: true, ctaLabel: 'Saiba mais', url: 'summit.html',
+        info: {
+          how: [
+            'Encontro presencial que reuniu mais de 1.500 agências, parceiros e fornecedores do turismo em Olímpia (SP).',
+            'Palestras, workshops e rodadas de negócio com foco em tecnologia, vendas e expansão para agências de viagens.'
+          ],
+          ctaUrl: 'summit.html',
+          ctaLabel: 'Ver página completa do Summit'
+        }
       },
     ];
 
@@ -509,28 +658,18 @@
     function svgClock(s) { return '<svg width="' + s + '" height="' + s + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>'; }
     function svgChevron(s) { return '<svg width="' + s + '" height="' + s + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>'; }
     function svgPin(s) { return '<svg width="' + s + '" height="' + s + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>'; }
+    function svgModalIcon(name) {
+      var icons = {
+        repeat: '<path d="M17 1l4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><path d="M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/>',
+        clock: '<circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>',
+        lock: '<rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>'
+      };
+      return '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' + (icons[name] || icons.clock) + '</svg>';
+    }
     function svgNewspaper(s) { return '<svg width="' + s + '" height="' + s + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2z"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>'; }
     function svgBook(s) { return '<svg width="' + s + '" height="' + s + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>'; }
     function svgMoveRight(s) { return '<svg width="' + s + '" height="' + s + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>'; }
 
-    /* ── Nav ─────────────────────────────────────────────────────────────── */
-    var nav = document.getElementById('nav');
-    window.addEventListener('scroll', function () { nav.classList.toggle('scrolled', window.scrollY > 24); }, { passive: true });
-
-    var burger = document.getElementById('nav-burger');
-    var mobileMenu = document.getElementById('nav-mobile');
-    var iconMenu = document.getElementById('icon-menu');
-    var iconX = document.getElementById('icon-x');
-    var menuOpen = false;
-    burger.addEventListener('click', function () {
-      menuOpen = !menuOpen;
-      mobileMenu.classList.toggle('open', menuOpen);
-      iconMenu.style.display = menuOpen ? 'none' : '';
-      iconX.style.display = menuOpen ? '' : 'none';
-    });
-    mobileMenu.querySelectorAll('a').forEach(function (a) {
-      a.addEventListener('click', function () { menuOpen = false; mobileMenu.classList.remove('open'); iconMenu.style.display = ''; iconX.style.display = 'none'; });
-    });
 
     /* ── Scroll reveal ───────────────────────────────────────────────────── */
     var revealObs = new IntersectionObserver(function (entries) {
@@ -592,10 +731,14 @@
     /* ── Eventos ─────────────────────────────────────────────────────────── */
     var eventsList = document.getElementById('eventsList');
     eventsList.innerHTML = EVENTS.map(function (e, i) {
-      return '<div class="event-card' + (e.highlight ? ' event-card--highlight' : '') + '" style="animation-delay:' + (i * 0.1) + 's">' +
+      return '<div class="event-card' + (e.highlight ? ' event-card--highlight' : '') + (e.info ? ' event-card--clickable' : '') + '" data-event-id="' + e.id + '" style="animation-delay:' + (i * 0.1) + 's">' +
         '<div class="event-card__img">' +
         '<img src="' + e.img + '" alt="' + e.name + '" loading="lazy"/>' +
-        (e.highlight ? '<div class="event-badge-hl"><span class="badge badge--purple">Destaque</span></div>' : '') +
+        (e.highlight
+          ? '<div class="event-badge-hl"><span class="badge badge--purple">Destaque</span></div>'
+          : e.tagText
+            ? '<div class="event-badge-hl"><span class="badge badge--muted">' + e.tagText + '</span></div>'
+            : '') +
         '</div>' +
         '<div class="event-card__body">' +
         '<h3 class="event-card__title">' + e.name + '</h3>' +
@@ -607,14 +750,64 @@
         (e.ended
           ? '<button class="btn" disabled style="margin-top:auto;align-self:flex-start;padding:10px 20px;opacity:0.45;cursor:not-allowed;background:#e5e7eb;color:#6b7280;border:none">Evento encerrado</button>'
           : e.url
-            ? '<a href="' + e.url + '" class="btn ' + (e.highlight ? 'btn--purple' : 'btn--light') + '" style="margin-top:auto;align-self:flex-start;padding:10px 20px">' + (e.highlight ? 'Garantir minha vaga' : 'Saiba mais') + ' ' + svgArrow(13) + '</a>'
-            : '<button class="btn ' + (e.highlight ? 'btn--purple' : 'btn--light') + '" style="margin-top:auto;align-self:flex-start;padding:10px 20px">' + (e.highlight ? 'Garantir minha vaga' : 'Saiba mais') + ' ' + svgArrow(13) + '</button>'
+            ? '<a href="' + e.url + '" class="btn ' + (e.highlight ? 'btn--purple' : 'btn--light') + '" style="margin-top:auto;align-self:flex-start;padding:10px 20px">' + (e.ctaLabel || (e.highlight ? 'Garantir minha vaga' : 'Saiba mais')) + ' ' + svgArrow(13) + '</a>'
+            : '<button class="btn ' + (e.highlight ? 'btn--purple' : 'btn--light') + '" style="margin-top:auto;align-self:flex-start;padding:10px 20px">' + (e.ctaLabel || (e.highlight ? 'Garantir minha vaga' : 'Saiba mais')) + ' ' + svgArrow(13) + '</button>'
         ) +
         '</div>' +
         '</div>';
     }).join('');
 
     observeCards(eventsList);
+
+    /* ── Modal de evento ────────────────────────────────────────────────── */
+    var eventModal = document.getElementById('eventModal');
+
+    function openEventModal(event) {
+      document.getElementById('eventModalImg').src = event.img;
+      document.getElementById('eventModalImg').alt = event.name;
+      document.getElementById('eventModalBadge').textContent = event.ended ? (event.tagText || 'Evento encerrado') : (event.highlight ? 'Destaque' : '');
+      document.getElementById('eventModalTitle').textContent = event.name;
+      document.getElementById('eventModalMeta').innerHTML =
+        '<span class="event-meta-item">' + svgPin(13) + event.city + '</span>' +
+        '<span class="event-meta-item">' + svgCalendar(13) + event.date + '</span>';
+      document.getElementById('eventModalDesc').textContent = event.desc;
+      document.getElementById('eventModalStats').innerHTML = (event.info.stats || []).map(function (s) {
+        return '<div class="event-modal__stat">' +
+          '<span class="event-modal__stat-icon">' + svgModalIcon(s.icon) + '</span>' +
+          '<span><b>' + s.value + '</b>' + s.label + '</span>' +
+          '</div>';
+      }).join('');
+      document.getElementById('eventModalList').innerHTML = (event.info.how || []).map(function (item) {
+        return '<li>' + item + '</li>';
+      }).join('');
+      document.getElementById('eventModalFooter').innerHTML =
+        (event.info.footerNote ? '<p class="event-modal__note">' + event.info.footerNote + '</p>' : '') +
+        (event.info.ctaUrl ? '<a href="' + event.info.ctaUrl + '" class="btn btn--purple event-modal__cta">' + (event.info.ctaLabel || 'Saiba mais') + ' ' + svgArrow(13) + '</a>' : '');
+
+      eventModal.classList.add('is-open');
+      eventModal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeEventModal() {
+      eventModal.classList.remove('is-open');
+      eventModal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    eventsList.addEventListener('click', function (ev) {
+      if (ev.target.closest('.btn')) return;
+      var card = ev.target.closest('.event-card--clickable');
+      if (!card) return;
+      var event = EVENTS.find(function (e) { return String(e.id) === card.getAttribute('data-event-id'); });
+      if (event) openEventModal(event);
+    });
+
+    document.getElementById('eventModalClose').addEventListener('click', closeEventModal);
+    document.getElementById('eventModalOverlay').addEventListener('click', closeEventModal);
+    document.addEventListener('keydown', function (ev) {
+      if (ev.key === 'Escape' && eventModal.classList.contains('is-open')) closeEventModal();
+    });
 
     /* ── Artigos ─────────────────────────────────────────────────────────── */
     var articlesGrid = document.getElementById('articlesGrid');
