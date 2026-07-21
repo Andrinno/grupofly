@@ -5,8 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Grupo Fly — Empreenda, estruture e escale sua agência de viagens</title>
-  <link rel="stylesheet" href="/css/styles.css" />
-  <link rel="stylesheet" href="/css/nav.css" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/nav.css" />
 </head>
 
 <body>
@@ -18,14 +18,89 @@
         <img src="../assets/grupofly-black.png" alt="Grupo Fly" />
       </a>
       <div class="nav__links">
-        <a href="#solucao">Solução</a>
-        <a href="#empresas">Empresas</a>
-        <a href="#essencia">Nossa Essência</a>
-        <a href="#socios">Sócios</a>
-        <a href="#atuacao">Como atuamos</a>
-        <a href="noticias.html">Notícias</a>
-        <a href="summit.html">Summit</a>
-        <a href="#contato">Contato</a>
+
+        <div class="nav__item is-current" data-menu="home">
+          <button class="nav__top-link" type="button" aria-haspopup="true" aria-expanded="false">
+            Home
+            <svg class="nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </button>
+          <div class="nav__dropdown nav__dropdown--grid">
+            <a href="#top" class="nav__dropdown-link nav__dropdown-link--featured">
+              <strong>Voltar ao início</strong>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+            <a href="#solucao" class="nav__dropdown-link"><strong>Solução</strong><small>Como funciona</small></a>
+            <a href="#empresas" class="nav__dropdown-link"><strong>Empresas</strong><small>Nosso ecossistema</small></a>
+            <a href="#essencia" class="nav__dropdown-link"><strong>Nossa Essência</strong><small>Valores e
+                propósito</small></a>
+            <a href="#socios" class="nav__dropdown-link"><strong>Sócios</strong><small>Quem lidera</small></a>
+            <a href="#atuacao" class="nav__dropdown-link"><strong>Como atuamos</strong><small>Nosso método</small></a>
+            <a href="#contato" class="nav__dropdown-link"><strong>Contato</strong><small>Fale conosco</small></a>
+          </div>
+        </div>
+
+        <div class="nav__item" data-menu="noticias">
+          <button class="nav__top-link" type="button" aria-haspopup="true" aria-expanded="false">
+            Notícias
+            <svg class="nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </button>
+          <div class="nav__dropdown">
+            <a href="noticias.html" class="nav__dropdown-link nav__dropdown-link--featured">
+              <strong>Ver todas as notícias</strong>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+            <a href="noticias.html#noticias" class="nav__dropdown-link"><strong>Últimas Notícias</strong><small>Atualizações
+                do grupo</small></a>
+            <a href="noticias.html#eventos" class="nav__dropdown-link"><strong>Eventos</strong><small>Agenda e
+                coberturas</small></a>
+            <a href="noticias.html#artigos" class="nav__dropdown-link"><strong>Matérias</strong><small>Conteúdos e
+                análises</small></a>
+          </div>
+        </div>
+
+        <div class="nav__item" data-menu="summit">
+          <button class="nav__top-link" type="button" aria-haspopup="true" aria-expanded="false">
+            Summit
+            <svg class="nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </button>
+          <div class="nav__dropdown nav__dropdown--grid">
+            <a href="summit.html" class="nav__dropdown-link nav__dropdown-link--featured">
+              <strong>Ver página do Summit</strong>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+            <a href="summit.html#sobre" class="nav__dropdown-link"><strong>Sobre o Summit</strong><small>O que é o
+                evento</small></a>
+            <a href="summit.html#destaques" class="nav__dropdown-link"><strong>Destaques</strong><small>Momentos
+                marcantes</small></a>
+            <a href="summit.html#palestrantes" class="nav__dropdown-link"><strong>Palestrantes</strong><small>Quem
+                esteve no palco</small></a>
+            <a href="summit.html#programacao" class="nav__dropdown-link"><strong>Programação</strong><small>Como foi a
+                jornada</small></a>
+            <a href="summit.html#parceiros" class="nav__dropdown-link"><strong>Parceiros</strong><small>Marcas
+                apoiadoras</small></a>
+            <a href="summit.html#premiacoes" class="nav__dropdown-link"><strong>Premiações</strong><small>Reconhecimento
+                da rede</small></a>
+          </div>
+        </div>
+
       </div>
       <div class="nav__cta">
         <a href="#solucao" class="btn--ghost-sm">Conhecer soluções</a>
@@ -46,14 +121,73 @@
       </button>
     </div>
     <div class="nav__mobile" id="nav-mobile">
-      <a href="#solucao">Solução</a>
-      <a href="#empresas">Empresas</a>
-      <a href="#essencia">Nossa Essência</a>
-      <a href="#socios">Sócios</a>
-      <a href="#atuacao">Como atuamos</a>
-      <a href="noticias.html">Notícias</a>
-      <a href="summit.html">Summit</a>
-      <a href="#contato">Contato</a>
+
+      <div class="nav__mobile-group is-current">
+        <button class="nav__mobile-group-toggle" type="button" aria-expanded="false">
+          Home
+          <svg class="nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 9l6 6 6-6" />
+          </svg>
+        </button>
+        <div class="nav__mobile-group-panel-wrap">
+          <div class="nav__mobile-group-panel">
+            <div class="nav__mobile-group-panel-inner">
+              <a href="#top" class="nav__dropdown-link--featured">Voltar ao início</a>
+              <a href="#solucao">Solução</a>
+              <a href="#empresas">Empresas</a>
+              <a href="#essencia">Nossa Essência</a>
+              <a href="#socios">Sócios</a>
+              <a href="#atuacao">Como atuamos</a>
+              <a href="#contato">Contato</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav__mobile-group">
+        <button class="nav__mobile-group-toggle" type="button" aria-expanded="false">
+          Notícias
+          <svg class="nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 9l6 6 6-6" />
+          </svg>
+        </button>
+        <div class="nav__mobile-group-panel-wrap">
+          <div class="nav__mobile-group-panel">
+            <div class="nav__mobile-group-panel-inner">
+              <a href="noticias.html" class="nav__dropdown-link--featured">Ver todas as notícias</a>
+              <a href="noticias.html#noticias">Últimas Notícias</a>
+              <a href="noticias.html#eventos">Eventos</a>
+              <a href="noticias.html#artigos">Matérias</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav__mobile-group">
+        <button class="nav__mobile-group-toggle" type="button" aria-expanded="false">
+          Summit
+          <svg class="nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 9l6 6 6-6" />
+          </svg>
+        </button>
+        <div class="nav__mobile-group-panel-wrap">
+          <div class="nav__mobile-group-panel">
+            <div class="nav__mobile-group-panel-inner">
+              <a href="summit.html" class="nav__dropdown-link--featured">Ver página do Summit</a>
+              <a href="summit.html#sobre">Sobre o Summit</a>
+              <a href="summit.html#destaques">Destaques</a>
+              <a href="summit.html#palestrantes">Palestrantes</a>
+              <a href="summit.html#programacao">Programação</a>
+              <a href="summit.html#parceiros">Parceiros</a>
+              <a href="summit.html#premiacoes">Premiações</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="nav__mobile-cta">
         <a href="#solucao" class="nav__mobile-btn nav__mobile-btn--ghost">Conhecer soluções</a>
         <a href="#cta" class="nav__mobile-btn nav__mobile-btn--purple">Falar com especialista</a>
@@ -70,8 +204,7 @@
     <div class="wrap hero__grid">
       <div class="hero__copy reveal">
         <span class="badge"><span class="dot"></span><b>+1.700 agências</b> criadas no turismo</span>
-        <h1 class="display h-hero" style="margin:22px 0 0;">Empreenda, estruture e <span class="grad">escale</span> sua
-          agência de viagens.</h1>
+        <h1 class="display h-hero" style="margin:22px 0 0;">Estruture, empreenda  e <span class="grad">escale</span> seu negócio de turismo.</h1>
         <p class="lead" style="margin:24px 0 0;max-width:46ch;">O Grupo Fly é uma estrutura completa para quem deseja
           empreender no turismo com segurança, organização e suporte real — conectando educação, operação, tecnologia e
           contabilidade em todas as etapas do negócio.</p>
@@ -97,7 +230,6 @@
 
   <!-- ============ EMPRESAS DO GRUPO ============ -->
   <section class="section eco-section" id="empresas">
-    <div class="eco-float-layer" id="ecoFloatLayer"></div>
     <div class="wrap">
 
       <!-- Header -->
@@ -125,12 +257,6 @@
           <span class="eco-ind-label">Fly Educacional</span>
           <span class="eco-ind-label--short">Educacional</span>
         </button>
-        <button class="eco-ind-btn" type="button" data-id="voefly" aria-pressed="false">
-          <img class="eco-ind-logo" src="../assets/voefly.png" alt="">
-          <div class="eco-ind-line"></div>
-          <span class="eco-ind-label">Voefly Viagens</span>
-          <span class="eco-ind-label--short">Voefly</span>
-        </button>
         <button class="eco-ind-btn" type="button" data-id="viajaflux" aria-pressed="false">
           <img class="eco-ind-logo" src="../assets/viajaflux.png" alt="">
           <div class="eco-ind-line"></div>
@@ -142,6 +268,12 @@
           <div class="eco-ind-line"></div>
           <span class="eco-ind-label">Fly One Contabilidade</span>
           <span class="eco-ind-label--short">Fly One</span>
+        </button>
+        <button class="eco-ind-btn" type="button" data-id="voefly" aria-pressed="false">
+          <img class="eco-ind-logo" src="../assets/voefly.png" alt="">
+          <div class="eco-ind-line"></div>
+          <span class="eco-ind-label">Voefly Viagens</span>
+          <span class="eco-ind-label--short">Voefly</span>
         </button>
       </div>
 
@@ -173,69 +305,40 @@
             <p class="eco-tagline">Você não precisa descobrir tudo sozinho.</p>
             <p class="eco-desc">Responsável pela formação de empreendedores do turismo, com cursos e treinamentos
               completos para abertura, estruturação e crescimento de agências.</p>
-            <div class="eco-services">
-              <ul class="eco-svc-list">
-                <li class="eco-svc-item"><span class="eco-svc-dot"></span><span class="eco-svc-title">Universidade
-                    Corporativa</span><span class="eco-svc-sub"> — trilhas para agentes e equipes</span></li>
-                <li class="eco-svc-item"><span class="eco-svc-dot"></span><span class="eco-svc-title">Serviços de
-                    Marketing</span><span class="eco-svc-sub"> — especializados em turismo</span></li>
-                <li class="eco-svc-item"><span class="eco-svc-dot"></span><span class="eco-svc-title">Consultoria de
-                    Negócio</span><span class="eco-svc-sub"> — para agências em crescimento</span></li>
-                <li class="eco-svc-item"><span class="eco-svc-dot"></span><span class="eco-svc-title">Mastermind
-                    Exclusivo</span><span class="eco-svc-sub"> — com líderes do setor</span></li>
-                <li class="eco-svc-item"><span class="eco-svc-dot"></span><span class="eco-svc-title">Implementação de
-                    Negócio</span><span class="eco-svc-sub"> — metodologia prática</span></li>
-              </ul>
-            </div>
-            <div class="eco-mobile-icons"></div>
-            <div class="eco-footer-link">Conhecer empresa <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M5 12h14M12 5l7 7-7 7" />
-              </svg></div>
-          </div>
-          <div class="eco-bottom-bar"></div>
-        </div>
-
-        <!-- Voefly Viagens -->
-        <div class="eco-card" data-id="voefly">
-          <div class="eco-glow-blob"></div>
-          <div class="eco-card-top">
-            <span class="eco-category">OPERAÇÃO</span>
-            <span class="eco-num">02</span>
-          </div>
-          <div class="eco-body">
-            <div class="eco-logo-row">
-              <div class="eco-logo-bubble"><img src="../assets/voefly.png" alt="Voefly Viagens"></div>
-              <div>
-                <h3 class="eco-name">Voefly Viagens</h3>
-                <p class="eco-group-label">Grupo Fly</p>
+            <div class="eco-carousel" data-carousel>
+              <div class="eco-carousel-viewport">
+                <ul class="eco-carousel-track">
+                  <li class="eco-carousel-slide"><span class="eco-carousel-icon"><svg
+                        data-lucide="graduation-cap"></svg></span><span class="eco-carousel-text"><strong>Universidade
+                        Corporativa</strong><small>trilhas para agentes e equipes</small></span></li>
+                  <li class="eco-carousel-slide"><span class="eco-carousel-icon"><svg
+                        data-lucide="megaphone"></svg></span><span class="eco-carousel-text"><strong>Serviços de
+                        Marketing</strong><small>especializados em turismo</small></span></li>
+                  <li class="eco-carousel-slide"><span class="eco-carousel-icon"><svg
+                        data-lucide="briefcase"></svg></span><span class="eco-carousel-text"><strong>Consultoria de
+                        Negócio</strong><small>para agências em crescimento</small></span></li>
+                  <li class="eco-carousel-slide"><span class="eco-carousel-icon"><svg
+                        data-lucide="users"></svg></span><span class="eco-carousel-text"><strong>Mastermind
+                        Exclusivo</strong><small>com líderes do setor</small></span></li>
+                  <li class="eco-carousel-slide"><span class="eco-carousel-icon"><svg
+                        data-lucide="rocket"></svg></span><span class="eco-carousel-text"><strong>Implementação de
+                        Negócio</strong><small>metodologia prática</small></span></li>
+                </ul>
+              </div>
+              <div class="eco-carousel-controls">
+                <button class="eco-carousel-arrow" type="button" data-dir="-1" aria-label="Anterior"><svg width="14"
+                    height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M15 18l-6-6 6-6" />
+                  </svg></button>
+                <div class="eco-carousel-dots"></div>
+                <button class="eco-carousel-arrow" type="button" data-dir="1" aria-label="Próximo"><svg width="14"
+                    height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 18l6-6-6-6" />
+                  </svg></button>
               </div>
             </div>
-            <div class="eco-tags">
-              <span class="eco-tag">Lazer</span>
-              <span class="eco-tag">Corporativo</span>
-              <span class="eco-tag">Concierge</span>
-              <span class="eco-tag">Operação</span>
-            </div>
-            <p class="eco-tagline">Nossa agência porta para rua.</p>
-            <p class="eco-desc">Agência com operação real no mercado, utilizada como laboratório prático para validação
-              de estratégias e aplicação das metodologias ensinadas dentro do ecossistema.</p>
-            <div class="eco-services">
-              <ul class="eco-svc-list">
-                <li class="eco-svc-item"><span class="eco-svc-dot"></span><span
-                    class="eco-svc-title">Assessoria</span><span class="eco-svc-sub"> — vistos e documentações</span>
-                </li>
-                <li class="eco-svc-item"><span class="eco-svc-dot"></span><span class="eco-svc-title">Gestão de
-                    Pontos</span><span class="eco-svc-sub"> — e programas de fidelidade</span></li>
-                <li class="eco-svc-item"><span class="eco-svc-dot"></span><span class="eco-svc-title">Viagens
-                    Corporativas</span><span class="eco-svc-sub"> — com gestão especializada</span></li>
-                <li class="eco-svc-item"><span class="eco-svc-dot"></span><span class="eco-svc-title">Lazer</span><span
-                    class="eco-svc-sub"> — nacional e internacional</span></li>
-                <li class="eco-svc-item"><span class="eco-svc-dot"></span><span class="eco-svc-title">Intercâmbio ·
-                    Eventos · Convenções</span></li>
-              </ul>
-            </div>
-            <div class="eco-mobile-icons"></div>
             <div class="eco-footer-link">Conhecer empresa <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M5 12h14M12 5l7 7-7 7" />
@@ -249,7 +352,7 @@
           <div class="eco-glow-blob"></div>
           <div class="eco-card-top">
             <span class="eco-category">TECNOLOGIA</span>
-            <span class="eco-num">03</span>
+            <span class="eco-num">02</span>
           </div>
           <div class="eco-body">
             <div class="eco-logo-row">
@@ -268,24 +371,44 @@
             <p class="eco-tagline">Mais controle, mais tempo, mais escala.</p>
             <p class="eco-desc">Sistema de gestão exclusivo para agências de turismo, focado em produtividade,
               automação, controle financeiro e escalabilidade. O único ALL IN ONE do setor.</p>
-            <div class="eco-services">
-              <ul class="eco-svc-list">
-                <li class="eco-svc-item"><span class="eco-svc-dot"></span><span class="eco-svc-title">CRM</span><span
-                    class="eco-svc-sub"> — pipeline de vendas e clientes</span></li>
-                <li class="eco-svc-item"><span class="eco-svc-dot"></span><span class="eco-svc-title">ERP
-                    Financeiro</span><span class="eco-svc-sub"> — integrado</span></li>
-                <li class="eco-svc-item"><span class="eco-svc-dot"></span><span class="eco-svc-title">Emissão e
-                    Operação</span><span class="eco-svc-sub"> — de viagens</span></li>
-                <li class="eco-svc-item"><span class="eco-svc-dot"></span><span class="eco-svc-title">BI e
-                    Relatórios</span><span class="eco-svc-sub"> — de desempenho</span></li>
-                <li class="eco-svc-item"><span class="eco-svc-dot"></span><span
-                    class="eco-svc-title">ViajaFlux.CASH</span><span class="eco-svc-sub"> — banco digital próprio
-                    (breve)</span></li>
-                <li class="eco-svc-item"><span class="eco-svc-dot"></span><span class="eco-svc-title">Construtor de
-                    Websites</span><span class="eco-svc-sub"> — para agências</span></li>
-              </ul>
+            <div class="eco-carousel" data-carousel>
+              <div class="eco-carousel-viewport">
+                <ul class="eco-carousel-track">
+                  <li class="eco-carousel-slide"><span class="eco-carousel-icon"><svg
+                        data-lucide="users"></svg></span><span class="eco-carousel-text"><strong>CRM</strong><small>pipeline
+                        de vendas e clientes</small></span></li>
+                  <li class="eco-carousel-slide"><span class="eco-carousel-icon"><svg
+                        data-lucide="database"></svg></span><span class="eco-carousel-text"><strong>ERP
+                        Financeiro</strong><small>integrado</small></span></li>
+                  <li class="eco-carousel-slide"><span class="eco-carousel-icon"><svg
+                        data-lucide="plane"></svg></span><span class="eco-carousel-text"><strong>Emissão e
+                        Operação</strong><small>de viagens</small></span></li>
+                  <li class="eco-carousel-slide"><span class="eco-carousel-icon"><svg
+                        data-lucide="bar-chart-2"></svg></span><span class="eco-carousel-text"><strong>BI e
+                        Relatórios</strong><small>de desempenho</small></span></li>
+                  <li class="eco-carousel-slide"><span class="eco-carousel-icon"><svg
+                        data-lucide="landmark"></svg></span><span
+                      class="eco-carousel-text"><strong>ViajaFlux.CASH</strong><small>banco digital próprio
+                        (breve)</small></span></li>
+                  <li class="eco-carousel-slide"><span class="eco-carousel-icon"><svg
+                        data-lucide="layout"></svg></span><span class="eco-carousel-text"><strong>Construtor de
+                        Websites</strong><small>para agências</small></span></li>
+                </ul>
+              </div>
+              <div class="eco-carousel-controls">
+                <button class="eco-carousel-arrow" type="button" data-dir="-1" aria-label="Anterior"><svg width="14"
+                    height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M15 18l-6-6 6-6" />
+                  </svg></button>
+                <div class="eco-carousel-dots"></div>
+                <button class="eco-carousel-arrow" type="button" data-dir="1" aria-label="Próximo"><svg width="14"
+                    height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 18l6-6-6-6" />
+                  </svg></button>
+              </div>
             </div>
-            <div class="eco-mobile-icons"></div>
             <div class="eco-footer-link">Conhecer empresa <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M5 12h14M12 5l7 7-7 7" />
@@ -299,7 +422,7 @@
           <div class="eco-glow-blob"></div>
           <div class="eco-card-top">
             <span class="eco-category">CONTABILIDADE</span>
-            <span class="eco-num">04</span>
+            <span class="eco-num">03</span>
           </div>
           <div class="eco-body">
             <div class="eco-logo-row">
@@ -318,23 +441,113 @@
             <p class="eco-tagline">A maioria dos donos de agência travam aqui.</p>
             <p class="eco-desc">Contabilidade especializada para turismo, com suporte jurídico, tributário, fiscal e
               societário — pensada para o setor, não adaptada.</p>
-            <div class="eco-services">
-              <ul class="eco-svc-list">
-                <li class="eco-svc-item"><span class="eco-svc-dot"></span><span class="eco-svc-title">Registro de
-                    Marca</span><span class="eco-svc-sub"> — proteção da identidade</span></li>
-                <li class="eco-svc-item"><span class="eco-svc-dot"></span><span class="eco-svc-title">Abertura e
-                    Legalização</span><span class="eco-svc-sub"> — de empresa</span></li>
-                <li class="eco-svc-item"><span class="eco-svc-dot"></span><span class="eco-svc-title">Serviços
-                    Contábeis</span><span class="eco-svc-sub"> — completos</span></li>
-                <li class="eco-svc-item"><span class="eco-svc-dot"></span><span class="eco-svc-title">BPO</span><span
-                    class="eco-svc-sub"> — Financeiro e Administrativo</span></li>
-                <li class="eco-svc-item"><span class="eco-svc-dot"></span><span class="eco-svc-title">Consultoria
-                    Tributária</span><span class="eco-svc-sub"> — e Planejamento</span></li>
-                <li class="eco-svc-item"><span class="eco-svc-dot"></span><span class="eco-svc-title">Assessoria
-                    Jurídica</span></li>
-              </ul>
+            <div class="eco-carousel" data-carousel>
+              <div class="eco-carousel-viewport">
+                <ul class="eco-carousel-track">
+                  <li class="eco-carousel-slide"><span class="eco-carousel-icon"><svg
+                        data-lucide="shield-check"></svg></span><span class="eco-carousel-text"><strong>Registro de
+                        Marca</strong><small>proteção da identidade</small></span></li>
+                  <li class="eco-carousel-slide"><span class="eco-carousel-icon"><svg
+                        data-lucide="badge-check"></svg></span><span class="eco-carousel-text"><strong>Abertura e
+                        Legalização</strong><small>de empresa</small></span></li>
+                  <li class="eco-carousel-slide"><span class="eco-carousel-icon"><svg
+                        data-lucide="book-open"></svg></span><span class="eco-carousel-text"><strong>Serviços
+                        Contábeis</strong><small>completos</small></span></li>
+                  <li class="eco-carousel-slide"><span class="eco-carousel-icon"><svg
+                        data-lucide="clipboard-list"></svg></span><span
+                      class="eco-carousel-text"><strong>BPO</strong><small>financeiro e administrativo</small></span>
+                  </li>
+                  <li class="eco-carousel-slide"><span class="eco-carousel-icon"><svg
+                        data-lucide="calculator"></svg></span><span class="eco-carousel-text"><strong>Consultoria
+                        Tributária</strong><small>e planejamento</small></span></li>
+                  <li class="eco-carousel-slide"><span class="eco-carousel-icon"><svg
+                        data-lucide="scale"></svg></span><span
+                      class="eco-carousel-text"><strong>Assessoria Jurídica</strong><small>suporte
+                        societário</small></span></li>
+                </ul>
+              </div>
+              <div class="eco-carousel-controls">
+                <button class="eco-carousel-arrow" type="button" data-dir="-1" aria-label="Anterior"><svg width="14"
+                    height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M15 18l-6-6 6-6" />
+                  </svg></button>
+                <div class="eco-carousel-dots"></div>
+                <button class="eco-carousel-arrow" type="button" data-dir="1" aria-label="Próximo"><svg width="14"
+                    height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 18l6-6-6-6" />
+                  </svg></button>
+              </div>
             </div>
-            <div class="eco-mobile-icons"></div>
+            <div class="eco-footer-link">Conhecer empresa <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg></div>
+          </div>
+          <div class="eco-bottom-bar"></div>
+        </div>
+
+        <!-- Voefly Viagens -->
+        <div class="eco-card" data-id="voefly">
+          <div class="eco-glow-blob"></div>
+          <div class="eco-card-top">
+            <span class="eco-category">OPERAÇÃO</span>
+            <span class="eco-num">04</span>
+          </div>
+          <div class="eco-body">
+            <div class="eco-logo-row">
+              <div class="eco-logo-bubble"><img src="../assets/voefly.png" alt="Voefly Viagens"></div>
+              <div>
+                <h3 class="eco-name">Voefly Viagens</h3>
+                <p class="eco-group-label">Grupo Fly</p>
+              </div>
+            </div>
+            <div class="eco-tags">
+              <span class="eco-tag">Lazer</span>
+              <span class="eco-tag">Corporativo</span>
+              <span class="eco-tag">Concierge</span>
+              <span class="eco-tag">Operação</span>
+            </div>
+            <p class="eco-tagline">Nossa própria agência.</p>
+            <p class="eco-desc">Agência com operação real no mercado, utilizada como laboratório prático para validação
+              de estratégias e aplicação das metodologias ensinadas dentro do ecossistema.</p>
+            <div class="eco-carousel" data-carousel>
+              <div class="eco-carousel-viewport">
+                <ul class="eco-carousel-track">
+                  <li class="eco-carousel-slide"><span class="eco-carousel-icon"><svg
+                        data-lucide="file-check"></svg></span><span
+                      class="eco-carousel-text"><strong>Assessoria</strong><small>vistos e documentações</small></span>
+                  </li>
+                  <li class="eco-carousel-slide"><span class="eco-carousel-icon"><svg
+                        data-lucide="star"></svg></span><span class="eco-carousel-text"><strong>Gestão de
+                        Pontos</strong><small>programas de fidelidade</small></span></li>
+                  <li class="eco-carousel-slide"><span class="eco-carousel-icon"><svg
+                        data-lucide="building-2"></svg></span><span class="eco-carousel-text"><strong>Viagens
+                        Corporativas</strong><small>com gestão especializada</small></span></li>
+                  <li class="eco-carousel-slide"><span class="eco-carousel-icon"><svg
+                        data-lucide="sun"></svg></span><span
+                      class="eco-carousel-text"><strong>Lazer</strong><small>nacional e internacional</small></span>
+                  </li>
+                  <li class="eco-carousel-slide"><span class="eco-carousel-icon"><svg
+                        data-lucide="globe"></svg></span><span class="eco-carousel-text"><strong>Intercâmbio</strong>
+                      <small>eventos e convenções</small></span></li>
+                </ul>
+              </div>
+              <div class="eco-carousel-controls">
+                <button class="eco-carousel-arrow" type="button" data-dir="-1" aria-label="Anterior"><svg width="14"
+                    height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M15 18l-6-6 6-6" />
+                  </svg></button>
+                <div class="eco-carousel-dots"></div>
+                <button class="eco-carousel-arrow" type="button" data-dir="1" aria-label="Próximo"><svg width="14"
+                    height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 18l6-6-6-6" />
+                  </svg></button>
+              </div>
+            </div>
             <div class="eco-footer-link">Conhecer empresa <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M5 12h14M12 5l7 7-7 7" />
@@ -854,6 +1067,86 @@
     </div>
   </section>
 
+  <!-- ============ NOTÍCIAS DO ECOSSISTEMA ============ -->
+  <section class="section news-hub" id="novidades">
+    <div class="wrap">
+
+      <div class="news-hub__header">
+        <div style="max-width:640px;">
+          <span class="eyebrow reveal">Fique por dentro</span>
+          <h2 class="h2 reveal" style="margin-top:18px;">O que está acontecendo <span class="grad">no
+              ecossistema.</span></h2>
+          <p class="lead reveal" style="margin-top:16px;">Premiações, eventos, bastidores e novidades das empresas do
+            grupo — tudo reunido em um só lugar.</p>
+        </div>
+        <a href="noticias.html" class="btn btn--ghost news-hub__header-cta reveal">Ver todas as notícias <svg
+            data-lucide="arrow-right"></svg></a>
+      </div>
+
+      <div class="news-hub__grid reveal" style="margin-top:40px;">
+
+        <a href="noticias.html#eventos" class="news-hub__feature">
+          <div class="news-hub__feature-media">
+            <img src="../assets/noticias/premiacao-teaser.jpg" alt="Premiação de agências do ecossistema Grupo Fly" />
+            <span class="news-hub__tag">Eventos</span>
+          </div>
+          <div class="news-hub__feature-body">
+            <span class="news-hub__date">29 Mai 2026 · 3 min de leitura</span>
+            <h3 class="news-hub__feature-title">Mais de 150 agências foram premiadas na 6ª edição do Summit 2026</h3>
+            <p class="news-hub__feature-desc">Em Olímpia (SP), o Grupo Fly reconheceu agências por faixas de
+              faturamento — de R$ 25 mil a R$ 45 milhões — reunindo mais de 1.500 participantes de todo o Brasil.</p>
+            <span class="news-hub__link">Ler matéria completa <svg data-lucide="arrow-right"></svg></span>
+          </div>
+        </a>
+
+        <div class="news-hub__list">
+          <a href="noticias.html" class="news-hub__item">
+            <div class="news-hub__item-media"><img src="../assets/noticias/n3-summit-parceiros.jpg" alt="" /></div>
+            <div class="news-hub__item-body">
+              <span class="news-hub__item-tag">Eventos</span>
+              <h4>ViajaFlux Summit reúne 1.500 agências em Olímpia (SP)</h4>
+              <div class="news-hub__item-footer">
+                <span class="news-hub__item-date">29 Mai 2026</span>
+                <svg class="news-hub__item-arrow" data-lucide="arrow-right"></svg>
+              </div>
+            </div>
+          </a>
+          <a href="noticias.html" class="news-hub__item">
+            <div class="news-hub__item-media"><img src="../assets/noticias/n5-summit-happyhour.jpg" alt="" /></div>
+            <div class="news-hub__item-body">
+              <span class="news-hub__item-tag">Eventos</span>
+              <h4>Networking com Happy Hour encerra 6ª edição do Summit</h4>
+              <div class="news-hub__item-footer">
+                <span class="news-hub__item-date">29 Mai 2026</span>
+                <svg class="news-hub__item-arrow" data-lucide="arrow-right"></svg>
+              </div>
+            </div>
+          </a>
+          <a href="noticias.html" class="news-hub__item">
+            <div class="news-hub__item-media"><img src="../assets/noticias/a4-turismo-corporativo.jpg" alt="" /></div>
+            <div class="news-hub__item-body">
+              <span class="news-hub__item-tag">Mercado</span>
+              <h4>Turismo corporativo supera R$ 6 bi e bate recorde em 2026</h4>
+              <div class="news-hub__item-footer">
+                <span class="news-hub__item-date">Matérias</span>
+                <svg class="news-hub__item-arrow" data-lucide="arrow-right"></svg>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="news-hub__stats reveal">
+        <div class="card"><b class="grad">+150</b><span>agências premiadas</span></div>
+        <div class="card"><b class="grad">+1.500</b><span>participantes no Summit</span></div>
+        <div class="card"><b class="grad">6ª</b><span>edição do evento</span></div>
+        <div class="card"><b class="grad">+10</b><span>matérias publicadas</span></div>
+      </div>
+
+    </div>
+  </section>
+
   <!-- ============ CTA FINAL ============ -->
   <section class="section" id="cta">
     <div class="wrap">
@@ -870,7 +1163,7 @@
         <p class="lead" style="margin:22px auto 0;max-width:560px;">Fale com o Grupo Fly e entenda como podemos apoiar o
           seu crescimento.</p>
         <div class="cta-btns">
-          <a href="https://wa.me/5518991871456" target="_blank" rel="noopener" class="btn btn--wa"><svg
+          <a href="https://wa.me/551831751190" target="_blank" rel="noopener" class="btn btn--wa"><svg
               data-lucide="message-circle"></svg> Chamar no WhatsApp</a>
           <a href="mailto:administrativo@grupofly.co" class="btn btn--ghost"><svg data-lucide="mail"></svg> Enviar
             e-mail</a>
@@ -887,9 +1180,9 @@
           <div class="icon-chip"><svg data-lucide="mail"></svg></div>
           <div><small>E-mail</small><span>administrativo@grupofly.co</span></div>
         </a>
-        <a class="cinfo" href="https://wa.me/5518991871456" target="_blank" rel="noopener">
+        <a class="cinfo" href="https://wa.me/551831751190" target="_blank" rel="noopener">
           <div class="icon-chip"><svg data-lucide="phone"></svg></div>
-          <div><small>Telefone / WhatsApp</small><span>(18) 99187-1456</span></div>
+          <div><small>Telefone / WhatsApp</small><span>(18) 3175-1190</span></div>
         </a>
         <div class="cinfo">
           <div class="icon-chip"><svg data-lucide="map-pin"></svg></div>
@@ -903,13 +1196,12 @@
   <footer class="footer">
     <div class="wrap footer__inner">
       <img class="footer__logo" src="../assets/grupofly-white.png" alt="Grupo Fly" />
-      <span class="muted-3" style="font-size:.85rem;">© 2026 Grupo Fly · Educação · Operação · Tecnologia ·
-        Contabilidade</span>
+      <span class="muted-3" style="font-size:.85rem;">© 2026 Grupo Fly · Educação · Tecnologia · Contabilidade · Operação </span>
     </div>
   </footer>
 
   <!-- ============ WHATSAPP FLOATER ============ -->
-  <a class="wa-float" href="https://wa.me/5518991871456" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <a class="wa-float" href="https://wa.me/551831751190" target="_blank" rel="noopener" aria-label="WhatsApp">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
       <path
         d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
@@ -919,41 +1211,13 @@
 
   <!-- icons -->
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="../js/nav.js"></script>
 
 
   <script>
     // icons
     function renderIcons() { if (window.lucide) window.lucide.createIcons(); }
     renderIcons();
-
-    // nav scroll state
-    const nav = document.getElementById('nav');
-    const onScroll = () => { nav.classList.toggle('scrolled', window.scrollY > 24); };
-    window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
-
-    // scroll-spy: marca o link ativo conforme a seção visível
-    (function () {
-      var navLinks = Array.from(document.querySelectorAll('.nav__links a[href^="#"], .nav__mobile a[href^="#"]'));
-      var sections = navLinks.map(function (a) {
-        return document.getElementById(a.getAttribute('href').slice(1));
-      }).filter(Boolean);
-
-      function setActive(id) {
-        navLinks.forEach(function (a) {
-          var match = a.getAttribute('href') === '#' + id;
-          a.classList.toggle('nav__link--active', match);
-        });
-      }
-
-      var spy = new IntersectionObserver(function (entries) {
-        entries.forEach(function (e) {
-          if (e.isIntersecting) setActive(e.target.id);
-        });
-      }, { rootMargin: '-30% 0px -60% 0px', threshold: 0 });
-
-      sections.forEach(function (s) { spy.observe(s); });
-    })();
 
     // reveal on scroll
     const io = new IntersectionObserver((entries) => {
@@ -978,286 +1242,96 @@
       });
     });
 
-    // ---- dados dos ícones por empresa ----
-    var COMPANY_ICONS = {
-      educacional: {
-        side: 'left',
-        cc: '#1B3A8C', ca: '#D4A017',
-        bg: 'rgba(27,58,140,0.11)', border: 'rgba(27,58,140,0.24)',
-        glow: 'rgba(27,58,140,0.28)', tooltipBorder: 'rgba(27,58,140,0.45)',
-        items: [
-          { icon: 'graduation-cap', label: 'Universidade Corporativa' },
-          { icon: 'megaphone', label: 'Serviços de Marketing' },
-          { icon: 'briefcase', label: 'Consultoria de Negócio' },
-          { icon: 'users', label: 'Mastermind Exclusivo' },
-          { icon: 'rocket', label: 'Implementação de Negócio' },
-        ]
-      },
-      voefly: {
-        side: 'right',
-        cc: '#F47B20', ca: '#F47B20',
-        bg: 'rgba(244,123,32,0.11)', border: 'rgba(244,123,32,0.24)',
-        glow: 'rgba(244,123,32,0.28)', tooltipBorder: 'rgba(244,123,32,0.45)',
-        items: [
-          { icon: 'file-check', label: 'Vistos e Documentações' },
-          { icon: 'star', label: 'Pontos e Fidelidade' },
-          { icon: 'building-2', label: 'Viagens Corporativas' },
-          { icon: 'sun', label: 'Lazer' },
-          { icon: 'compass', label: 'Expedições' },
-          { icon: 'calendar', label: 'Eventos e Convenções' },
-          { icon: 'globe', label: 'Intercâmbio' },
-        ]
-      },
-      viajaflux: {
-        side: 'left',
-        cc: '#7B3FE4', ca: '#a78bfa',
-        bg: 'rgba(123,63,228,0.11)', border: 'rgba(123,63,228,0.24)',
-        glow: 'rgba(123,63,228,0.28)', tooltipBorder: 'rgba(123,63,228,0.45)',
-        items: [
-          { icon: 'users', label: 'CRM' },
-          { icon: 'database', label: 'ERP Financeiro' },
-          { icon: 'plane', label: 'Emissão de Viagens' },
-          { icon: 'zap', label: 'Automação de Marketing' },
-          { icon: 'bar-chart-2', label: 'BI e Relatórios' },
-          { icon: 'landmark', label: 'Banco Digital Próprio' },
-          { icon: 'layout', label: 'Construtor de Websites' },
-        ]
-      },
-      flyone: {
-        side: 'right',
-        cc: '#1B8C4E', ca: '#34D399',
-        bg: 'rgba(27,140,78,0.11)', border: 'rgba(27,140,78,0.24)',
-        glow: 'rgba(27,140,78,0.28)', tooltipBorder: 'rgba(27,140,78,0.45)',
-        items: [
-          { icon: 'shield-check', label: 'Registro de Marca' },
-          { icon: 'monitor', label: 'Planejamento Digital' },
-          { icon: 'calculator', label: 'Tributário' },
-          { icon: 'scale', label: 'Assessoria Jurídica' },
-          { icon: 'book-open', label: 'Serviços Contábeis' },
-          { icon: 'clipboard-list', label: 'BPO Financeiro e Fiscal' },
-          { icon: 'user-check', label: 'RH e Departamento Pessoal' },
-          { icon: 'badge-check', label: 'Abertura e Legalização' },
-        ]
-      }
-    };
+    // ---- carrossel de serviços (dentro do próprio card) ----
+    // Só avança sozinho enquanto o card estiver selecionado (eco-card--on);
+    // ao perder a seleção, volta para o primeiro item e para de girar.
+    function initEcoCarousels() {
+      var registry = {};
 
-    var activeFloatIcons = [];
-    var activeRowSpacers = [];
+      document.querySelectorAll('.eco-carousel').forEach(function (root) {
+        var card = root.closest('.eco-card');
+        var cardId = card ? card.dataset.id : null;
+        var track = root.querySelector('.eco-carousel-track');
+        var slides = Array.prototype.slice.call(root.querySelectorAll('.eco-carousel-slide'));
+        var dotsWrap = root.querySelector('.eco-carousel-dots');
+        var prevBtn = root.querySelector('.eco-carousel-arrow[data-dir="-1"]');
+        var nextBtn = root.querySelector('.eco-carousel-arrow[data-dir="1"]');
+        if (!track || !slides.length) return;
 
-    function clearMobileIcons() {
-      document.querySelectorAll('.eco-mobile-icons').forEach(function (strip) {
-        strip.innerHTML = '';
-      });
-    }
+        var index = 0;
+        var timer = null;
+        var isActive = false;
 
-    function clearFloatingIcons() {
-      activeFloatIcons.forEach(function (el) {
-        el.classList.remove('eco-float--visible');
-        var ref = el;
-        setTimeout(function () { if (ref.parentNode) ref.parentNode.removeChild(ref); }, 380);
-      });
-      activeFloatIcons = [];
-      var spacers = activeRowSpacers.slice();
-      activeRowSpacers = [];
-      setTimeout(function () {
-        spacers.forEach(function (s) { if (s && s.parentNode) s.parentNode.removeChild(s); });
-      }, 380);
-    }
-
-    function spawnFloatingIcons(cardId) {
-      clearMobileIcons();
-      clearFloatingIcons();
-      if (!cardId) return;
-      var data = COMPANY_ICONS[cardId];
-      if (!data) return;
-
-      // ── Mobile (< 640px): strip horizontal dentro do card ──
-      if (window.innerWidth < 640) {
-        var mCard = document.querySelector('.eco-card[data-id="' + cardId + '"]');
-        if (!mCard) return;
-        var strip = mCard.querySelector('.eco-mobile-icons');
-        if (!strip) return;
-        data.items.forEach(function (item, i) {
-          var btn = document.createElement('div');
-          btn.className = 'eco-mobile-icon-btn';
-          btn.style.background = data.bg;
-          btn.style.borderColor = data.border;
-          btn.style.color = data.ca;
-          var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-          svg.setAttribute('data-lucide', item.icon);
-          svg.style.width = '22px';
-          svg.style.height = '22px';
-          btn.appendChild(svg);
-          var lbl = document.createElement('span');
-          lbl.className = 'eco-mobile-icon-label';
-          lbl.textContent = item.label;
-          btn.appendChild(lbl);
-          strip.appendChild(btn);
-          setTimeout(function () { btn.classList.add('visible'); }, 20 + i * 45);
+        slides.forEach(function (_, i) {
+          var dot = document.createElement('button');
+          dot.type = 'button';
+          dot.className = 'eco-carousel-dot';
+          dot.setAttribute('aria-label', 'Ir para item ' + (i + 1));
+          dot.addEventListener('click', function (e) {
+            e.stopPropagation();
+            goTo(i);
+            if (isActive) play();
+          });
+          dotsWrap.appendChild(dot);
         });
-        setTimeout(function () { if (window.lucide) window.lucide.createIcons(); }, 60);
-        return;
-      }
+        var dots = Array.prototype.slice.call(dotsWrap.children);
 
-      var card = document.querySelector('.eco-card[data-id="' + cardId + '"]');
-      var layer = document.getElementById('ecoFloatLayer');
-      if (!card || !layer) return;
-
-      var cardRect = card.getBoundingClientRect();
-      var layerRect = layer.getBoundingClientRect();
-      var cx = cardRect.left - layerRect.left;
-      var cy = cardRect.top - layerRect.top;
-      var cw = cardRect.width;
-      var ch = cardRect.height;
-
-      var ICON_SIZE = 44;
-      var GAP_X = 14;
-      var ICON_GAP = 9;
-      var side = data.side;
-
-      // Detecta se há espaço lateral suficiente para o modo original
-      var spaceAvail = side === 'left' ? cardRect.left : (window.innerWidth - cardRect.right);
-      var hasRoom = spaceAvail >= ICON_SIZE + GAP_X + 8;
-
-      var items = data.items;
-      var n = items.length;
-
-      if (!hasRoom) {
-        // ── Modo responsivo: ícones abaixo ──
-        var ICON_SIZE_B = 56;
-        var ICON_GAP_B = 8;
-        // Quantos ícones cabem por linha com base na largura real do card
-        var ICONS_PER_ROW = Math.min(n, Math.max(3, Math.floor((cardRect.width + ICON_GAP_B) / (ICON_SIZE_B + ICON_GAP_B))));
-        var rowCount = Math.ceil(n / ICONS_PER_ROW);
-        var iconZoneH = rowCount * ICON_SIZE_B + (rowCount - 1) * ICON_GAP_B + 14 + 12;
-
-        // Spacer — funciona para 1 coluna (mobile) e 2 colunas (tablet)
-        var grid = document.querySelector('.eco-grid');
-        var allCards = Array.from(grid.querySelectorAll('.eco-card'));
-        var cardIndex = allCards.indexOf(card);
-        var colCount = window.innerWidth < 640 ? 1 : 2;
-        var isLastRow = cardIndex >= allCards.length - colCount;
-        var spacer = document.createElement('div');
-        spacer.style.cssText = 'grid-column:1/-1;height:' + iconZoneH + 'px;pointer-events:none;transition:height .4s ease;';
-        if (!isLastRow) {
-          var lastInRow = allCards[Math.min(cardIndex + (colCount - 1 - (cardIndex % colCount)), allCards.length - 1)];
-          lastInRow.parentNode.insertBefore(spacer, lastInRow.nextSibling);
-        } else {
-          grid.appendChild(spacer);
+        function render() {
+          track.style.transform = 'translateX(-' + (index * 100) + '%)';
+          dots.forEach(function (d, i) { d.classList.toggle('is-active', i === index); });
         }
-        activeRowSpacers.push(spacer);
 
-        // Medir posição após inserção do spacer
-        var cRect2 = card.getBoundingClientRect();
-        var lRect2 = layer.getBoundingClientRect();
-        var cardBottom = cRect2.bottom - lRect2.top;
-        var cardLeft = cRect2.left - lRect2.left;
-        var cardWidth = cRect2.width;
+        function goTo(i) {
+          index = (i + slides.length) % slides.length;
+          render();
+        }
 
-        items.forEach(function (item, i) {
-          var row = Math.floor(i / ICONS_PER_ROW);
-          var col = i % ICONS_PER_ROW;
-          var itemsInRow = Math.min(ICONS_PER_ROW, n - row * ICONS_PER_ROW);
-          var rowWidth = itemsInRow * ICON_SIZE_B + (itemsInRow - 1) * ICON_GAP_B;
-          var x = cardLeft + (cardWidth - rowWidth) / 2 + col * (ICON_SIZE_B + ICON_GAP_B);
-          var y = cardBottom + 14 + row * (ICON_SIZE_B + ICON_GAP_B);
+        function next() { goTo(index + 1); }
 
-          var el = document.createElement('div');
-          el.className = 'eco-float-icon eco-float--below';
-          el.style.left = Math.round(x) + 'px';
-          el.style.top = Math.round(y) + 'px';
-          el.style.width = ICON_SIZE_B + 'px';
-          el.style.height = ICON_SIZE_B + 'px';
-          el.style.borderRadius = '14px';
-          el.style.background = data.bg;
-          el.style.border = '1px solid ' + data.border;
-          el.style.color = data.ca;
-          el.style.boxShadow = '0 0 0 0 ' + data.glow;
+        function play() {
+          if (timer) clearInterval(timer);
+          timer = setInterval(next, 3200);
+        }
 
-          var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-          svg.setAttribute('data-lucide', item.icon);
-          svg.style.width = '24px';
-          svg.style.height = '24px';
-          el.appendChild(svg);
+        function pause() {
+          if (timer) clearInterval(timer);
+          timer = null;
+        }
 
-          var tip = document.createElement('span');
-          tip.className = 'eco-float-tooltip';
-          tip.textContent = item.label;
-          tip.style.borderColor = data.tooltipBorder;
-          tip.style.color = data.ca;
-          el.appendChild(tip);
+        function activate() {
+          isActive = true;
+          goTo(0);
+          play();
+        }
 
-          el.addEventListener('mouseenter', function () {
-            el.style.boxShadow = '0 0 22px ' + data.glow;
-            el.style.background = 'rgba(' + hexToRgb(data.cc) + ',0.22)';
-          });
-          el.addEventListener('mouseleave', function () {
-            el.style.boxShadow = '0 0 0 0 ' + data.glow;
-            el.style.background = data.bg;
-          });
+        function deactivate() {
+          isActive = false;
+          pause();
+          goTo(0);
+        }
 
-          layer.appendChild(el);
-          activeFloatIcons.push(el);
-          setTimeout(function () { el.classList.add('eco-float--visible'); }, 30 + i * 50);
+        if (prevBtn) prevBtn.addEventListener('click', function (e) {
+          e.stopPropagation();
+          goTo(index - 1);
+          if (isActive) play();
+        });
+        if (nextBtn) nextBtn.addEventListener('click', function (e) {
+          e.stopPropagation();
+          goTo(index + 1);
+          if (isActive) play();
         });
 
-      } else {
-        // ── Modo original: ícones na lateral ──
-        var totalH = n * ICON_SIZE + (n - 1) * ICON_GAP;
-        var startY = cy + (ch - totalH) / 2;
-        var x = side === 'left'
-          ? cx - ICON_SIZE - GAP_X
-          : cx + cw + GAP_X;
+        root.addEventListener('mouseenter', function () { if (isActive) pause(); });
+        root.addEventListener('mouseleave', function () { if (isActive) play(); });
 
-        items.forEach(function (item, i) {
-          var y = startY + i * (ICON_SIZE + ICON_GAP);
+        render();
 
-          var el = document.createElement('div');
-          el.className = 'eco-float-icon eco-float--' + side;
-          el.style.left = Math.round(x) + 'px';
-          el.style.top = Math.round(y) + 'px';
-          el.style.background = data.bg;
-          el.style.border = '1px solid ' + data.border;
-          el.style.color = data.ca;
-          el.style.boxShadow = '0 0 0 0 ' + data.glow;
+        if (cardId) registry[cardId] = { activate: activate, deactivate: deactivate };
+      });
 
-          var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-          svg.setAttribute('data-lucide', item.icon);
-          svg.style.width = '18px';
-          svg.style.height = '18px';
-          el.appendChild(svg);
-
-          var tip = document.createElement('span');
-          tip.className = 'eco-float-tooltip';
-          tip.textContent = item.label;
-          tip.style.borderColor = data.tooltipBorder;
-          tip.style.color = data.ca;
-          el.appendChild(tip);
-
-          el.addEventListener('mouseenter', function () {
-            el.style.boxShadow = '0 0 22px ' + data.glow;
-            el.style.background = 'rgba(' + hexToRgb(data.cc) + ',0.22)';
-          });
-          el.addEventListener('mouseleave', function () {
-            el.style.boxShadow = '0 0 0 0 ' + data.glow;
-            el.style.background = data.bg;
-          });
-
-          layer.appendChild(el);
-          activeFloatIcons.push(el);
-          setTimeout(function () { el.classList.add('eco-float--visible'); }, 30 + i * 45);
-        });
-      }
-
-      setTimeout(function () { if (window.lucide) window.lucide.createIcons(); }, 60);
+      return registry;
     }
-
-    function hexToRgb(hex) {
-      var r = parseInt(hex.slice(1, 3), 16);
-      var g = parseInt(hex.slice(3, 5), 16);
-      var b = parseInt(hex.slice(5, 7), 16);
-      return r + ',' + g + ',' + b;
-    }
+    var ecoCarousels = initEcoCarousels();
 
     // interatividade empresas
     function selectCompany(id) {
@@ -1269,8 +1343,17 @@
         button.classList.toggle('eco-ind--on', isActive);
         button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
       });
-      spawnFloatingIcons(id);
+      Object.keys(ecoCarousels).forEach(function (cardId) {
+        if (cardId === id) ecoCarousels[cardId].activate();
+        else ecoCarousels[cardId].deactivate();
+      });
     }
+
+    // ativa o carrossel do card que já começa selecionado
+    (function () {
+      var initialCard = document.querySelector('.eco-card.eco-card--on');
+      if (initialCard) selectCompany(initialCard.dataset.id);
+    })();
 
     document.querySelectorAll('.eco-card').forEach(function (card) {
       card.addEventListener('click', function () { selectCompany(this.dataset.id); });
@@ -1278,48 +1361,6 @@
     document.querySelectorAll('.eco-ind-btn').forEach(function (button) {
       button.addEventListener('click', function () { selectCompany(this.dataset.id); });
     });
-
-    // reposicionar ao redimensionar
-    var resizeTimer;
-    window.addEventListener('resize', function () {
-      clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(function () {
-        var activeCard = document.querySelector('.eco-card--on');
-        if (activeCard) spawnFloatingIcons(activeCard.dataset.id);
-      }, 120);
-    });
-
-    // spawn ícones do card ativo inicial após layout estabilizar
-    window.addEventListener('load', function () {
-      setTimeout(function () {
-        var activeCard = document.querySelector('.eco-card--on');
-        if (activeCard) spawnFloatingIcons(activeCard.dataset.id);
-      }, 300);
-    });
-
-
-    // nav burger (slide-down mobile)
-    (function () {
-      var burger = document.getElementById('nav-burger');
-      var mobile = document.getElementById('nav-mobile');
-      var iconMenu = document.getElementById('icon-menu');
-      var iconX = document.getElementById('icon-x');
-      var open = false;
-      burger.addEventListener('click', function () {
-        open = !open;
-        mobile.classList.toggle('open', open);
-        iconMenu.style.display = open ? 'none' : '';
-        iconX.style.display = open ? '' : 'none';
-      });
-      mobile.querySelectorAll('a').forEach(function (a) {
-        a.addEventListener('click', function () {
-          open = false;
-          mobile.classList.remove('open');
-          iconMenu.style.display = '';
-          iconX.style.display = 'none';
-        });
-      });
-    })();
   </script>
 
 </body>

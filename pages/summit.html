@@ -14,20 +14,67 @@
 <body>
 
   <!-- ============ NAV ============ -->
-  <header class="nav" id="nav">
+  <header class="nav nav--summit" id="nav">
     <div class="nav__inner">
       <a href="index.html" class="nav__logo-link">
-        <img src="../assets/grupofly-black.png" alt="Grupo Fly" />
+        <img src="../assets/grupofly-white.png" alt="Grupo Fly" />
       </a>
       <div class="nav__links">
-        <a href="index.html#solucao">Solução</a>
-        <a href="index.html#empresas">Empresas</a>
-        <a href="index.html#essencia">Nossa Essência</a>
-        <a href="index.html#socios">Sócios</a>
-        <a href="index.html#atuacao">Como atuamos</a>
-        <a href="noticias.html">Notícias</a>
-        <a href="summit.html" class="nav__link--active">Summit</a>
-        <a href="index.html#contato">Contato</a>
+
+        <div class="nav__item" data-menu="home">
+          <button class="nav__top-link" type="button" aria-haspopup="true" aria-expanded="false">
+            Home
+            <svg class="nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="nav__dropdown nav__dropdown--grid">
+            <a href="index.html" class="nav__dropdown-link nav__dropdown-link--featured">
+              <strong>Voltar à página inicial</strong>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="index.html#solucao" class="nav__dropdown-link"><strong>Solução</strong><small>Como funciona</small></a>
+            <a href="index.html#empresas" class="nav__dropdown-link"><strong>Empresas</strong><small>Nosso ecossistema</small></a>
+            <a href="index.html#essencia" class="nav__dropdown-link"><strong>Nossa Essência</strong><small>Valores e propósito</small></a>
+            <a href="index.html#socios" class="nav__dropdown-link"><strong>Sócios</strong><small>Quem lidera</small></a>
+            <a href="index.html#atuacao" class="nav__dropdown-link"><strong>Como atuamos</strong><small>Nosso método</small></a>
+            <a href="index.html#contato" class="nav__dropdown-link"><strong>Contato</strong><small>Fale conosco</small></a>
+          </div>
+        </div>
+
+        <div class="nav__item" data-menu="noticias">
+          <button class="nav__top-link" type="button" aria-haspopup="true" aria-expanded="false">
+            Notícias
+            <svg class="nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="nav__dropdown">
+            <a href="noticias.html" class="nav__dropdown-link nav__dropdown-link--featured">
+              <strong>Ver todas as notícias</strong>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="noticias.html#noticias" class="nav__dropdown-link"><strong>Últimas Notícias</strong><small>Atualizações do grupo</small></a>
+            <a href="noticias.html#eventos" class="nav__dropdown-link"><strong>Eventos</strong><small>Agenda e coberturas</small></a>
+            <a href="noticias.html#artigos" class="nav__dropdown-link"><strong>Matérias</strong><small>Conteúdos e análises</small></a>
+          </div>
+        </div>
+
+        <div class="nav__item is-current" data-menu="summit">
+          <button class="nav__top-link" type="button" aria-haspopup="true" aria-expanded="false">
+            Summit
+            <svg class="nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="nav__dropdown nav__dropdown--grid">
+            <a href="#top" class="nav__dropdown-link nav__dropdown-link--featured">
+              <strong>Topo da página</strong>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#sobre" class="nav__dropdown-link"><strong>Sobre o Summit</strong><small>O que é o evento</small></a>
+            <a href="#destaques" class="nav__dropdown-link"><strong>Destaques</strong><small>Momentos marcantes</small></a>
+            <a href="#palestrantes" class="nav__dropdown-link"><strong>Palestrantes</strong><small>Quem esteve no palco</small></a>
+            <a href="#programacao" class="nav__dropdown-link"><strong>Programação</strong><small>Como foi a jornada</small></a>
+            <a href="#parceiros" class="nav__dropdown-link"><strong>Parceiros</strong><small>Marcas apoiadoras</small></a>
+            <a href="#premiacoes" class="nav__dropdown-link"><strong>Premiações</strong><small>Reconhecimento da rede</small></a>
+          </div>
+        </div>
+
       </div>
       <div class="nav__cta">
         <a href="index.html" class="btn--ghost-sm">Conhecer soluções</a>
@@ -39,14 +86,64 @@
       </button>
     </div>
     <div class="nav__mobile" id="nav-mobile">
-      <a href="index.html#solucao">Solução</a>
-      <a href="index.html#empresas">Empresas</a>
-      <a href="index.html#essencia">Nossa Essência</a>
-      <a href="index.html#socios">Sócios</a>
-      <a href="index.html#atuacao">Como atuamos</a>
-      <a href="noticias.html">Notícias</a>
-      <a href="summit.html" class="nav__link--active">Summit</a>
-      <a href="index.html#contato">Contato</a>
+
+      <div class="nav__mobile-group">
+        <button class="nav__mobile-group-toggle" type="button" aria-expanded="false">
+          Home
+          <svg class="nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="nav__mobile-group-panel-wrap">
+          <div class="nav__mobile-group-panel">
+            <div class="nav__mobile-group-panel-inner">
+              <a href="index.html" class="nav__dropdown-link--featured">Voltar à página inicial</a>
+              <a href="index.html#solucao">Solução</a>
+              <a href="index.html#empresas">Empresas</a>
+              <a href="index.html#essencia">Nossa Essência</a>
+              <a href="index.html#socios">Sócios</a>
+              <a href="index.html#atuacao">Como atuamos</a>
+              <a href="index.html#contato">Contato</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav__mobile-group">
+        <button class="nav__mobile-group-toggle" type="button" aria-expanded="false">
+          Notícias
+          <svg class="nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="nav__mobile-group-panel-wrap">
+          <div class="nav__mobile-group-panel">
+            <div class="nav__mobile-group-panel-inner">
+              <a href="noticias.html" class="nav__dropdown-link--featured">Ver todas as notícias</a>
+              <a href="noticias.html#noticias">Últimas Notícias</a>
+              <a href="noticias.html#eventos">Eventos</a>
+              <a href="noticias.html#artigos">Matérias</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav__mobile-group is-current">
+        <button class="nav__mobile-group-toggle" type="button" aria-expanded="false">
+          Summit
+          <svg class="nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="nav__mobile-group-panel-wrap">
+          <div class="nav__mobile-group-panel">
+            <div class="nav__mobile-group-panel-inner">
+              <a href="#top" class="nav__dropdown-link--featured">Topo da página</a>
+              <a href="#sobre">Sobre o Summit</a>
+              <a href="#destaques">Destaques</a>
+              <a href="#palestrantes">Palestrantes</a>
+              <a href="#programacao">Programação</a>
+              <a href="#parceiros">Parceiros</a>
+              <a href="#premiacoes">Premiações</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="nav__mobile-cta">
         <a href="index.html" class="nav__mobile-btn nav__mobile-btn--ghost">Conhecer soluções</a>
         <a href="index.html#cta" class="nav__mobile-btn nav__mobile-btn--purple">Falar com especialista</a>
@@ -405,9 +502,10 @@
       </div>
 
       <div style="text-align:center;margin-top:36px;">
-        <a href="#galeria" class="btn btn--ghost">
-          Ver mais fotos <svg data-lucide="arrow-right"></svg>
-        </a>
+        <span class="summit-badge" style="margin-bottom:0;">
+          <svg data-lucide="zoom-in" style="width:14px;height:14px;"></svg>
+          Clique em qualquer foto para ampliar
+        </span>
       </div>
     </div>
   </section>
@@ -425,353 +523,145 @@
         </p>
       </div>
 
-      <div class="summit-speakers__carousel-wrapper reveal">
-        <div class="summit-spk-slider">
-          <div class="summit-spk-track">
-
-            <!-- set original -->
-            <div class="summit-spk-card">
-              <div class="summit-spk-card__img"><img src="../assets/speakers/luiz.png" alt="Luiz Gregatti" /></div>
-              <div class="summit-spk-card__info">
-                <strong class="summit-spk-card__name">Luiz Gregatti</strong>
-                <span class="summit-spk-card__role">CEO &amp; Fundador</span>
-                <span class="summit-spk-card__company">ViajaFlux / Grupo Fly</span>
+      <div class="spk-carousel reveal" data-spk-carousel>
+        <button class="spk-arrow spk-arrow--prev" type="button" data-dir="-1" aria-label="Palestrante anterior">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <div class="spk-viewport">
+          <div class="spk-track">
+            <div class="spk-card">
+              <span class="spk-card__num">01</span>
+              <div class="spk-card__inner">
+                <img class="spk-card__img" src="../assets/speakers/cropped/luiz.png" alt="Luiz Gregatti — CEO & Fundador, ViajaFlux / Grupo Fly" loading="lazy" />
               </div>
             </div>
-            <div class="summit-spk-card">
-              <div class="summit-spk-card__img"><img src="../assets/speakers/pablo.png" alt="Pablo Alexandrino" /></div>
-              <div class="summit-spk-card__info">
-                <strong class="summit-spk-card__name">Pablo Alexandrino</strong>
-                <span class="summit-spk-card__role">Tecnologia</span>
-                <span class="summit-spk-card__company">Grupo Fly</span>
+            <div class="spk-card">
+              <span class="spk-card__num">02</span>
+              <div class="spk-card__inner">
+                <img class="spk-card__img" src="../assets/speakers/cropped/pablo.png" alt="Pablo Alexandrino — Tecnologia, Grupo Fly" loading="lazy" />
               </div>
             </div>
-            <div class="summit-spk-card">
-              <div class="summit-spk-card__img"><img src="../assets/speakers/joao.png" alt="João Zanini" /></div>
-              <div class="summit-spk-card__info">
-                <strong class="summit-spk-card__name">João Zanini</strong>
-                <span class="summit-spk-card__role">Pós-venda</span>
-                <span class="summit-spk-card__company">ViajaFlux</span>
+            <div class="spk-card">
+              <span class="spk-card__num">03</span>
+              <div class="spk-card__inner">
+                <img class="spk-card__img" src="../assets/speakers/cropped/joao.png" alt="João Zanini — Pós-venda, ViajaFlux" loading="lazy" />
               </div>
             </div>
-            <div class="summit-spk-card">
-              <div class="summit-spk-card__img"><img src="../assets/speakers/edney.png" alt="Edney Souza" /></div>
-              <div class="summit-spk-card__info">
-                <strong class="summit-spk-card__name">Edney Souza</strong>
-                <span class="summit-spk-card__role">Especialista em IA</span>
-                <span class="summit-spk-card__company">Professor ESPM</span>
+            <div class="spk-card">
+              <span class="spk-card__num">04</span>
+              <div class="spk-card__inner">
+                <img class="spk-card__img" src="../assets/speakers/cropped/edney.png" alt="Edney Souza — Especialista em IA, Professor ESPM" loading="lazy" />
               </div>
             </div>
-            <div class="summit-spk-card">
-              <div class="summit-spk-card__img"><img src="../assets/speakers/guilherme.png" alt="Guilherme Wroclawski" /></div>
-              <div class="summit-spk-card__info">
-                <strong class="summit-spk-card__name">Guilherme Wroclawski</strong>
-                <span class="summit-spk-card__role">CEO</span>
-                <span class="summit-spk-card__company">Hero Seguros</span>
+            <div class="spk-card">
+              <span class="spk-card__num">05</span>
+              <div class="spk-card__inner">
+                <img class="spk-card__img" src="../assets/speakers/cropped/guilherme.png" alt="Guilherme Wroclawski — CEO, Hero Seguros" loading="lazy" />
               </div>
             </div>
-            <div class="summit-spk-card">
-              <div class="summit-spk-card__img"><img src="../assets/speakers/daniel.png" alt="Daniel Toledo" /></div>
-              <div class="summit-spk-card__info">
-                <strong class="summit-spk-card__name">Daniel Toledo</strong>
-                <span class="summit-spk-card__role">CEO</span>
-                <span class="summit-spk-card__company">Grupo Pátria</span>
+            <div class="spk-card">
+              <span class="spk-card__num">06</span>
+              <div class="spk-card__inner">
+                <img class="spk-card__img" src="../assets/speakers/cropped/daniel.png" alt="Daniel Toledo — CEO, Grupo Pátria" loading="lazy" />
               </div>
             </div>
-            <div class="summit-spk-card">
-              <div class="summit-spk-card__img"><img src="../assets/speakers/joice.png" alt="Joice Ferreira" /></div>
-              <div class="summit-spk-card__info">
-                <strong class="summit-spk-card__name">Joice Ferreira</strong>
-                <span class="summit-spk-card__role">Fundadora</span>
-                <span class="summit-spk-card__company">Magic Blue Turismo</span>
+            <div class="spk-card">
+              <span class="spk-card__num">07</span>
+              <div class="spk-card__inner">
+                <img class="spk-card__img" src="../assets/speakers/cropped/joice.png" alt="Joice Ferreira — Fundadora, Magic Blue Turismo" loading="lazy" />
               </div>
             </div>
-            <div class="summit-spk-card">
-              <div class="summit-spk-card__img"><img src="../assets/speakers/rodrigo-alvim.png" alt="Rodrigo Alvim" /></div>
-              <div class="summit-spk-card__info">
-                <strong class="summit-spk-card__name">Rodrigo Alvim</strong>
-                <span class="summit-spk-card__role">Advogado · Criador</span>
-                <span class="summit-spk-card__company">Viaje sem B.O.</span>
+            <div class="spk-card">
+              <span class="spk-card__num">08</span>
+              <div class="spk-card__inner">
+                <img class="spk-card__img" src="../assets/speakers/cropped/rodrigo-alvim.png" alt="Rodrigo Alvim — Advogado · Criador, Viaje sem B.O." loading="lazy" />
               </div>
             </div>
-            <div class="summit-spk-card">
-              <div class="summit-spk-card__img"><img src="../assets/speakers/kaio.png" alt="Kaio Souza" /></div>
-              <div class="summit-spk-card__info">
-                <strong class="summit-spk-card__name">Kaio Souza</strong>
-                <span class="summit-spk-card__role">Influenciador</span>
-                <span class="summit-spk-card__company">Turismo Digital</span>
+            <div class="spk-card">
+              <span class="spk-card__num">09</span>
+              <div class="spk-card__inner">
+                <img class="spk-card__img" src="../assets/speakers/cropped/kaio.png" alt="Kaio Souza — Influenciador, Turismo Digital" loading="lazy" />
               </div>
             </div>
-            <div class="summit-spk-card">
-              <div class="summit-spk-card__img"><img src="../assets/speakers/zubaran.png" alt="Alexandre Zubaran" /></div>
-              <div class="summit-spk-card__info">
-                <strong class="summit-spk-card__name">Alexandre Zubaran</strong>
-                <span class="summit-spk-card__role">CEO</span>
-                <span class="summit-spk-card__company">Enjoy Hotéis &amp; Resorts</span>
+            <div class="spk-card">
+              <span class="spk-card__num">10</span>
+              <div class="spk-card__inner">
+                <img class="spk-card__img" src="../assets/speakers/cropped/zubaran.png" alt="Alexandre Zubaran — CEO, Enjoy Hotéis & Resorts" loading="lazy" />
               </div>
             </div>
-            <div class="summit-spk-card">
-              <div class="summit-spk-card__img"><img src="../assets/speakers/marcio.png" alt="Marcio Nogueira" /></div>
-              <div class="summit-spk-card__info">
-                <strong class="summit-spk-card__name">Marcio Nogueira</strong>
-                <span class="summit-spk-card__role">Diretor-geral</span>
-                <span class="summit-spk-card__company">HotelDO</span>
+            <div class="spk-card">
+              <span class="spk-card__num">11</span>
+              <div class="spk-card__inner">
+                <img class="spk-card__img" src="../assets/speakers/cropped/marcio.png" alt="Marcio Nogueira — Diretor-geral, HotelDO" loading="lazy" />
               </div>
             </div>
-            <div class="summit-spk-card">
-              <div class="summit-spk-card__img"><img src="../assets/speakers/eduardo.png" alt="Eduardo Vansan" /></div>
-              <div class="summit-spk-card__info">
-                <strong class="summit-spk-card__name">Eduardo Vansan</strong>
-                <span class="summit-spk-card__role">Diretor</span>
-                <span class="summit-spk-card__company">Orinter</span>
+            <div class="spk-card">
+              <span class="spk-card__num">12</span>
+              <div class="spk-card__inner">
+                <img class="spk-card__img" src="../assets/speakers/cropped/eduardo.png" alt="Eduardo Vansan — Diretor, Orinter" loading="lazy" />
               </div>
             </div>
-            <div class="summit-spk-card">
-              <div class="summit-spk-card__img"><img src="../assets/speakers/wagner.png" alt="Wagner Chaves" /></div>
-              <div class="summit-spk-card__info">
-                <strong class="summit-spk-card__name">Wagner Chaves</strong>
-                <span class="summit-spk-card__role">Liderança Comercial</span>
-                <span class="summit-spk-card__company">Sakura Consolidadora</span>
+            <div class="spk-card">
+              <span class="spk-card__num">13</span>
+              <div class="spk-card__inner">
+                <img class="spk-card__img" src="../assets/speakers/cropped/wagner.png" alt="Wagner Chaves — Liderança Comercial, Sakura Consolidadora" loading="lazy" />
               </div>
             </div>
-            <div class="summit-spk-card">
-              <div class="summit-spk-card__img"><img src="../assets/speakers/rodrigo.png" alt="Rodrigo Vaz" /></div>
-              <div class="summit-spk-card__info">
-                <strong class="summit-spk-card__name">Rodrigo Vaz</strong>
-                <span class="summit-spk-card__role">Representante</span>
-                <span class="summit-spk-card__company">Hot Beach</span>
+            <div class="spk-card">
+              <span class="spk-card__num">14</span>
+              <div class="spk-card__inner">
+                <img class="spk-card__img" src="../assets/speakers/cropped/rodrigo.png" alt="Rodrigo Vaz — Representante, Hot Beach" loading="lazy" />
               </div>
             </div>
-            <div class="summit-spk-card">
-              <div class="summit-spk-card__img"><img src="../assets/speakers/geninho.png" alt="Geninho Zuliani" /></div>
-              <div class="summit-spk-card__info">
-                <strong class="summit-spk-card__name">Geninho Zuliani</strong>
-                <span class="summit-spk-card__role">Prefeito</span>
-                <span class="summit-spk-card__company">Olímpia, SP</span>
+            <div class="spk-card">
+              <span class="spk-card__num">15</span>
+              <div class="spk-card__inner">
+                <img class="spk-card__img" src="../assets/speakers/cropped/geninho.png" alt="Geninho Zuliani — Prefeito, Olímpia, SP" loading="lazy" />
               </div>
             </div>
-            <div class="summit-spk-card">
-              <div class="summit-spk-card__img"><img src="../assets/speakers/andre.png" alt="André" /></div>
-              <div class="summit-spk-card__info">
-                <strong class="summit-spk-card__name">André</strong>
-                <span class="summit-spk-card__role">Palestrante</span>
-                <span class="summit-spk-card__company">ViajaFlux Summit 2026</span>
+            <div class="spk-card">
+              <span class="spk-card__num">16</span>
+              <div class="spk-card__inner">
+                <img class="spk-card__img" src="../assets/speakers/cropped/andre.png" alt="André — Palestrante, ViajaFlux Summit 2026" loading="lazy" />
               </div>
             </div>
-            <div class="summit-spk-card">
-              <div class="summit-spk-card__img"><img src="../assets/speakers/marcelo.png" alt="Marcelo" /></div>
-              <div class="summit-spk-card__info">
-                <strong class="summit-spk-card__name">Marcelo</strong>
-                <span class="summit-spk-card__role">Palestrante</span>
-                <span class="summit-spk-card__company">ViajaFlux Summit 2026</span>
+            <div class="spk-card">
+              <span class="spk-card__num">17</span>
+              <div class="spk-card__inner">
+                <img class="spk-card__img" src="../assets/speakers/cropped/marcelo.png" alt="Marcelo — Palestrante, ViajaFlux Summit 2026" loading="lazy" />
               </div>
             </div>
-            <div class="summit-spk-card">
-              <div class="summit-spk-card__img"><img src="../assets/speakers/marcos.png" alt="Marcos" /></div>
-              <div class="summit-spk-card__info">
-                <strong class="summit-spk-card__name">Marcos</strong>
-                <span class="summit-spk-card__role">Palestrante</span>
-                <span class="summit-spk-card__company">ViajaFlux Summit 2026</span>
+            <div class="spk-card">
+              <span class="spk-card__num">18</span>
+              <div class="spk-card__inner">
+                <img class="spk-card__img" src="../assets/speakers/cropped/marcos.png" alt="Marcos — Palestrante, ViajaFlux Summit 2026" loading="lazy" />
               </div>
             </div>
-            <div class="summit-spk-card">
-              <div class="summit-spk-card__img"><img src="../assets/speakers/alexandre.png" alt="Alexandre" /></div>
-              <div class="summit-spk-card__info">
-                <strong class="summit-spk-card__name">Alexandre</strong>
-                <span class="summit-spk-card__role">Palestrante</span>
-                <span class="summit-spk-card__company">ViajaFlux Summit 2026</span>
+            <div class="spk-card">
+              <span class="spk-card__num">19</span>
+              <div class="spk-card__inner">
+                <img class="spk-card__img" src="../assets/speakers/cropped/alexandre.png" alt="Alexandre — Palestrante, ViajaFlux Summit 2026" loading="lazy" />
               </div>
             </div>
-            <div class="summit-spk-card">
-              <div class="summit-spk-card__img"><img src="../assets/speakers/amanda.png" alt="Amanda" /></div>
-              <div class="summit-spk-card__info">
-                <strong class="summit-spk-card__name">Amanda</strong>
-                <span class="summit-spk-card__role">Palestrante</span>
-                <span class="summit-spk-card__company">ViajaFlux Summit 2026</span>
+            <div class="spk-card">
+              <span class="spk-card__num">20</span>
+              <div class="spk-card__inner">
+                <img class="spk-card__img" src="../assets/speakers/cropped/amanda.png" alt="Amanda — Palestrante, ViajaFlux Summit 2026" loading="lazy" />
               </div>
             </div>
-            <div class="summit-spk-card">
-              <div class="summit-spk-card__img"><img src="../assets/speakers/ze.png" alt="Zé" /></div>
-              <div class="summit-spk-card__info">
-                <strong class="summit-spk-card__name">Zé</strong>
-                <span class="summit-spk-card__role">Palestrante</span>
-                <span class="summit-spk-card__company">ViajaFlux Summit 2026</span>
+            <div class="spk-card">
+              <span class="spk-card__num">21</span>
+              <div class="spk-card__inner">
+                <img class="spk-card__img" src="../assets/speakers/cropped/ze.png" alt="Zé — Palestrante, ViajaFlux Summit 2026" loading="lazy" />
               </div>
             </div>
-
-            <!-- set duplicado para loop seamless -->
-            <div class="summit-spk-card" aria-hidden="true">
-              <div class="summit-spk-card__img"><img src="../assets/speakers/luiz.png" alt="" /></div>
-              <div class="summit-spk-card__info">
-                <strong class="summit-spk-card__name">Luiz Gregatti</strong>
-                <span class="summit-spk-card__role">CEO &amp; Fundador</span>
-                <span class="summit-spk-card__company">ViajaFlux / Grupo Fly</span>
-              </div>
-            </div>
-            <div class="summit-spk-card" aria-hidden="true">
-              <div class="summit-spk-card__img"><img src="../assets/speakers/pablo.png" alt="" /></div>
-              <div class="summit-spk-card__info">
-                <strong class="summit-spk-card__name">Pablo Alexandrino</strong>
-                <span class="summit-spk-card__role">Tecnologia</span>
-                <span class="summit-spk-card__company">Grupo Fly</span>
-              </div>
-            </div>
-            <div class="summit-spk-card" aria-hidden="true">
-              <div class="summit-spk-card__img"><img src="../assets/speakers/joao.png" alt="" /></div>
-              <div class="summit-spk-card__info">
-                <strong class="summit-spk-card__name">João Zanini</strong>
-                <span class="summit-spk-card__role">Pós-venda</span>
-                <span class="summit-spk-card__company">ViajaFlux</span>
-              </div>
-            </div>
-            <div class="summit-spk-card" aria-hidden="true">
-              <div class="summit-spk-card__img"><img src="../assets/speakers/edney.png" alt="" /></div>
-              <div class="summit-spk-card__info">
-                <strong class="summit-spk-card__name">Edney Souza</strong>
-                <span class="summit-spk-card__role">Especialista em IA</span>
-                <span class="summit-spk-card__company">Professor ESPM</span>
-              </div>
-            </div>
-            <div class="summit-spk-card" aria-hidden="true">
-              <div class="summit-spk-card__img"><img src="../assets/speakers/guilherme.png" alt="" /></div>
-              <div class="summit-spk-card__info">
-                <strong class="summit-spk-card__name">Guilherme Wroclawski</strong>
-                <span class="summit-spk-card__role">CEO</span>
-                <span class="summit-spk-card__company">Hero Seguros</span>
-              </div>
-            </div>
-            <div class="summit-spk-card" aria-hidden="true">
-              <div class="summit-spk-card__img"><img src="../assets/speakers/daniel.png" alt="" /></div>
-              <div class="summit-spk-card__info">
-                <strong class="summit-spk-card__name">Daniel Toledo</strong>
-                <span class="summit-spk-card__role">CEO</span>
-                <span class="summit-spk-card__company">Grupo Pátria</span>
-              </div>
-            </div>
-            <div class="summit-spk-card" aria-hidden="true">
-              <div class="summit-spk-card__img"><img src="../assets/speakers/joice.png" alt="" /></div>
-              <div class="summit-spk-card__info">
-                <strong class="summit-spk-card__name">Joice Ferreira</strong>
-                <span class="summit-spk-card__role">Fundadora</span>
-                <span class="summit-spk-card__company">Magic Blue Turismo</span>
-              </div>
-            </div>
-            <div class="summit-spk-card" aria-hidden="true">
-              <div class="summit-spk-card__img"><img src="../assets/speakers/rodrigo-alvim.png" alt="" /></div>
-              <div class="summit-spk-card__info">
-                <strong class="summit-spk-card__name">Rodrigo Alvim</strong>
-                <span class="summit-spk-card__role">Advogado · Criador</span>
-                <span class="summit-spk-card__company">Viaje sem B.O.</span>
-              </div>
-            </div>
-            <div class="summit-spk-card" aria-hidden="true">
-              <div class="summit-spk-card__img"><img src="../assets/speakers/kaio.png" alt="" /></div>
-              <div class="summit-spk-card__info">
-                <strong class="summit-spk-card__name">Kaio Souza</strong>
-                <span class="summit-spk-card__role">Influenciador</span>
-                <span class="summit-spk-card__company">Turismo Digital</span>
-              </div>
-            </div>
-            <div class="summit-spk-card" aria-hidden="true">
-              <div class="summit-spk-card__img"><img src="../assets/speakers/zubaran.png" alt="" /></div>
-              <div class="summit-spk-card__info">
-                <strong class="summit-spk-card__name">Alexandre Zubaran</strong>
-                <span class="summit-spk-card__role">CEO</span>
-                <span class="summit-spk-card__company">Enjoy Hotéis &amp; Resorts</span>
-              </div>
-            </div>
-            <div class="summit-spk-card" aria-hidden="true">
-              <div class="summit-spk-card__img"><img src="../assets/speakers/marcio.png" alt="" /></div>
-              <div class="summit-spk-card__info">
-                <strong class="summit-spk-card__name">Marcio Nogueira</strong>
-                <span class="summit-spk-card__role">Diretor-geral</span>
-                <span class="summit-spk-card__company">HotelDO</span>
-              </div>
-            </div>
-            <div class="summit-spk-card" aria-hidden="true">
-              <div class="summit-spk-card__img"><img src="../assets/speakers/eduardo.png" alt="" /></div>
-              <div class="summit-spk-card__info">
-                <strong class="summit-spk-card__name">Eduardo Vansan</strong>
-                <span class="summit-spk-card__role">Diretor</span>
-                <span class="summit-spk-card__company">Orinter</span>
-              </div>
-            </div>
-            <div class="summit-spk-card" aria-hidden="true">
-              <div class="summit-spk-card__img"><img src="../assets/speakers/wagner.png" alt="" /></div>
-              <div class="summit-spk-card__info">
-                <strong class="summit-spk-card__name">Wagner Chaves</strong>
-                <span class="summit-spk-card__role">Liderança Comercial</span>
-                <span class="summit-spk-card__company">Sakura Consolidadora</span>
-              </div>
-            </div>
-            <div class="summit-spk-card" aria-hidden="true">
-              <div class="summit-spk-card__img"><img src="../assets/speakers/rodrigo.png" alt="" /></div>
-              <div class="summit-spk-card__info">
-                <strong class="summit-spk-card__name">Rodrigo Vaz</strong>
-                <span class="summit-spk-card__role">Representante</span>
-                <span class="summit-spk-card__company">Hot Beach</span>
-              </div>
-            </div>
-            <div class="summit-spk-card" aria-hidden="true">
-              <div class="summit-spk-card__img"><img src="../assets/speakers/geninho.png" alt="" /></div>
-              <div class="summit-spk-card__info">
-                <strong class="summit-spk-card__name">Geninho Zuliani</strong>
-                <span class="summit-spk-card__role">Prefeito</span>
-                <span class="summit-spk-card__company">Olímpia, SP</span>
-              </div>
-            </div>
-            <div class="summit-spk-card" aria-hidden="true">
-              <div class="summit-spk-card__img"><img src="../assets/speakers/andre.png" alt="" /></div>
-              <div class="summit-spk-card__info">
-                <strong class="summit-spk-card__name">André</strong>
-                <span class="summit-spk-card__role">Palestrante</span>
-                <span class="summit-spk-card__company">ViajaFlux Summit 2026</span>
-              </div>
-            </div>
-            <div class="summit-spk-card" aria-hidden="true">
-              <div class="summit-spk-card__img"><img src="../assets/speakers/marcelo.png" alt="" /></div>
-              <div class="summit-spk-card__info">
-                <strong class="summit-spk-card__name">Marcelo</strong>
-                <span class="summit-spk-card__role">Palestrante</span>
-                <span class="summit-spk-card__company">ViajaFlux Summit 2026</span>
-              </div>
-            </div>
-            <div class="summit-spk-card" aria-hidden="true">
-              <div class="summit-spk-card__img"><img src="../assets/speakers/marcos.png" alt="" /></div>
-              <div class="summit-spk-card__info">
-                <strong class="summit-spk-card__name">Marcos</strong>
-                <span class="summit-spk-card__role">Palestrante</span>
-                <span class="summit-spk-card__company">ViajaFlux Summit 2026</span>
-              </div>
-            </div>
-            <div class="summit-spk-card" aria-hidden="true">
-              <div class="summit-spk-card__img"><img src="../assets/speakers/alexandre.png" alt="" /></div>
-              <div class="summit-spk-card__info">
-                <strong class="summit-spk-card__name">Alexandre</strong>
-                <span class="summit-spk-card__role">Palestrante</span>
-                <span class="summit-spk-card__company">ViajaFlux Summit 2026</span>
-              </div>
-            </div>
-            <div class="summit-spk-card" aria-hidden="true">
-              <div class="summit-spk-card__img"><img src="../assets/speakers/amanda.png" alt="" /></div>
-              <div class="summit-spk-card__info">
-                <strong class="summit-spk-card__name">Amanda</strong>
-                <span class="summit-spk-card__role">Palestrante</span>
-                <span class="summit-spk-card__company">ViajaFlux Summit 2026</span>
-              </div>
-            </div>
-            <div class="summit-spk-card" aria-hidden="true">
-              <div class="summit-spk-card__img"><img src="../assets/speakers/ze.png" alt="" /></div>
-              <div class="summit-spk-card__info">
-                <strong class="summit-spk-card__name">Zé</strong>
-                <span class="summit-spk-card__role">Palestrante</span>
-                <span class="summit-spk-card__company">ViajaFlux Summit 2026</span>
-              </div>
-            </div>
-
           </div>
         </div>
+        <button class="spk-arrow spk-arrow--next" type="button" data-dir="1" aria-label="Próximo palestrante">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
       </div>
+      <div class="spk-dots" data-spk-dots></div>
     </div>
   </section>
 
@@ -924,18 +814,22 @@
       <!-- Realizadores -->
       <div class="summit-partners-tier">
         <span class="summit-partners-tier__label reveal">Realização</span>
-        <div class="summit-partners__grid summit-partners__grid--featured">
-          <div class="summit-partner-logo summit-partner-logo--featured reveal" style="--brand:147,51,234; transition-delay:.08s">
-            <img src="../assets/viajaflux.png" alt="ViajaFlux" />
+        <div class="summit-partners__grid">
+          <div class="summit-partner-card summit-partner-card--featured reveal" style="--brand:147,51,234; transition-delay:.08s">
+            <img class="summit-partner-card__logo" src="../assets/viajaflux.png" alt="ViajaFlux" />
+            <span class="summit-partner-card__name">ViajaFlux</span>
           </div>
-          <div class="summit-partner-logo summit-partner-logo--featured summit-partner-logo--edu reveal" style="--brand:26,62,198; transition-delay:.18s">
-            <img src="../assets/fly-educacional.png" alt="Fly Educacional" />
+          <div class="summit-partner-card summit-partner-card--featured reveal" style="--brand:26,62,198; transition-delay:.18s">
+            <img class="summit-partner-card__logo" src="../assets/fly-educacional.png" alt="Fly Educacional" />
+            <span class="summit-partner-card__name">Fly Educacional</span>
           </div>
-          <div class="summit-partner-logo summit-partner-logo--featured reveal" style="--brand:255,102,0; transition-delay:.28s">
-            <img src="../assets/voefly.png" alt="VoeFly Viagens" />
+          <div class="summit-partner-card summit-partner-card--featured reveal" style="--brand:255,102,0; transition-delay:.28s">
+            <img class="summit-partner-card__logo" src="../assets/voefly.png" alt="VoeFly Viagens" />
+            <span class="summit-partner-card__name">VoeFly Viagens</span>
           </div>
-          <div class="summit-partner-logo summit-partner-logo--featured reveal" style="--brand:22,163,74; transition-delay:.38s">
-            <img src="../assets/fly-one.png" alt="Fly One Contabilidade" />
+          <div class="summit-partner-card summit-partner-card--featured reveal" style="--brand:22,163,74; transition-delay:.38s">
+            <img class="summit-partner-card__logo" src="../assets/fly-one.png" alt="Fly One Contabilidade" />
+            <span class="summit-partner-card__name">Fly One Contabilidade</span>
           </div>
         </div>
       </div>
@@ -946,27 +840,27 @@
         <div class="summit-slider">
           <div class="summit-slide-track">
             <!-- set original — --brand: R,G,B da cor principal de cada marca -->
-            <div class="summit-slide" style="--brand:232,0,61"><img src="../assets/partners/cvc.png" alt="CVC" /></div>
-            <div class="summit-slide" style="--brand:0,82,165"><img src="../assets/partners/azul-viagens.png" alt="Azul Viagens" /></div>
-            <div class="summit-slide" style="--brand:255,107,0"><img src="../assets/partners/hoteldo.png" alt="HotelDO" /></div>
-            <div class="summit-slide" style="--brand:99,28,220"><img src="../assets/partners/befly.png" alt="BeFly" /></div>
-            <div class="summit-slide" style="--brand:0,102,204"><img src="../assets/partners/orinter.png" alt="Orinter" /></div>
-            <div class="summit-slide" style="--brand:218,44,110"><img src="../assets/partners/sakura.png" alt="Sakura Consolidadora" /></div>
-            <div class="summit-slide" style="--brand:230,88,0"><img src="../assets/partners/brt.png" alt="BRT Operadora" /></div>
-            <div class="summit-slide" style="--brand:0,140,90"><img src="../assets/partners/enjoy.png" alt="Enjoy Hotéis &amp; Resorts" /></div>
-            <div class="summit-slide" style="--brand:0,155,210"><img src="../assets/partners/termas.png" alt="Termas dos Laranjais" /></div>
-            <div class="summit-slide" style="--brand:255,90,30"><img src="../assets/partners/hot-beach.png" alt="Hot Beach Parques &amp; Resorts" /></div>
+            <div class="summit-partner-card summit-partner-card--slide" style="--brand:232,0,61"><img class="summit-partner-card__logo" src="../assets/partners/cvc.png" alt="CVC" /><span class="summit-partner-card__name">CVC</span></div>
+            <div class="summit-partner-card summit-partner-card--slide" style="--brand:0,82,165"><img class="summit-partner-card__logo" src="../assets/partners/azul-viagens.png" alt="Azul Viagens" /><span class="summit-partner-card__name">Azul Viagens</span></div>
+            <div class="summit-partner-card summit-partner-card--slide" style="--brand:255,107,0"><img class="summit-partner-card__logo" src="../assets/partners/hoteldo.png" alt="HotelDO" /><span class="summit-partner-card__name">HotelDO</span></div>
+            <div class="summit-partner-card summit-partner-card--slide" style="--brand:99,28,220"><img class="summit-partner-card__logo" src="../assets/partners/befly.png" alt="BeFly" /><span class="summit-partner-card__name">BeFly</span></div>
+            <div class="summit-partner-card summit-partner-card--slide" style="--brand:0,102,204"><img class="summit-partner-card__logo" src="../assets/partners/orinter.png" alt="Orinter" /><span class="summit-partner-card__name">Orinter</span></div>
+            <div class="summit-partner-card summit-partner-card--slide" style="--brand:218,44,110"><img class="summit-partner-card__logo" src="../assets/partners/sakura.png" alt="Sakura Consolidadora" /><span class="summit-partner-card__name">Sakura</span></div>
+            <div class="summit-partner-card summit-partner-card--slide" style="--brand:230,88,0"><img class="summit-partner-card__logo" src="../assets/partners/brt.png" alt="BRT Operadora" /><span class="summit-partner-card__name">BRT Operadora</span></div>
+            <div class="summit-partner-card summit-partner-card--slide" style="--brand:0,140,90"><img class="summit-partner-card__logo" src="../assets/partners/enjoy.png" alt="Enjoy Hotéis &amp; Resorts" /><span class="summit-partner-card__name">Enjoy Hotéis &amp; Resorts</span></div>
+            <div class="summit-partner-card summit-partner-card--slide" style="--brand:0,155,210"><img class="summit-partner-card__logo" src="../assets/partners/termas.png" alt="Termas dos Laranjais" /><span class="summit-partner-card__name">Termas dos Laranjais</span></div>
+            <div class="summit-partner-card summit-partner-card--slide" style="--brand:255,90,30"><img class="summit-partner-card__logo" src="../assets/partners/hot-beach.png" alt="Hot Beach Parques &amp; Resorts" /><span class="summit-partner-card__name">Hot Beach</span></div>
             <!-- set duplicado para loop seamless -->
-            <div class="summit-slide" style="--brand:232,0,61" aria-hidden="true"><img src="../assets/partners/cvc.png" alt="" /></div>
-            <div class="summit-slide" style="--brand:0,82,165" aria-hidden="true"><img src="../assets/partners/azul-viagens.png" alt="" /></div>
-            <div class="summit-slide" style="--brand:255,107,0" aria-hidden="true"><img src="../assets/partners/hoteldo.png" alt="" /></div>
-            <div class="summit-slide" style="--brand:99,28,220" aria-hidden="true"><img src="../assets/partners/befly.png" alt="" /></div>
-            <div class="summit-slide" style="--brand:0,102,204" aria-hidden="true"><img src="../assets/partners/orinter.png" alt="" /></div>
-            <div class="summit-slide" style="--brand:218,44,110" aria-hidden="true"><img src="../assets/partners/sakura.png" alt="" /></div>
-            <div class="summit-slide" style="--brand:230,88,0" aria-hidden="true"><img src="../assets/partners/brt.png" alt="" /></div>
-            <div class="summit-slide" style="--brand:0,140,90" aria-hidden="true"><img src="../assets/partners/enjoy.png" alt="" /></div>
-            <div class="summit-slide" style="--brand:0,155,210" aria-hidden="true"><img src="../assets/partners/termas.png" alt="" /></div>
-            <div class="summit-slide" style="--brand:255,90,30" aria-hidden="true"><img src="../assets/partners/hot-beach.png" alt="" /></div>
+            <div class="summit-partner-card summit-partner-card--slide" style="--brand:232,0,61" aria-hidden="true"><img class="summit-partner-card__logo" src="../assets/partners/cvc.png" alt="" /><span class="summit-partner-card__name">CVC</span></div>
+            <div class="summit-partner-card summit-partner-card--slide" style="--brand:0,82,165" aria-hidden="true"><img class="summit-partner-card__logo" src="../assets/partners/azul-viagens.png" alt="" /><span class="summit-partner-card__name">Azul Viagens</span></div>
+            <div class="summit-partner-card summit-partner-card--slide" style="--brand:255,107,0" aria-hidden="true"><img class="summit-partner-card__logo" src="../assets/partners/hoteldo.png" alt="" /><span class="summit-partner-card__name">HotelDO</span></div>
+            <div class="summit-partner-card summit-partner-card--slide" style="--brand:99,28,220" aria-hidden="true"><img class="summit-partner-card__logo" src="../assets/partners/befly.png" alt="" /><span class="summit-partner-card__name">BeFly</span></div>
+            <div class="summit-partner-card summit-partner-card--slide" style="--brand:0,102,204" aria-hidden="true"><img class="summit-partner-card__logo" src="../assets/partners/orinter.png" alt="" /><span class="summit-partner-card__name">Orinter</span></div>
+            <div class="summit-partner-card summit-partner-card--slide" style="--brand:218,44,110" aria-hidden="true"><img class="summit-partner-card__logo" src="../assets/partners/sakura.png" alt="" /><span class="summit-partner-card__name">Sakura</span></div>
+            <div class="summit-partner-card summit-partner-card--slide" style="--brand:230,88,0" aria-hidden="true"><img class="summit-partner-card__logo" src="../assets/partners/brt.png" alt="" /><span class="summit-partner-card__name">BRT Operadora</span></div>
+            <div class="summit-partner-card summit-partner-card--slide" style="--brand:0,140,90" aria-hidden="true"><img class="summit-partner-card__logo" src="../assets/partners/enjoy.png" alt="" /><span class="summit-partner-card__name">Enjoy Hotéis &amp; Resorts</span></div>
+            <div class="summit-partner-card summit-partner-card--slide" style="--brand:0,155,210" aria-hidden="true"><img class="summit-partner-card__logo" src="../assets/partners/termas.png" alt="" /><span class="summit-partner-card__name">Termas dos Laranjais</span></div>
+            <div class="summit-partner-card summit-partner-card--slide" style="--brand:255,90,30" aria-hidden="true"><img class="summit-partner-card__logo" src="../assets/partners/hot-beach.png" alt="" /><span class="summit-partner-card__name">Hot Beach</span></div>
           </div>
         </div>
       </div>
@@ -995,9 +889,7 @@
               o que é possível no turismo."
             </p>
             <div class="summit-testimonial-card__author">
-              <div class="summit-testimonial-card__avatar summit-testimonial-card__avatar--1">
-                <svg data-lucide="user"></svg>
-              </div>
+              <div class="summit-testimonial-card__avatar summit-testimonial-card__avatar--1">MS</div>
               <div>
                 <strong>Maria Silva</strong>
                 <span>CEO, Agência Viajar Melhor</span>
@@ -1013,9 +905,7 @@
               dobrar meu faturamento no próximo ciclo."
             </p>
             <div class="summit-testimonial-card__author">
-              <div class="summit-testimonial-card__avatar summit-testimonial-card__avatar--2">
-                <svg data-lucide="user"></svg>
-              </div>
+              <div class="summit-testimonial-card__avatar summit-testimonial-card__avatar--2">CM</div>
               <div>
                 <strong>Carlos Mendes</strong>
                 <span>Diretor, Turismo Sem Fronteiras</span>
@@ -1031,9 +921,7 @@
               essência do que é o ecossistema Grupo Fly."
             </p>
             <div class="summit-testimonial-card__author">
-              <div class="summit-testimonial-card__avatar summit-testimonial-card__avatar--3">
-                <svg data-lucide="user"></svg>
-              </div>
+              <div class="summit-testimonial-card__avatar summit-testimonial-card__avatar--3">AC</div>
               <div>
                 <strong>Ana Costa</strong>
                 <span>Fundadora, Fly Dreams Travel</span>
@@ -1049,9 +937,7 @@
               acreditar em nós empreendedores."
             </p>
             <div class="summit-testimonial-card__author">
-              <div class="summit-testimonial-card__avatar summit-testimonial-card__avatar--4">
-                <svg data-lucide="user"></svg>
-              </div>
+              <div class="summit-testimonial-card__avatar summit-testimonial-card__avatar--4">RS</div>
               <div>
                 <strong>Ricardo Santos</strong>
                 <span>Sócio, RS Travels Premium</span>
@@ -1209,7 +1095,7 @@
 
 
   <!-- ============ WA FLOATER ============ -->
-  <a class="wa-float" href="https://wa.me/5518991871456" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <a class="wa-float" href="https://wa.me/551831751190" target="_blank" rel="noopener" aria-label="WhatsApp">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
       <path
         d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
@@ -1219,16 +1105,11 @@
 
   <!-- ============ SCRIPTS ============ -->
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="../js/nav.js"></script>
   <script>
     /* ── Ícones ─────────────────────────────────────────────── */
     function renderIcons() { if (window.lucide) window.lucide.createIcons(); }
     renderIcons();
-
-    /* ── Nav scroll state ───────────────────────────────────── */
-    var nav = document.getElementById('nav');
-    function onScroll() { nav.classList.toggle('scrolled', window.scrollY > 24); }
-    window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
 
     /* ── Reveal on scroll ──────────────────────────────────── */
     var io = new IntersectionObserver(function (entries) {
@@ -1293,6 +1174,133 @@
       counterObs.observe(el);
     });
 
+    /* ── Pausa/hover por clique nos carrosséis (mobile, sem hover) ── */
+    (function () {
+      var isTouch = window.matchMedia('(hover: none), (pointer: coarse)').matches;
+      if (!isTouch) return;
+
+      function setupTapCarousel(sliderSelector, cardSelector) {
+        document.querySelectorAll(sliderSelector).forEach(function (slider) {
+          var cards = slider.querySelectorAll(cardSelector);
+          cards.forEach(function (card) {
+            card.addEventListener('click', function (e) {
+              var wasActive = card.classList.contains('is-active');
+              cards.forEach(function (c) { c.classList.remove('is-active'); });
+              if (!wasActive) {
+                card.classList.add('is-active');
+                slider.classList.add('is-paused');
+              } else {
+                slider.classList.remove('is-paused');
+              }
+            });
+          });
+        });
+        document.addEventListener('click', function (e) {
+          document.querySelectorAll(sliderSelector).forEach(function (slider) {
+            if (!slider.contains(e.target)) {
+              slider.querySelectorAll(cardSelector).forEach(function (c) { c.classList.remove('is-active'); });
+              slider.classList.remove('is-paused');
+            }
+          });
+        });
+      }
+
+      setupTapCarousel('.summit-slider', '.summit-partner-card--slide');
+    })();
+
+    /* ── Carrossel de palestrantes (setas, paginação, autoplay) ── */
+    (function () {
+      var root = document.querySelector('[data-spk-carousel]');
+      if (!root) return;
+      var viewport = root.querySelector('.spk-viewport');
+      var track = root.querySelector('.spk-track');
+      var cards = Array.prototype.slice.call(track.children);
+      var prevBtn = root.querySelector('.spk-arrow--prev');
+      var nextBtn = root.querySelector('.spk-arrow--next');
+      var dotsWrap = document.querySelector('[data-spk-dots]');
+      if (!cards.length) return;
+
+      var pageCount = 1;
+      var dots = [];
+      var timer = null;
+
+      function cardStep() {
+        var rect = cards[0].getBoundingClientRect();
+        var gap = parseFloat(getComputedStyle(track).gap) || 0;
+        return rect.width + gap;
+      }
+
+      function perView() {
+        return Math.max(1, Math.round(viewport.clientWidth / cardStep()));
+      }
+
+      function currentPage() {
+        return Math.round(viewport.scrollLeft / (cardStep() * perView()));
+      }
+
+      function buildDots() {
+        pageCount = Math.max(1, Math.ceil(cards.length / perView()));
+        dotsWrap.innerHTML = '';
+        dots = [];
+        for (var i = 0; i < pageCount; i++) {
+          var dot = document.createElement('button');
+          dot.type = 'button';
+          dot.className = 'spk-dot';
+          dot.setAttribute('aria-label', 'Ir para página ' + (i + 1));
+          dot.addEventListener('click', function (idx) {
+            return function () { goToPage(idx); restart(); };
+          }(i));
+          dotsWrap.appendChild(dot);
+          dots.push(dot);
+        }
+        updateDots();
+      }
+
+      function updateDots() {
+        var page = Math.min(currentPage(), dots.length - 1);
+        dots.forEach(function (d, i) { d.classList.toggle('is-active', i === page); });
+      }
+
+      function goToPage(i) {
+        var page = (i + pageCount) % pageCount;
+        viewport.scrollTo({ left: page * cardStep() * perView(), behavior: 'smooth' });
+      }
+
+      function next() {
+        var page = currentPage();
+        var atEnd = viewport.scrollLeft + viewport.clientWidth >= track.scrollWidth - 4;
+        goToPage(atEnd ? 0 : page + 1);
+      }
+
+      function prev() { goToPage(currentPage() - 1); }
+
+      function restart() {
+        if (timer) clearInterval(timer);
+        timer = setInterval(next, 4200);
+      }
+
+      if (prevBtn) prevBtn.addEventListener('click', function () { prev(); restart(); });
+      if (nextBtn) nextBtn.addEventListener('click', function () { next(); restart(); });
+
+      var scrollTimer;
+      viewport.addEventListener('scroll', function () {
+        clearTimeout(scrollTimer);
+        scrollTimer = setTimeout(updateDots, 80);
+      }, { passive: true });
+
+      root.addEventListener('mouseenter', function () { if (timer) clearInterval(timer); });
+      root.addEventListener('mouseleave', restart);
+
+      buildDots();
+      restart();
+
+      var resizeTimer;
+      window.addEventListener('resize', function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(buildDots, 150);
+      });
+    })();
+
     /* ── Carrossel de depoimentos ───────────────────────────── */
     (function () {
       var track  = document.getElementById('testimonialTrack');
@@ -1348,28 +1356,6 @@
       startTimer();
     })();
 
-    /* ── Mobile menu (slide-down) ───────────────────────────── */
-    (function() {
-      var burger = document.getElementById('nav-burger');
-      var mobile = document.getElementById('nav-mobile');
-      var iconMenu = document.getElementById('icon-menu');
-      var iconX = document.getElementById('icon-x');
-      var open = false;
-      burger.addEventListener('click', function() {
-        open = !open;
-        mobile.classList.toggle('open', open);
-        iconMenu.style.display = open ? 'none' : '';
-        iconX.style.display = open ? '' : 'none';
-      });
-      mobile.querySelectorAll('a').forEach(function(a) {
-        a.addEventListener('click', function() {
-          open = false;
-          mobile.classList.remove('open');
-          iconMenu.style.display = '';
-          iconX.style.display = 'none';
-        });
-      });
-    })();
 
 
     /* ── Re-render icons após manipulação de DOM ─────────────── */
